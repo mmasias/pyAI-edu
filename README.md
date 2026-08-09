@@ -18,7 +18,7 @@ Profesorado de UNEATLANTICO como usuario primario. El corpus documental y los cr
 ## Estructura del repositorio
 
 ```
-pyAI@edu/
+pyAI-edu/
 ├── README.md                  Este documento
 ├── planDeAccion.md            Hoja de ruta priorizada
 ├── docs/                      Corpus documental de referencia
