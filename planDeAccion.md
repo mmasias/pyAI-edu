@@ -67,7 +67,7 @@ El profesorado necesita ayuda para dos decisiones de diseño:
 
 **Entregables:**
 - Árbol de decisión basado en las dos preguntas de P3 (¿reconstruible sin IA? ¿medio u objeto?), no en la taxonomía instrumental/conceptual/sustantivo del V9.
-- Ejemplos por disciplina y tipo de actividad — ya hay un primer borrador de seis casos (Derecho, Ingeniería, Enfermería, Historia, Marketing, Matemáticas) en la discussion #1, cierre de P4; ampliar y llevar a plantilla.
+- Ejemplos por grado de UNEATLANTICO y tipo de actividad — ya hay un primer borrador de seis casos (Ingeniería Informática, Ingeniería de Organización Industrial, Psicología, Nutrición Humana y Dietética, Traducción y Enseñanza de Lenguas, Publicidad y Relaciones Públicas) en el issue #11; ampliar y llevar a plantilla.
 - Casos límite documentados: especificación por actividad dentro de un régimen (§4.3), multi-régimen por fase dentro de la misma asignatura, mixtura B/D en un mismo trabajo (deuda P4, ver más abajo).
 
 ### 4. Caso especial TFG, TFM y tesis doctorales
