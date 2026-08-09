@@ -23,7 +23,7 @@ Para cada herramienta utilizada, replicar el bloque siguiente.
 
 ## Declaración de responsabilidad
 
-Quien firma declara que el uso declarado arriba no sustituye su autoría efectiva: el resultado entregado es defendible y modificable por quien firma, conforme al guion de defensa oral (P1). Cualquier parte del trabajo que no pudiera ser explicada o modificada por quien firma queda fuera del alcance de esta declaración y constituye uso no admisible conforme a los arquetipos de fraude (P5).
+Quien firma declara que el uso declarado arriba no sustituye su autoría efectiva: el resultado entregado es defendible y modificable por quien firma, conforme al guion de defensa oral (P1). Cualquier parte del trabajo que no pudiera ser explicada o modificada por quien firma queda fuera del alcance de esta declaración; se resuelve mediante la conversación del guion de defensa oral, que distingue evaluación negativa (no aprendió) de fraude (defraudó, conforme a los arquetipos de P5) antes de concluir nada.
 
 ## Firma
 
