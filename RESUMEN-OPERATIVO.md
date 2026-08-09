@@ -2,13 +2,13 @@
 
 > Una página para que el profesorado opere el régimen de IA el primer día de curso.
 > Para los _por qués_ de cada regla: [`docs/articulos/`](docs/articulos/) (capa 2) o la [discusión de cribado](https://github.com/mmasias/pyAI-edu/discussions/1).
-> Para referencia institucional completa: [`UNEATLANTICO/ProtocoloCIAEP.pdf`](UNEATLANTICO/ProtocoloCIAEP.pdf) (V9, política que autoriza y limita este resumen).
-
----
+> Para referencia institucional completa: [`UNEATLANTICO/ProtocoloCIAEP.pdf`](UNEATLANTICO/ProtocoloCIAEP.pdf) — _Protocolo de medidas para garantizar la calidad y la integridad académicas en la modalidad de enseñanza presencial_, V9, política que autoriza y limita este resumen.
 
 ## 1. Régimen A/B/D
 
-Tres regímenes. No cuatro: el régimen C del V9 colapsa porque la distinción conceptual/sustantivo es fuzzy en LLMs actuales (P3, P4).
+Tres regímenes. No cuatro: el régimen C del protocolo V9 colapsa porque la distinción conceptual/sustantivo es difusa en LLMs actuales (P3, P4).
+
+<div align="center">
 
 | Régimen | Cuándo aplica | Cómo se evalúa |
 |---|---|---|
@@ -16,16 +16,21 @@ Tres regímenes. No cuatro: el régimen C del V9 colapsa porque la distinción c
 | **B** | IA como medio | Con independencia de la herramienta usada para producir |
 | **D** | IA como objeto evaluado | A través de la interacción del alumno con la IA |
 
-**Regla mecánica de clasificación (P3 + P4)** — dos preguntas al diseñar la actividad:
+</div>
 
-1. ¿El resultado debe ser reconstruible por el alumno sin la herramienta?
-2. ¿La IA es **medio** para producir el resultado, o es el **objeto** mismo que se evalúa?
+**Regla mecánica de clasificación (P3 + P4)** — una pregunta clasificatoria al diseñar la actividad:
+
+> ¿La IA es **medio** para producir el resultado, o es el **objeto** mismo que se evalúa?
 
 - Evalúa con independencia de la herramienta → **B** (con declaración de uso).
 - Evalúa a través de la interacción con la IA → **D**.
 - Sin IA permitida → **A**.
 
+**Pregunta diagnóstica complementaria (P3):** _¿El resultado debe ser reconstruible por el alumno sin la herramienta?_ Si la respuesta es NO, sugiere fuertemente D (la actividad depende de la IA); la decisión final la da la pregunta clasificatoria anterior.
+
 ## 2. Instrumentos por régimen
+
+<div align="center">
 
 | Régimen | Declaración autoría | Declaración uso IA | Trazabilidad pasiva |
 |---|:-:|:-:|---|
@@ -33,9 +38,13 @@ Tres regímenes. No cuatro: el régimen C del V9 colapsa porque la distinción c
 | B | ✓ | ✓ | Recomendada |
 | D | ✓ | ✓ | Obligatoria |
 
+</div>
+
 - **Declaración de autoría** (§5.1, P0): universal. Una línea, <2 min.
 - **Declaración de uso de IA** (P2): herramienta + finalidad + fase. No reconstruye log; deja constancia. <5 min.
 - **Trazabilidad pasiva** (P8): el trabajo en régimen B/D se redacta en un **Doc compartido con el profesor desde el primer día**, nunca se pega un documento final. El historial de versiones de Docs/Sheets hace de registro sin coste adicional — es la base sobre la que se construyen los indicios de proceso.
+
+> _Nota de fidelidad al cribado: la distinción Recomendada(B)/Obligatoria(D) es inferencia de este resumen, no del cierre de P8. El cierre de P8 hablaba de "régimen C/D" sin diferenciar B de D. La inferencia es razonable (en D la trazabilidad es parte de lo evaluable; en B el producto se puede evaluar aparte), pero no debe citarse como si viniera de P8._
 
 ## 3. Guion de defensa oral (P1) — sugerido
 
@@ -48,17 +57,21 @@ Cuatro preguntas para verificar autoría efectiva cuando hay indicio. Lo ejecuta
 
 **Cubre bien** producto de código/texto. **No probado** en actuación, interpretación musical o cálculo manual — adaptar por disciplina.
 
-_Marcado como **sugerido**, no canónico: imponerlo fijo arriesga la misma fosilización que motivó retirar VERITAS. Versión canónica cerrada como punto de partida fijo: [issue #7](https://github.com/mmasias/pyAI-edu/issues/7)._
+_Marcado como **sugerido**, no canónico: una versión fija arriesga fosilización — la misma razón por la que el cribado sustituyó VERITAS por este guion. Versión canónica cerrada como punto de partida fijo: [issue #7](https://github.com/mmasias/pyAI-edu/issues/7)._
 
 ## 4. Disparadores de verificación (P10)
 
 Tres categorías exhaustivas. **Un indicio documentado de cualquiera basta para activar** la verificación (guion de defensa oral).
+
+<div align="center">
 
 | Categoría | Qué detecta | Ejemplos |
 |---|---|---|
 | **1. Producto** | El trabajo entregado descuadra con lo esperable del alumno o del régimen | Salto cualitativo vs. histórico · Inconsistencia de estilo entre secciones · Calidad superior a la demostrada en aula · Declaración vacía, copiada o contradictoria |
 | **2. Proceso** | Huecos en la trazabilidad pasiva (Docs, enlace de chat) | Documento sin histórico · Saltos temporales inconsistentes · Enlace de chat que no cuadra con la declaración · Versiones intermedias ausentes cuando el régimen las exige |
 | **3. Interacción** | El comportamiento en aula/tutoría descuadra con el trabajo entregado | Respuestas evasivas a preguntas sobre el propio trabajo · Incapacidad de explicar decisiones que el trabajo presupone |
+
+</div>
 
 - **Registro:** categoría + ejemplo concreto, un clic. No texto libre.
 - **Naturaleza:** conversacional (guion P1), no sancionadora.
@@ -83,20 +96,16 @@ Lo que funda una decisión es la conversación que el indicio dispara, no el ind
 
 Esta regla aparece al pie de cada plantilla operativa que toque verificación — es la pieza que sostiene que todo lo anterior se resuelva por juicio humano y no por delegación a una herramienta de puntuación.
 
----
-
 ## Cómo aplicarlo el primer día de curso
 
-1. **Guía docente:** añadir la frase _"Esta asignatura se rige por el Protocolo CIAEP de UNEATLANTICO. El régimen aplicable a cada actividad se indicará en su enunciado."_
+1. **Guía docente:** añadir la frase _"Esta asignatura se rige por el Protocolo de medidas para garantizar la calidad y la integridad académicas en la modalidad de enseñanza presencial de UNEATLANTICO. El régimen aplicable a cada actividad se indicará en su enunciado."_
 2. **Para cada actividad evaluada:** fijar el régimen (A/B/D) usando la regla mecánica de §1.
-3. **Para B y D:** exigir declaración de autoría + declaración de uso + Doc compartido desde el primer día.
-4. **Para D:** añadir consigna tipo con la regla de especificación por actividad (§4.3).
+3. **Para B:** declaración de autoría + declaración de uso + Doc compartido recomendado. **Para D:** exige lo mismo, con Doc compartido obligatorio.
+4. **Para B y D:** añadir consigna tipo con la regla de especificación por actividad (§4.3).
 5. **Anunciar al aula:** la verificación es **reactiva, no universal** — cualquiera puede ser auditado bajo indicio, pero el indicio nunca es prueba y la conversación sí funda la decisión.
-
----
 
 ## Trazabilidad de este documento
 
-- Fundado en el [cribado del V9 cerrado](https://github.com/mmasias/pyAI-edu/discussions/1) (P0-P10).
-- Construido en [issue #3](https://github.com/mmasias/pyAI-edu/issues/3) y validado por revisión cruzada Claude + z.AI + usuario.
-- Cambios en el protocolo V9 (V10+) disparan revisión del cribado, no directa de este documento — el cribado es la capa intermedia que absorbe el cambio.
+- Fundado en el [cribado del protocolo cerrado](https://github.com/mmasias/pyAI-edu/discussions/1) (P0-P10).
+- Construido en [issue #3](https://github.com/mmasias/pyAI-edu/issues/3); este borrador está en revisión cruzada (Claude + z.AI + usuario) en [PR #17](https://github.com/mmasias/pyAI-edu/pull/17). La mención a validación aplica tras merge.
+- Cambios en el protocolo (V10+) disparan revisión del cribado, no directa de este documento — el cribado es la capa intermedia que absorbe el cambio.
