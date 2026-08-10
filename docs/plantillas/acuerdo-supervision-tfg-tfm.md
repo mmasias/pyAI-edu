@@ -1,6 +1,6 @@
 # Acuerdo de supervisión — TFG / TFM / tesis
 
-> Régimen reforzado sin los 13 campos del V9 (P7): declaración en apartado metodológico, entrega escalonada, defensa oral final obligatoria. Este acuerdo fija el régimen desde el arranque y resuelve dos deudas del cribado a la vez: la mixtura B/D dentro del mismo trabajo (deuda de [P4](../articulos/P4.md)) y la distinción entre dirección activa y nominal (deuda de [P7](../articulos/P7.md)). Se firma al inicio del trabajo, no al depósito.
+> Régimen reforzado sin los 13 campos del V9 ([P7](../articulos/P7.md#qué-se-decidió)): declaración en apartado metodológico, entrega escalonada, defensa oral final obligatoria. Este acuerdo fija el régimen desde el arranque y resuelve dos deudas del cribado a la vez: la mixtura B/D dentro del mismo trabajo (deuda de [P4](../articulos/P4.md)) y la distinción entre dirección activa y nominal (deuda de [P7](../articulos/P7.md)). Se firma al inicio del trabajo, no al depósito.
 
 ## Datos del trabajo
 

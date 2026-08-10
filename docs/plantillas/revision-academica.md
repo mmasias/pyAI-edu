@@ -1,6 +1,6 @@
 # Revisión académica bajo indicio (P10 / §7.5)
 
-> Protocolo de apertura, catálogo de evidencias y plantilla de decisión motivada para cuando el [registro estructurado de indicio](registro-indicio.md) (P10) documenta un disparador de verificación. Cubre lo que el profesorado **ejecuta y decide** en la revisión académica; no reescribe el procedimiento disciplinario formal, que sigue el Reglamento Académico y del Alumno. Alcance fijado en [discussions#33](https://github.com/mmasias/pyAI-edu/discussions/33).
+> Protocolo de apertura, catálogo de evidencias y plantilla de decisión motivada para cuando el [registro estructurado de indicio](registro-indicio.md) ([P10](../articulos/P10.md#qué-se-decidió)) documenta un disparador de verificación. Cubre lo que el profesorado **ejecuta y decide** en la revisión académica; no reescribe el procedimiento disciplinario formal, que sigue el Reglamento Académico y del Alumno. Alcance fijado en [discussions#33](https://github.com/mmasias/pyAI-edu/discussions/33).
 
 ## Cuándo se abre
 
@@ -27,7 +27,7 @@ Todas deben pedirse con proporcionalidad y coherencia con la actividad — no se
 
 | Evidencia | Qué aporta |
 |---|---|
-| **Versiones intermedias** | Historial del Doc compartido — elaboración real vs. pegado final (P8). |
+| **Versiones intermedias** | Historial del Doc compartido — elaboración real vs. pegado final ([P8](../articulos/P8.md#qué-se-decidió)). |
 | **Trazabilidad pasiva** | Historial de revisiones, timestamps de servidor, enlace de chat declarado. |
 | **Declaración de uso** | Contraste entre lo declarado y el producto entregado. |
 | **Comprobación de fuentes citadas** | Verificación de que las fuentes existen y dicen lo que el trabajo les atribuye (arquetipo 6, falsificación de fuente). |
@@ -71,7 +71,7 @@ _(qué evidencia concreta sostiene la conclusión, en los términos exactos del 
 
 ## Criterio de parada — cuándo esto deja de ser revisión académica
 
-Si las evidencias recabadas apuntan a un arquetipo de fraude (P5), la revisión académica **no tramita el expediente**. El V9 (§7.9) fija el límite exacto: cuando los hechos pudieran constituir falta disciplinaria, la revisión académica se limita a adoptar la decisión evaluativa que corresponda y a **preservar las evidencias**, remitiendo las actuaciones al órgano competente según el Reglamento Académico y del Alumno. La revisión académica y el procedimiento disciplinario no pueden confundirse, aunque compartan evidencias.
+Si las evidencias recabadas apuntan a un arquetipo de fraude ([P5](../articulos/P5.md#qué-se-decidió)), la revisión académica **no tramita el expediente**. El V9 (§7.9) fija el límite exacto: cuando los hechos pudieran constituir falta disciplinaria, la revisión académica se limita a adoptar la decisión evaluativa que corresponda y a **preservar las evidencias**, remitiendo las actuaciones al órgano competente según el Reglamento Académico y del Alumno. La revisión académica y el procedimiento disciplinario no pueden confundirse, aunque compartan evidencias.
 
 En la práctica: si marcas "indicio de fraude" en la plantilla, tu trabajo termina en preservar la evidencia recabada (no borrar ni modificar nada del Doc compartido, del registro de indicio ni de esta plantilla) y remitirla al órgano competente de tu institución. No te corresponde instruir el expediente.
 

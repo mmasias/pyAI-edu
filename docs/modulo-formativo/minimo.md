@@ -1,8 +1,8 @@
 # Módulo formativo mínimo
 
-> Formación que el profesorado necesita para ejecutar los mecanismos del régimen cribado (P9): no el catálogo de plantillas, sino el **juicio operativo** que las hace aplicables. Publicado junto a las plantillas, no después — la regla P9 establece que un instrumento sin manual se aplica mal por las mismas razones que el V9: exceso de confianza en el enunciado formal y ausencia de práctica guiada donde la regla contradice la intuición.
+> Formación que el profesorado necesita para ejecutar los mecanismos del régimen cribado ([P9](../articulos/P9.md#qué-se-decidió)): no el catálogo de plantillas, sino el **juicio operativo** que las hace aplicables. Publicado junto a las plantillas, no después — la regla P9 establece que un instrumento sin manual se aplica mal por las mismas razones que el V9: exceso de confianza en el enunciado formal y ausencia de práctica guiada donde la regla contradice la intuición.
 >
-> El alcance se fijó en [discussions#27](https://github.com/mmasias/pyAI-edu/discussions/27): las cuatro piezas cotidianas (autoría / uso IA / defensa oral / consigna) ya viven explicadas dentro de cada plantilla; este módulo no las duplica. Cubre las dos piezas que no tienen sitio propio y que el cierre de P9 marcó como críticas: reconocimiento práctico de arquetipos de fraude (P5) y aplicación guiada de la regla de cautela §7.6 (P6).
+> El alcance se fijó en [discussions#27](https://github.com/mmasias/pyAI-edu/discussions/27): las cuatro piezas cotidianas (autoría / uso IA / defensa oral / consigna) ya viven explicadas dentro de cada plantilla; este módulo no las duplica. Cubre las dos piezas que no tienen sitio propio y que el cierre de P9 marcó como críticas: reconocimiento práctico de arquetipos de fraude ([P5](../articulos/P5.md#qué-se-decidió)) y aplicación guiada de la regla de cautela §7.6 ([P6](../articulos/P6.md#qué-se-decidió)).
 
 ## Dónde está el "cómo usar" de cada plantilla
 
@@ -16,14 +16,14 @@ Las cuatro plantillas cotidianas (autoría / uso IA / defensa oral / consigna) y
 
 Lo que sigue es lo que no vive en ninguna plantilla.
 
-## Pieza 1 — Reconocimiento práctico de arquetipos de fraude (P5)
+## Pieza 1 — Reconocimiento práctico de arquetipos de fraude ([P5](../articulos/P5.md#qué-se-decidió))
 
 El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) §5 lista los seis arquetipos (copia literal / fabricación de evidencia / uso desproporcionado al régimen / evasión activa / colusión organizada / falsificación de fuente) como índice de reconocimiento rápido. Esta sección los trabaja: por cada arquetipo, un ejemplo, cómo se tipifica y qué **no** es ese arquetipo (la frontera con la mera evaluación negativa o con la declaración olvidada).
 
 **Tres recordatorios del cierre de P5 antes de los ejemplos:**
 
 - El listado es **abierto y combinable**. El docente puede proponer tipificaciones adicionales. Un fraude real puede ser multi-arquetipo; la tipificación reporta todos los que aplican.
-- La función de los arquetipos es **diagnóstica, no detectiva**: el docente detecta por criterio propio (P10); los arquetipos ayudan a **tipificar la magnitud** del mal uso.
+- La función de los arquetipos es **diagnóstica, no detectiva**: el docente detecta por criterio propio ([P10](../articulos/P10.md#qué-se-decidió)); los arquetipos ayudan a **tipificar la magnitud** del mal uso.
 - Los seis arquetipos son **actos afirmativos** del alumno, no síntomas observables ni omisiones ambiguas.
 
 ### Arquetipo 1 — Copia literal o sustitución completa
@@ -48,7 +48,7 @@ El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) §5 lista los seis arque
 
 **Cómo se tipifica:** arquetipo 3. El régimen B permite IA como medio (defendible y reconstruible); el análisis sustantivo generado por IA cruza al régimen D sin estar declarado ni defendido.
 
-**Qué no es este arquetipo:** un alumno en régimen D que usa IA más intensamente de lo que inicialmente declaró, siempre que la declaración se corrija y el trabajo sea defendible. La declaración incompleta corregible no es fraude; es deuda que la conversación (P1) resuelve.
+**Qué no es este arquetipo:** un alumno en régimen D que usa IA más intensamente de lo que inicialmente declaró, siempre que la declaración se corrija y el trabajo sea defendible. La declaración incompleta corregible no es fraude; es deuda que la conversación ([P1](../articulos/P1.md#qué-se-decidió)) resuelve.
 
 ### Arquetipo 4 — Evasión activa de verificación
 
@@ -74,7 +74,7 @@ El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) §5 lista los seis arque
 
 **Qué no es este arquetipo:** citar una fuente que resulta errónea o mal interpretada. La fuente defectuosa funda evaluación negativa (no supo investigar); el arquetipo requiere que la fuente no exista tal como se presenta.
 
-## Pieza 2 — Práctica guiada de la regla de cautela §7.6 (P6)
+## Pieza 2 — Práctica guiada de la regla de cautela §7.6 ([P6](../articulos/P6.md#qué-se-decidió))
 
 El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) §6 enuncia la regla: _"un detector automático (de IA, de similitud, etc.) puede ser **disparador**, nunca **prueba**"_. El cierre de P9 advierte que esta regla es **contraintuitiva** — cuando un detector dice _"85% probable IA"_, la tentación natural es calificar conforme al detector; la regla exige lo contrario. Enunciarla no basta; requiere práctica guiada. Esta sección es esa práctica.
 
@@ -122,7 +122,7 @@ Es el caso que el cierre de P9 marca como crítico — donde el atajo intuitivo 
 
 El cierre original de P9 listaba como pieza del módulo _"cómo aplicar el muestreo sin que explote el coste (P2 acotado por P8)"_. El propio cierre de P8, en la misma discusión, sustituyó el muestreo por **verificación reactiva bajo indicio legítimo** (definido en P10), sin distinción de niveles ni necesidad de muestrear. El muestreo no es un mecanismo vigente del régimen cribado — ver [P8](../articulos/P8.md) y la nota de obsolescencia en [P9](../articulos/P9.md).
 
-Lo que sí existe: trazabilidad pasiva universal de base (Docs compartidos desde el primer día) y activación de defensa oral solo bajo indicio documentado (P10). Cómo se documenta ese indicio vive en [`registro-indicio.md`](../plantillas/registro-indicio.md), no aquí.
+Lo que sí existe: trazabilidad pasiva universal de base (Docs compartidos desde el primer día) y activación de defensa oral solo bajo indicio documentado ([P10](../articulos/P10.md#qué-se-decidió)). Cómo se documenta ese indicio vive en [`registro-indicio.md`](../plantillas/registro-indicio.md), no aquí.
 
 ## Fundamentos
 
