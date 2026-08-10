@@ -69,7 +69,7 @@ Tres categorías exhaustivas. **Un indicio documentado de cualquiera basta para 
 |---|---|---|
 | **1. Producto** | El trabajo entregado descuadra con lo esperable del alumno o del régimen | Salto cualitativo vs. histórico · Inconsistencia de estilo entre secciones · Calidad superior a la demostrada en aula · Declaración vacía, copiada o contradictoria |
 | **2. Proceso** | Huecos en la trazabilidad pasiva (Docs, enlace de chat) | Documento sin histórico · Saltos temporales inconsistentes · Enlace de chat que no cuadra con la declaración · Versiones intermedias ausentes cuando el régimen las exige |
-| **3. Interacción** | El comportamiento en aula/tutoría descuadra con el trabajo entregado | Respuestas evasivas a preguntas sobre el propio trabajo · Incapacidad de explicar decisiones que el trabajo presupone |
+| **3. Interacción** | El comportamiento en aula/tutoría descuadra con el trabajo entregado | Respuestas evasivas a preguntas sobre el propio trabajo · Incapacidad de explicar decisiones que el trabajo presupone · Discrepancia entre lo que el alumno dice conocer y lo que puede operar en vivo |
 
 </div>
 
