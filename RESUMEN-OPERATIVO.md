@@ -7,7 +7,7 @@
 
 ## 1. Régimen A/B/D
 
-Tres regímenes. No cuatro: el régimen C del protocolo V9 colapsa porque la distinción conceptual/sustantivo es difusa en LLMs actuales (P3, P4).
+Tres regímenes. No cuatro: el régimen C del protocolo V9 colapsa porque la distinción conceptual/sustantivo es difusa en LLMs actuales ([P3](docs/articulos/P3.md#por-qué), [P4](docs/articulos/P4.md#por-qué)).
 
 <div align="center">
 
@@ -19,7 +19,7 @@ Tres regímenes. No cuatro: el régimen C del protocolo V9 colapsa porque la dis
 
 </div>
 
-**Regla mecánica de clasificación (P3 + P4)** — una pregunta clasificatoria al diseñar la actividad:
+**Regla mecánica de clasificación ([P3](docs/articulos/P3.md#qué-se-decidió) + [P4](docs/articulos/P4.md#qué-se-decidió))** — una pregunta clasificatoria al diseñar la actividad:
 
 > ¿La IA es **medio** para producir el resultado, o es el **objeto** mismo que se evalúa?
 
@@ -27,7 +27,7 @@ Tres regímenes. No cuatro: el régimen C del protocolo V9 colapsa porque la dis
 - Evalúa a través de la interacción con la IA → **D**.
 - Sin IA permitida → **A**.
 
-**Pregunta diagnóstica complementaria (P3):** _¿El resultado debe ser reconstruible por el alumno sin la herramienta?_ Si la respuesta es NO, sugiere fuertemente D (la actividad depende de la IA); la decisión final la da la pregunta clasificatoria anterior.
+**Pregunta diagnóstica complementaria ([P3](docs/articulos/P3.md#qué-se-decidió)):** _¿El resultado debe ser reconstruible por el alumno sin la herramienta?_ Si la respuesta es NO, sugiere fuertemente D (la actividad depende de la IA); la decisión final la da la pregunta clasificatoria anterior.
 
 ## 2. Instrumentos por régimen
 
@@ -41,13 +41,13 @@ Tres regímenes. No cuatro: el régimen C del protocolo V9 colapsa porque la dis
 
 </div>
 
-- **Declaración de autoría** (§5.1, P0): universal. Una línea, <2 min.
-- **Declaración de uso de IA** (P2): herramienta + finalidad + fase. No reconstruye log; deja constancia. <5 min.
-- **Trazabilidad pasiva** (P8): el trabajo en régimen B/D se redacta en un **Doc compartido con el profesor desde el primer día**, nunca se pega un documento final. El historial de versiones de Docs/Sheets hace de registro sin coste adicional — es la base sobre la que se construyen los indicios de proceso.
+- **Declaración de autoría** (§5.1, [P0](docs/articulos/P0.md#qué-se-decidió)): universal. Una línea, <2 min.
+- **Declaración de uso de IA** ([P2](docs/articulos/P2.md#qué-se-decidió)): herramienta + finalidad + fase. No reconstruye log; deja constancia. <5 min.
+- **Trazabilidad pasiva** ([P8](docs/articulos/P8.md#qué-se-decidió)): el trabajo en régimen B/D se redacta en un **Doc compartido con el profesor desde el primer día**, nunca se pega un documento final. El historial de versiones de Docs/Sheets hace de registro sin coste adicional — es la base sobre la que se construyen los indicios de proceso.
 
-> _Nota de fidelidad al cribado: la distinción Recomendada(B)/Obligatoria(D) es inferencia de este resumen, no del cierre de P8. El cierre de P8 hablaba de "régimen C/D" sin diferenciar B de D. La inferencia es razonable (en D la trazabilidad es parte de lo evaluable; en B el producto se puede evaluar aparte), pero no debe citarse como si viniera de P8._
+> _Nota de fidelidad al cribado: la distinción Recomendada(B)/Obligatoria(D) es inferencia de este resumen, no del [cierre de P8](docs/articulos/P8.md#qué-se-decidió). El cierre de P8 hablaba de "régimen C/D" sin diferenciar B de D. La inferencia es razonable (en D la trazabilidad es parte de lo evaluable; en B el producto se puede evaluar aparte), pero no debe citarse como si viniera de P8._
 
-## 3. Guion de defensa oral (P1) — sugerido
+## 3. Guion de defensa oral ([P1](docs/articulos/P1.md#qué-se-decidió)) — sugerido
 
 Cuatro preguntas para verificar autoría efectiva cuando hay indicio. Lo ejecuta el profesor; no lo rellena el alumno.
 
@@ -60,7 +60,7 @@ Cuatro preguntas para verificar autoría efectiva cuando hay indicio. Lo ejecuta
 
 _Marcado como **sugerido**, no canónico: una versión fija arriesga fosilización — la misma razón por la que el cribado sustituyó VERITAS por este guion. Versión canónica cerrada como punto de partida fijo: [issue #7](https://github.com/mmasias/pyAI-edu/issues/7)._
 
-## 4. Disparadores de verificación (P10)
+## 4. Disparadores de verificación ([P10](docs/articulos/P10.md#qué-se-decidió))
 
 Tres categorías exhaustivas. **Un indicio documentado de cualquiera basta para activar** la verificación (guion de defensa oral).
 
@@ -78,7 +78,7 @@ Tres categorías exhaustivas. **Un indicio documentado de cualquiera basta para 
 - **Naturaleza:** conversacional (guion P1), no sancionadora.
 - **Lo que funda la decisión es la conversación, no el indicio.**
 
-## 5. Seis arquetipos de fraude (P5) — abierto y combinable
+## 5. Seis arquetipos de fraude ([P5](docs/articulos/P5.md#qué-se-decidió)) — abierto y combinable
 
 1. Copia literal o sustitución completa de la producción del alumno.
 2. Fabricación de evidencia de proceso (versiones intermedias falseadas, etc.).
@@ -89,7 +89,7 @@ Tres categorías exhaustivas. **Un indicio documentado de cualquiera basta para 
 
 **Función diagnóstica, no detectiva:** el docente detecta el uso indebido por criterio propio; los arquetipos ayudan a **tipificar la magnitud**, no a detectar. Combinables — un fraude real puede ser multi-arquetipo. Lista no cerrada: el docente puede proponer tipificaciones adicionales.
 
-## 6. Regla de cautela §7.6 (P6)
+## 6. Regla de cautela §7.6 ([P6](docs/articulos/P6.md#qué-se-decidió))
 
 > Un detector automático (de IA, de similitud, etc.) puede ser **disparador**, nunca **prueba**.
 
