@@ -32,8 +32,9 @@ pyAI-edu/
 ├── docs/
 │   ├── articulos/          Por qué de cada regla (P0-P10)
 │   ├── plantillas/         Artefactos listos para usar
-│   ├── README.md           Catálogo del corpus normativo
-│   └── *.pdf                Corpus — normativa UE/España, AEPD, NIST, UNESCO...
+│   ├── modulo-formativo/   Formación (módulo mínimo, ampliación, diferenciada)
+│   ├── historicos/         Copia local de 2 documentos pre-2022 descatalogados
+│   └── README.md           Catálogo del corpus — enlaces a orígenes oficiales
 └── UNEATLANTICO/
     └── ProtocoloCIAEP.pdf   Protocolo institucional V9, referencia de última instancia
 ```
