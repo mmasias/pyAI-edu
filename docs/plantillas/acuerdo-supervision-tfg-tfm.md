@@ -14,9 +14,11 @@
 
 Se fija con la regla mecánica de P4: ¿el resultado se evalúa con independencia de la herramienta (medio) o a través de la interacción con la IA (objeto)?
 
-- **Régimen global del trabajo:** ☐ B (IA como medio en todas las secciones) &nbsp;&nbsp; ☐ D (alguna sección audita el propio uso de IA como objeto de estudio)
+- **Régimen del trabajo:** ☐ Uniforme &nbsp;&nbsp; ☐ Mixto (varía por sección)
 
-Si el trabajo es **mixto** — la IA es medio en unas secciones y objeto evaluado en otra —, no fuerces un único régimen global: decláralo por sección.
+Si es **uniforme**, marca aquí y deja la tabla de abajo en blanco: ☐ B (IA como medio en todo el trabajo) &nbsp;&nbsp; ☐ D (todo el trabajo audita el propio uso de IA).
+
+Si es **mixto** — la IA es medio en unas secciones y objeto evaluado en otra —, no marques B ni D arriba: rellena solo la tabla por sección. La tabla manda cuando el régimen es mixto; el campo de arriba manda cuando es uniforme. No rellenar los dos a la vez.
 
 | Sección del trabajo | Régimen | Motivo |
 |---|:-:|---|
@@ -64,4 +66,3 @@ Obligatoria en toda sección marcada B o D — usar la [plantilla estándar](dec
 ## Fundamentos
 
 - Cierre de [P4](../articulos/P4.md) (regla mecánica de régimen) y [P7](../articulos/P7.md) (régimen reforzado TFG/TFM sin los 13 campos) del cribado ([discussions/1](https://github.com/mmasias/pyAI-edu/discussions/1)).
-- Guion canónico de defensa oral ([issue #7](https://github.com/mmasias/pyAI-edu/issues/7)).
