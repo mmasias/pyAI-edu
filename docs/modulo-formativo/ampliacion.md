@@ -43,13 +43,13 @@ La regla 5 del cierre de P10 (_salvaguarda de proporcionalidad_) establece: si e
 
 ### Cuándo se activa
 
-La revisión se activa por patrón, no por caso individual. Un único indicio sin confirmar es falso positivo esperado (los detectores no eliminan los falsos positivos — P6); el problema es el **patrón**:
+La revisión se activa por patrón, no por caso individual. Un único indicio sin confirmar es falso positivo esperado (los detectores no eliminan los falsos positivos — P6); el problema es el patrón que la regla 5 del cierre P10 fija explícitamente:
 
 - **Concentración sobre un mismo alumno:** varias activaciones sobre el mismo alumno en una asignatura o trabajo, sin que ninguna se confirme en la conversación. Señal de criterio mal calibrado para ese alumno.
-- **Concentración sobre un perfil:** activaciones que se concentran sistemáticamente en un colectivo (p. ej. alumnos de un año de incorporación, alumnos con matrícula parcial, alumnos internacionales) sin correspondencia con la tasa de fraude real. Señal de sesgo del criterio.
-- **Tasa de confirmación global muy baja:** la mayoría de las activaciones del profesor se cierran sin consecuencia tras la conversación. Señal de umbral de indicio demasiado bajo.
 
-El gatillo no es discrecional: cuando el agregado del registro muestra alguna de estas tres señales, la revisión procede. El registro ya existe por la regla 2 de P10 (_registro estructurado_); solo hace falta mirar el agregado — coste cero, como señaló el cierre.
+El gatillo no es discrecional: cuando el agregado del registro muestra este patrón, la revisión procede. El registro ya existe por la regla 2 de P10 (_registro estructurado_); solo hace falta mirar el agregado — coste cero, como señaló el cierre.
+
+**Ampliaciones posibles, no incorporadas en este PR:** patrones de sesgo sobre un perfil concreto (p. ej. alumnos internacionales, de incorporación tardía, con matrícula parcial) o tasas de confirmación global persistentemente bajas son señal razonable de criterio mal calibrado y conviene que la revisión las considere. Pero exceden lo que el cierre P10 pedía operativizar (_"quién revisa y con qué autoridad"_) y tocan una dimensión de equidad que merece debate explícito (discussion específica o inclusión en [issue #14](https://github.com/mmasias/pyAI-edu/issues/14), módulo de revisión académica) antes de fijarse como regla. Este PR no las asume como disparador automático.
 
 ### Quién revisa y con qué autoridad
 
@@ -63,17 +63,16 @@ El gatillo no es discrecional: cuando el agregado del registro muestra alguna de
 
 **Lo que la revisión NO es:**
 
-- No es sanción al profesor. El criterio mal calibrado no es falta; es deficits de formación o de herramienta. La consecuencia es ajuste del criterio y, en su caso, formación específica — no expediente.
+- No es sanción al profesor. El criterio mal calibrado no es falta; es por déficit de formación o de herramienta. La consecuencia es ajuste del criterio y, en su caso, formación específica — no expediente.
 - No es revisión del alumno. El alumno sobre el que se concentraron las activaciones queda fuera del foco; el patrón se interpreta como problema del criterio, no del alumno.
 - No es auditoría pormenorizada de cada activación. Se revisa el agregado y la calibración, no cada conversación individual.
 
 ### Qué se evalúa en la revisión
 
-La revisión mira tres dimensiones del criterio del profesor:
+La revisión mira dos dimensiones del criterio del profesor:
 
 1. **Calibración del umbral:** ¿el profesor activa con indicios demasiado tenues o demasiado fuertes? Compara su tasa de activación con la del resto del departamento en asignaturas equivalentes.
 2. **Coherencia con las categorías declaradas:** ¿el profesor registra categoría + ejemplo concreto (regla 2 de P10), o usa texto libre que dificulta auditar el criterio?
-3. **Sesgo de perfil:** ¿las activaciones se distribuyen homogeneous entre alumnos, o se concentran en un perfil concreto sin justificación académica?
 
 La salida de la revisión es un ajuste: descripción del problema detectado y recomendación (cambio de umbral, registro más estructurado, formación específica en reconocimiento de arquetipos o en aplicación de §7.6). La salida **no** es una sanción ni una calibración impuesta — la decisión final sobre cómo ajustar el criterio la sigue tomando el profesor, ahora con la observación documentada de la dirección o el comité.
 
