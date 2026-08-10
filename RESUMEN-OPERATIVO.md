@@ -2,6 +2,7 @@
 
 > Una página para que el profesorado opere el régimen de IA el primer día de curso.
 > Para los _por qués_ de cada regla: [`docs/articulos/`](docs/articulos/) (capa 2) o la [discusión de cribado](https://github.com/mmasias/pyAI-edu/discussions/1).
+> Para formación sobre la ejecución (reconocimiento de arquetipos de fraude, aplicación práctica de la regla de cautela §7.6): [`docs/modulo-formativo/minimo.md`](docs/modulo-formativo/minimo.md).
 > Para referencia institucional completa: [`UNEATLANTICO/ProtocoloCIAEP.pdf`](UNEATLANTICO/ProtocoloCIAEP.pdf) — _Protocolo de medidas para garantizar la calidad y la integridad académicas en la modalidad de enseñanza presencial_, V9, política que autoriza y limita este resumen.
 
 ## 1. Régimen A/B/D
