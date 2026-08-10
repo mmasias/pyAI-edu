@@ -53,7 +53,6 @@ Comportamiento del alumno en aula o tutoría que descuadra con el trabajo entreg
 - Respuestas evasivas o no reproducibles a preguntas puntuales sobre el propio trabajo.
 - Incapacidad de explicar decisiones que el trabajo presupone.
 - Discrepancia entre lo que el alumno dice conocer y lo que puede operar en vivo.
-- Discrepancia entre lo que el alumno dice conocer y lo que puede operar en vivo.
 
 ## Reglas procedimentales (P10)
 
