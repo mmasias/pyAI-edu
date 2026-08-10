@@ -2,7 +2,7 @@
 
 > Marco normativo y orientativo que sustancia el [Protocolo CIAEP](../UNEATLANTICO/ProtocoloCIAEP.pdf). Referencia contextual — la referencia operativa prioritaria es el [resumen operativo](../RESUMEN-OPERATIVO.md) y los [artículos de capa 2](articulos/); ver [`../README.md`](../README.md) para la orientación general del repo.
 
-Agrupado por bloque temático. 15 documentos activos, 2 históricos. Todos verificados como PDF válidos.
+Agrupado por bloque temático. 15 documentos activos enlazados a su origen oficial, 2 históricos con copia local. Enlaces verificados con respuesta HTTP 200 (2026-08-10).
 
 ### Marco normativo Unión Europea
 | Archivo | Referencia |
@@ -36,7 +36,7 @@ Agrupado por bloque temático. 15 documentos activos, 2 históricos. Todos verif
 | [`OECD_2026_AI_literacy_framework_EN.pdf`](https://ailiteracyframework.org/wp-content/uploads/2025/05/AILitFramework_ReviewDraft.pdf) | OECD, marco de alfabetización en IA para primaria y secundaria |
 | [`UNESCO_2024_marco_competencias_docentes_IA_ES.pdf`](https://unesdoc.unesco.org/ark:/48223/pf0000393813.locale=es) | UNESCO, marco de competencias docentes en IA |
 | [`UNESCO_2021_recomendacion_etica_IA_ES.pdf`](https://unesdoc.unesco.org/ark:/48223/pf0000381137_spa) | UNESCO, recomendación sobre ética de la IA |
-| [`INTEF_2024_guia_IA_ambito_educativo.pdf`](https://code.intef.es/wp-content/uploads/2024/07/Guía-sobre-el-uso-de-la-IA-en-el-ámbito-educativo-INTEF_2024.pdf) | Guía INTEF-MEFP para el ámbito educativo |
+| [`INTEF_2024_guia_IA_ambito_educativo.pdf`](https://code.intef.es/wp-content/uploads/2025/11/Gui%CC%81a-sobre-el-uso-de-la-IA-en-el-a%CC%81mbito-educativo-INTEF_2024.pdf) | Guía INTEF-MEFP para el ámbito educativo |
 | [`GenCat_2024_IA_educacio_catala.pdf`](https://educacio.gencat.cat/web/.content/home/departament/publicacions/monografies/mon-digital/intelligencia-artificial-educacio/ia-educacio.pdf) | Orientaciones Generalitat de Catalunya |
 
 ### Históricos (`historicos/`)
