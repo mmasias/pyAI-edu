@@ -14,7 +14,7 @@
 Quien firma declara que la entrega referenciada es producto de su autoría efectiva: las decisiones, el análisis y la elaboración intelectual sustantivos son propios.
 
 - En **régimen A**, declara además que no ha utilizado ninguna herramienta de IA en ninguna fase del trabajo.
-- En **regímenes B y D**, declara que el uso de IA (declarado aparte en la _Declaración de uso de IA_) no sustituye su autoría efectiva: el resultado es defendible y modificable por quien firma, conforme al guion de defensa oral (P1).
+- En **regímenes B y D**, declara que el uso de IA (declarado aparte en la _Declaración de uso de IA_) no sustituye su autoría efectiva: el resultado es defendible y modificable por quien firma, conforme al guion de defensa oral ([P1](../articulos/P1.md#qué-se-decidió)).
 
 ## Firma
 

@@ -30,7 +30,7 @@
 > - [Declaración de uso de IA](declaracion-uso-ia.md): herramienta + finalidad + fase.
 > - **Trazabilidad pasiva recomendada:** el trabajo se redacta en un Doc compartido con el profesorado desde el primer día; el historial de versiones hace de registro sin coste adicional.
 >
-> La IA no puede sustituir la autoría efectiva: la aportación intelectual del alumno debe ser defendible y reconstruible. La declaración de uso no exime de esta exigencia; la reconstrucción puede pedirse en una defensa oral bajo indicio (P1).
+> La IA no puede sustituir la autoría efectiva: la aportación intelectual del alumno debe ser defendible y reconstruible. La declaración de uso no exime de esta exigencia; la reconstrucción puede pedirse en una defensa oral bajo indicio ([P1](../articulos/P1.md#qué-se-decidió)).
 
 #### Especificación por actividad (opcional, solo si acotas una subtarea)
 
@@ -54,7 +54,7 @@
 > - [Declaración de uso de IA](declaracion-uso-ia.md): herramienta + finalidad + fase.
 > - **Trazabilidad pasiva obligatoria:** el trabajo se redacta en un Doc compartido con el profesorado desde el primer día; el historial de versiones es parte de lo evaluable, no un extra opcional.
 >
-> El alumno debe poder explicar y reconstruir el proceso completo de interacción con la IA: por qué hizo cada solicitud, cómo interpretó cada respuesta, qué modificó y por qué. Una defensa oral (P1) puede exigir esta reconstrucción en vivo.
+> El alumno debe poder explicar y reconstruir el proceso completo de interacción con la IA: por qué hizo cada solicitud, cómo interpretó cada respuesta, qué modificó y por qué. Una defensa oral ([P1](../articulos/P1.md#qué-se-decidió)) puede exigir esta reconstrucción en vivo.
 
 ## Regla de especificación por actividad (§4.3 del V9)
 

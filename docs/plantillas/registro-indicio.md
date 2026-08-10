@@ -1,10 +1,10 @@
-# Registro estructurado de indicio (P10)
+# Registro estructurado de indicio ([P10](../articulos/P10.md#qué-se-decidió))
 
 > Formato estandarizado para que el profesorado documente el disparador de verificación sin texto libre. Selección de categoría + ejemplo concreto, un clic. Comparte tabla fuente con los 6 arquetipos de fraude de P5.
 
 ## Cuándo rellenarlo
 
-Cuando el profesorado detecta un indicio legítimo (P10) que activa la verificación (defensa oral, P1). Una línea por indicio documentado.
+Cuando el profesorado detecta un indicio legítimo ([P10](../articulos/P10.md#qué-se-decidió)) que activa la verificación (defensa oral, P1). Una línea por indicio documentado.
 
 No es prerrequisito de sanción; es prerrequisito de conversación. La verificación que sigue es conversacional (defensa oral), no sancionadora (ver §7.6 / P6).
 
@@ -54,12 +54,12 @@ Comportamiento del alumno en aula o tutoría que descuadra con el trabajo entreg
 - Incapacidad de explicar decisiones que el trabajo presupone.
 - Discrepancia entre lo que el alumno dice conocer y lo que puede operar en vivo.
 
-## Reglas procedimentales (P10)
+## Reglas procedimentales ([P10](../articulos/P10.md#qué-se-decidió))
 
 1. **Activación:** un indicio documentado de cualquier categoría basta. No requiere multi-indicio ni gravedad mínima.
 2. **Registro estructurado:** categoría + ejemplo concreto. No texto libre. Mantiene el coste de un clic, hace el registro auditable.
-3. **Naturaleza conversacional:** la verificación activada es defensa oral (P1), no sanción. La decisión se funda en la conversación, no en el indicio.
-4. **Interacción con §7.6 (P6):** el indicio puede venir de detector automático (categoría 1) o de juicio humano (cualquier categoría). El detector puede ser disparador; nunca es prueba.
+3. **Naturaleza conversacional:** la verificación activada es defensa oral ([P1](../articulos/P1.md#qué-se-decidió)), no sanción. La decisión se funda en la conversación, no en el indicio.
+4. **Interacción con §7.6 ([P6](../articulos/P6.md#qué-se-decidió)):** el indicio puede venir de detector automático (categoría 1) o de juicio humano (cualquier categoría). El detector puede ser disparador; nunca es prueba.
 5. **Salvaguarda de proporcionalidad:** si el registro muestra activaciones repetidas sobre el mismo alumno sin confirmación en la conversación, se revisa el criterio del profesor, no al alumno.
 
 ## Veredicto

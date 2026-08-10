@@ -1,4 +1,4 @@
-# Guion canónico de defensa oral (P1) — anexo
+# Guion canónico de defensa oral ([P1](../articulos/P1.md#qué-se-decidió)) — anexo
 
 > Versión canónica cerrada del guion de defensa oral. Referenciada desde el _Resumen operativo_ §3 como punto de partida fijo para el profesorado que prefiera no adaptar el guion sugerido.
 >
@@ -34,4 +34,4 @@ Cuatro preguntas para verificar autoría efectiva cuando hay indicio. Lo ejecuta
 
 - Cierre de P1 del cribado ([discussions/1](https://github.com/mmasias/pyAI-edu/discussions/1)).
 - _Resumen operativo_ §3 (guion sugerido) y §6 (regla de cautela).
-- Tabla fuente compartida con arquetipos de fraude (P5) e indicios de P10.
+- Tabla fuente compartida con arquetipos de fraude ([P5](../articulos/P5.md#qué-se-decidió)) e indicios de P10.

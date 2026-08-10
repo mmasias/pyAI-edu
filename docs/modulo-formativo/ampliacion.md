@@ -1,6 +1,6 @@
 # Ampliación del módulo formativo mínimo
 
-> Amplía el [`módulo mínimo`](minimo.md) con las dos piezas que no podían escribirse hasta que existieran la plantilla de [acuerdo de supervisión TFG/TFM/tesis](../plantillas/acuerdo-supervision-tfg-tfm.md) (P7, #12) y el [registro estructurado de indicio](../plantillas/registro-indicio.md) (P10). Pieza A: guía para quien dirige TFG/TFM/tesis a lo largo del ciclo completo (no solo el acuerdo inicial, que ya lo fija la plantilla). Pieza B: guía procedural que resuelve la deuda operativa de P10 (regla 5, _salvaguarda de proporcionalidad_) — definir **quién revisa el criterio del profesor** cuando el registro muestra activaciones repetidas sin confirmar, y **con qué autoridad**.
+> Amplía el [`módulo mínimo`](minimo.md) con las dos piezas que no podían escribirse hasta que existieran la plantilla de [acuerdo de supervisión TFG/TFM/tesis](../plantillas/acuerdo-supervision-tfg-tfm.md) (P7, #12) y el [registro estructurado de indicio](../plantillas/registro-indicio.md) ([P10](../articulos/P10.md#qué-se-decidió)). Pieza A: guía para quien dirige TFG/TFM/tesis a lo largo del ciclo completo (no solo el acuerdo inicial, que ya lo fija la plantilla). Pieza B: guía procedural que resuelve la deuda operativa de P10 (regla 5, _salvaguarda de proporcionalidad_) — definir **quién revisa el criterio del profesor** cuando el registro muestra activaciones repetidas sin confirmar, y **con qué autoridad**.
 
 ## Pieza A — Guía para dirección de TFG/TFM/tesis
 
@@ -35,7 +35,7 @@ La defensa oral de un TFG/TFM/tesis no es la misma pieza que la defensa reactiva
 1. **Cobertura:** la defensa cubre explícitamente la reconstrucción del proceso completo de elaboración, no solo preguntas puntuales sobre decisiones. La dirección puede pedir al alumno que recorra el histórico del Doc compartido y explique las decisiones tomadas en cada revisión.
 2. **Profundidad:** la defensa puede exigir modificación en vivo de fragmentos concretos (pregunta 2 del guion canónico) con más peso que en una asignatura ordinaria, porque el trabajo tiene peso mayoritario en la nota y la defensa es el mecanismo central.
 
-Si durante la defensa aparece un arquetipo claro de fraude (P5), la conversación **no** resuelve el expediente — la apertura de expediente, si procede, se basa en el arquetipo, no en el indicio que disparó la pregunta (regla de cautela §7.6 / P6). La conversación funda la decisión sobre autoría efectiva (evaluación negativa si no aprendió, expediente si defraudó); la distinción está en los [seis arquetipos](minimo.md#pieza-1--reconocimiento-práctico-de-arquetipos-de-fraude-p5).
+Si durante la defensa aparece un arquetipo claro de fraude ([P5](../articulos/P5.md#qué-se-decidió)), la conversación **no** resuelve el expediente — la apertura de expediente, si procede, se basa en el arquetipo, no en el indicio que disparó la pregunta (regla de cautela §7.6 / P6). La conversación funda la decisión sobre autoría efectiva (evaluación negativa si no aprendió, expediente si defraudó); la distinción está en los [seis arquetipos](minimo.md#pieza-1--reconocimiento-práctico-de-arquetipos-de-fraude-p5).
 
 ## Pieza B — Guía procedural para revisión del criterio del profesor (deuda P10)
 
