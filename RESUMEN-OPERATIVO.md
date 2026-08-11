@@ -1,11 +1,13 @@
 # Resumen operativo — pyAI-edu
 
-> |<sub>En una página.
+Las seis piezas en una página: qué **régimen** aplica a cada actividad, qué **instrumento** exige cada régimen con ejemplo, el **guion para verificar autoría** cuando hay indicio, **qué dispara** esa verificación, los **patrones de fraude** para tipificar lo encontrado y la **regla que impide delegar el criterio** a un detector automático.
+
+> ||
 > |-
-> <sub>Si busca la secuencia paso a paso para el primer día de clase, vaya directamente a [`Cómo aplicarlo`](#cómo-aplicarlo-el-primer-día-de-curso).
-> <sub>Para los _por qués_ de cada regla: [`docs/articulos/`](docs/articulos/) (capa 2) o la [discusión de cribado](https://github.com/mmasias/pyAI-edu/discussions/1).
-> <sub>Para formación sobre la ejecución (reconocimiento de arquetipos de fraude, aplicación práctica de la regla de cautela §7.6): [`docs/modulo-formativo/minimo.md`](docs/modulo-formativo/minimo.md).
-> <sub>Para referencia institucional completa: [`UNEATLANTICO/ProtocoloCIAEP.pdf`](UNEATLANTICO/ProtocoloCIAEP.pdf) — _Protocolo de medidas para garantizar la calidad y la integridad académicas en la modalidad de enseñanza presencial_, V9, política que autoriza y limita este resumen.
+> |<sub>Si busca la secuencia paso a paso para el primer día de clase, vaya directamente a [`Cómo aplicarlo`](#cómo-aplicarlo-el-primer-día-de-curso).
+> |<sub>Para los _por qués_ de cada regla: [`docs/articulos/`](docs/articulos/) (capa 2) o la [discusión de cribado](https://github.com/mmasias/pyAI-edu/discussions/1).
+> |<sub>Para formación sobre la ejecución (reconocimiento de arquetipos de fraude, aplicación práctica de la regla de cautela §7.6): [`docs/modulo-formativo/minimo.md`](docs/modulo-formativo/minimo.md).
+> |<sub>Para referencia institucional completa: [`UNEATLANTICO/ProtocoloCIAEP.pdf`](UNEATLANTICO/ProtocoloCIAEP.pdf) — _Protocolo de medidas para garantizar la calidad y la integridad académicas en la modalidad de enseñanza presencial_, V9, política que autoriza y limita este resumen.
 
 ## 1. Régimen A/B/D
 
