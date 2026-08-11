@@ -1,6 +1,7 @@
 # Resumen operativo — pyAI-edu
 
 > Una página para que el profesorado opere el régimen de IA el primer día de curso.
+> Si busca la secuencia paso a paso para el primer día de clase, vaya directamente a [`Cómo aplicarlo`](#cómo-aplicarlo-el-primer-día-de-curso).
 > Para los _por qués_ de cada regla: [`docs/articulos/`](docs/articulos/) (capa 2) o la [discusión de cribado](https://github.com/mmasias/pyAI-edu/discussions/1).
 > Para formación sobre la ejecución (reconocimiento de arquetipos de fraude, aplicación práctica de la regla de cautela §7.6): [`docs/modulo-formativo/minimo.md`](docs/modulo-formativo/minimo.md).
 > Para referencia institucional completa: [`UNEATLANTICO/ProtocoloCIAEP.pdf`](UNEATLANTICO/ProtocoloCIAEP.pdf) — _Protocolo de medidas para garantizar la calidad y la integridad académicas en la modalidad de enseñanza presencial_, V9, política que autoriza y limita este resumen.
@@ -42,8 +43,11 @@ Tres regímenes. No cuatro: el régimen C del protocolo V9 colapsa porque la dis
 </div>
 
 - **Declaración de autoría** (§5.1, [P0](docs/articulos/P0.md#qué-se-decidió)): universal. Una línea, <2 min.
+  - _Ejemplo: "Declaro que la entrega referenciada es producto de mi autoría efectiva."_
 - **Declaración de uso de IA** ([P2](docs/articulos/P2.md#qué-se-decidió)): herramienta + finalidad + fase. No reconstruye log; deja constancia. <5 min.
+  - _Ejemplo: "Herramienta: Claude Sonnet 5 · Finalidad: corrección ortográfica · Fase: revisión final."_
 - **Trazabilidad pasiva** ([P8](docs/articulos/P8.md#qué-se-decidió)): el trabajo en régimen B/D se redacta en un **Doc compartido con el profesor desde el primer día**, nunca se pega un documento final. El historial de versiones de Docs/Sheets hace de registro sin coste adicional — es la base sobre la que se construyen los indicios de proceso.
+  - _Ejemplo: "Doc de Google Drive compartido con el profesor desde el día 1; historial de versiones visible."_
 
 > _Nota de fidelidad al cribado: la distinción Recomendada(B)/Obligatoria(D) es inferencia de este resumen, no del [cierre de P8](docs/articulos/P8.md#qué-se-decidió). El cierre de P8 hablaba de "régimen C/D" sin diferenciar B de D. La inferencia es razonable (en D la trazabilidad es parte de lo evaluable; en B el producto se puede evaluar aparte), pero no debe citarse como si viniera de P8._
 
@@ -56,7 +60,7 @@ Cuatro preguntas para verificar autoría efectiva cuando hay indicio. Lo ejecuta
 3. ¿Qué parte de lo entregado no sabrías reproducir sin la herramienta?
 4. Si aparece un error aquí, ¿lo detectas y lo corriges sin ayuda?
 
-**Cubre bien** producto de código/texto. **No probado** en actuación, interpretación musical o cálculo manual — adaptar por disciplina.
+**Cubre bien** producto de código/texto (y, por extensión, cálculo manual). **No probado** en ejecución práctica en vivo (p. ej. prácticas de Gastronomía, ejecución técnica en Ciencias de la Actividad Física y del Deporte) — adaptar por disciplina.
 
 _Marcado como **sugerido**, no canónico: una versión fija arriesga fosilización — la misma razón por la que el cribado sustituyó VERITAS por este guion. Versión canónica cerrada como punto de partida fijo: [issue #7](https://github.com/mmasias/pyAI-edu/issues/7)._
 
