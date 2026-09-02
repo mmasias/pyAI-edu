@@ -1,8 +1,6 @@
-# Guion canónico de defensa oral ([P1](../articulos/P1.md#qué-se-decidió)) — anexo
+# Guion canónico de defensa oral
 
-> Versión canónica cerrada del guion de defensa oral. Referenciada desde el _Resumen operativo_ §3 como punto de partida fijo para el profesorado que prefiera no adaptar el guion sugerido.
->
-> El resumen presenta por defecto el guion como **sugerido**, no canónico: una versión fija arriesga fosilización — la misma razón por la que el cribado sustituyó VERITAS por este guion. Este anexo ofrece una alternativa cerrada para quien la prefiera.
+Versión fija del guion de defensa oral, para quien prefiera no adaptarlo. La versión por defecto (adaptable) está en [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md).
 
 ## Cuatro preguntas
 
@@ -28,10 +26,4 @@ Cuatro preguntas para verificar autoría efectiva cuando hay indicio. Lo ejecuta
 ## Veredicto
 
 - La defensa oral **funda decisión** sobre autoría efectiva; el indicio que la disparó no.
-- La incapacidad de defender el trabajo funda **evaluación negativa** (no aprendió); la detección de fraude (arquetipos de P5) requiere evidencia adicional y abre expediente disciplinario — no se resuelve solo en esta conversación.
-
-## Fundamentos
-
-- Cierre de P1 del cribado ([discussions/1](https://github.com/mmasias/pyAI-edu/discussions/1)).
-- _Resumen operativo_ §3 (guion sugerido) y §6 (regla de cautela).
-- Tabla fuente compartida con arquetipos de fraude ([P5](../articulos/P5.md#qué-se-decidió)) e indicios de P10.
+- La incapacidad de defender el trabajo funda **evaluación negativa** (no aprendió); la detección de fraude (arquetipos de fraude) requiere evidencia adicional y abre expediente disciplinario — no se resuelve solo en esta conversación.

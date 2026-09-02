@@ -1,6 +1,6 @@
 # Ampliación del módulo formativo mínimo
 
-> Amplía el [`módulo mínimo`](minimo.md) con las dos piezas que no podían escribirse hasta que existieran la plantilla de [acuerdo de supervisión TFG/TFM/tesis](../plantillas/acuerdo-supervision-tfg-tfm.md) (P7, #12) y el [registro estructurado de indicio](../plantillas/registro-indicio.md) ([P10](../articulos/P10.md#qué-se-decidió)). Pieza A: guía para quien dirige TFG/TFM/tesis a lo largo del ciclo completo (no solo el acuerdo inicial, que ya lo fija la plantilla). Pieza B: guía procedural que resuelve la deuda operativa de P10 (regla 5, _salvaguarda de proporcionalidad_) — definir **quién revisa el criterio del profesor** cuando el registro muestra activaciones repetidas sin confirmar, y **con qué autoridad**.
+Amplía el [`módulo mínimo`](minimo.md) con dos piezas: (A) guía para quien dirige TFG/TFM/tesis a lo largo del ciclo completo; (B) guía procedural sobre quién revisa el criterio del profesor cuando el registro muestra activaciones repetidas sin confirmar, y con qué autoridad.
 
 ## Pieza A — Guía para dirección de TFG/TFM/tesis
 
@@ -12,7 +12,7 @@ La plantilla de [acuerdo de supervisión](../plantillas/acuerdo-supervision-tfg-
 
 **Qué decide la dirección con el alumno:**
 
-1. **Régimen del trabajo** (uniforme o mixto) usando la regla mecánica de P4: ¿el resultado se evalúa con independencia de la herramienta (medio, B) o a través de la interacción con la IA (objeto, D)? Si el trabajo tiene secciones con régimen distinto (p. ej. marco teórico en B, metodología que audita IA en D), se rellena la tabla por sección de la plantilla — la mixtura B/D dentro del mismo trabajo se resuelve ahí, no subiendo todo el trabajo a un único régimen.
+1. **Régimen del trabajo** (uniforme o mixto) usando la regla mecánica: ¿el resultado se evalúa con independencia de la herramienta (medio, B) o a través de la interacción con la IA (objeto, D)? Si el trabajo tiene secciones con régimen distinto (p. ej. marco teórico en B, metodología que audita IA en D), se rellena la tabla por sección de la plantilla — la mixtura B/D dentro del mismo trabajo se resuelve ahí, no subiendo todo el trabajo a un único régimen.
 2. **Tipo de dirección** (activa o nominal). La distinción no es jerárquica — es declarativa: fija qué mecanismo sostiene realmente el régimen. Si la dirección es nominal, la defensa oral final pasa a ser el **único** mecanismo que sostiene el régimen; la dirección debe saberlo al firmar.
 3. **Calendario de versiones intermedias** rellenando la tabla de la plantilla con fechas concretas y qué se revisa en cada una. Sin calendario, "versiones intermedias revisables" se queda en enunciado.
 
@@ -35,31 +35,31 @@ La defensa oral de un TFG/TFM/tesis no es la misma pieza que la defensa reactiva
 1. **Cobertura:** la defensa cubre explícitamente la reconstrucción del proceso completo de elaboración, no solo preguntas puntuales sobre decisiones. La dirección puede pedir al alumno que recorra el histórico del Doc compartido y explique las decisiones tomadas en cada revisión.
 2. **Profundidad:** la defensa puede exigir modificación en vivo de fragmentos concretos (pregunta 2 del guion canónico) con más peso que en una asignatura ordinaria, porque el trabajo tiene peso mayoritario en la nota y la defensa es el mecanismo central.
 
-Si durante la defensa aparece un arquetipo claro de fraude ([P5](../articulos/P5.md#qué-se-decidió)), la conversación **no** resuelve el expediente — la apertura de expediente, si procede, se basa en el arquetipo, no en el indicio que disparó la pregunta (regla de cautela §7.6 / P6). La conversación funda la decisión sobre autoría efectiva (evaluación negativa si no aprendió, expediente si defraudó); la distinción está en los [seis arquetipos](minimo.md#pieza-1--reconocimiento-práctico-de-arquetipos-de-fraude-p5).
+Si durante la defensa aparece un arquetipo claro de fraude, la conversación **no** resuelve el expediente — la apertura de expediente, si procede, se basa en el arquetipo, no en el indicio que disparó la pregunta (regla de cautela). La conversación funda la decisión sobre autoría efectiva (evaluación negativa si no aprendió, expediente si defraudó); la distinción está en los [seis arquetipos](minimo.md#pieza-1--reconocimiento-práctico-de-arquetipos-de-fraude).
 
-## Pieza B — Guía procedural para revisión del criterio del profesor (deuda P10)
+## Pieza B — Guía procedural para revisión del criterio del profesor
 
-La regla 5 del cierre de P10 (_salvaguarda de proporcionalidad_) establece: si el registro de indicios muestra activaciones repetidas sobre un mismo alumno sin que ninguna se haya confirmado en la conversación, eso **dispara una revisión del criterio del profesor, no del alumno**. El cierre dejó explícitamente abierta la deuda operativa: _"falta definir quién revisa y con qué autoridad — probablemente dirección de departamento"_. Esta sección la resuelve.
+La salvaguarda de proporcionalidad establece: si el registro de indicios muestra activaciones repetidas sobre un mismo alumno sin que ninguna se haya confirmado en la conversación, eso **dispara una revisión del criterio del profesor, no del alumno**. Esta sección define quién revisa y con qué autoridad.
 
 ### Cuándo se activa
 
-La revisión se activa por patrón, no por caso individual. Un único indicio sin confirmar es falso positivo esperado (los detectores no eliminan los falsos positivos — P6); el problema es el patrón que la regla 5 del cierre P10 fija explícitamente:
+La revisión se activa por patrón, no por caso individual. Un único indicio sin confirmar es falso positivo esperado (los detectores no eliminan los falsos positivos); el problema es el patrón:
 
 - **Concentración sobre un mismo alumno:** varias activaciones sobre el mismo alumno en una asignatura o trabajo, sin que ninguna se confirme en la conversación. Señal de criterio mal calibrado para ese alumno.
 
-El gatillo no es discrecional: cuando el agregado del registro muestra este patrón, la revisión procede. El registro ya existe por la regla 2 de P10 (_registro estructurado_); solo hace falta mirar el agregado — coste cero, como señaló el cierre.
+El gatillo no es discrecional: cuando el agregado del registro muestra este patrón, la revisión procede. El registro ya existe (registro estructurado); solo hace falta mirar el agregado, coste cero.
 
-**Ampliaciones posibles, no incorporadas en este PR:** patrones de sesgo sobre un perfil concreto (p. ej. alumnos internacionales, de incorporación tardía, con matrícula parcial) o tasas de confirmación global persistentemente bajas son señal razonable de criterio mal calibrado y conviene que la revisión las considere. Pero exceden lo que el cierre P10 pedía operativizar (_"quién revisa y con qué autoridad"_) y tocan una dimensión de equidad que merece debate explícito (discussion específica o inclusión en [issue #14](https://github.com/mmasias/pyAI-edu/issues/14), módulo de revisión académica) antes de fijarse como regla. Este PR no las asume como disparador automático.
+**Ampliaciones posibles, aún no fijadas:** patrones de sesgo sobre un perfil concreto (p. ej. alumnos internacionales, de incorporación tardía, con matrícula parcial) o tasas de confirmación global persistentemente bajas son señal razonable de criterio mal calibrado y conviene que la revisión las considere. Tocan una dimensión de equidad que merece debate explícito antes de fijarse como regla; no se asumen como disparador automático.
 
 ### Quién revisa y con qué autoridad
 
-**Propuesta por defecto (lo que sugería el cierre de P10):** la **dirección de departamento** (o equivalente en la estructura de cada facultad) es el órgano que revisa el criterio del profesor. Razones:
+**Propuesta por defecto:** la **dirección de departamento** (o equivalente en la estructura de cada facultad) es el órgano que revisa el criterio del profesor. Razones:
 
 - Tiene autoridad académica sobre el profesorado del departamento sin ser parte del caso individual.
 - No es un órgano nuevo: la estructura departamental ya existe.
 - No requiere apertura de expediente al profesor — es una revisión de criterio, no un procedimiento sancionador.
 
-**Alternativa institucional:** si la universidad dispone de un **comité de integridad académica** u órgano equivalente con autoridad sobre criterios de evaluación, ese órgano puede asumir la revisión. La elección entre dirección de departamento y comité la decide cada institución según su estructura; el régimen cribado solo fija que **alguno** de los dos debe estar identificado como responsable de la revisión.
+**Alternativa institucional:** si la universidad dispone de un **comité de integridad académica** u órgano equivalente con autoridad sobre criterios de evaluación, ese órgano puede asumir la revisión. La elección entre dirección de departamento y comité la decide cada institución según su estructura; el régimen solo fija que **alguno** de los dos debe estar identificado como responsable de la revisión.
 
 **Lo que la revisión NO es:**
 
@@ -72,19 +72,10 @@ El gatillo no es discrecional: cuando el agregado del registro muestra este patr
 La revisión mira dos dimensiones del criterio del profesor:
 
 1. **Calibración del umbral:** ¿el profesor activa con indicios demasiado tenues o demasiado fuertes? Compara su tasa de activación con la del resto del departamento en asignaturas equivalentes.
-2. **Coherencia con las categorías declaradas:** ¿el profesor registra categoría + ejemplo concreto (regla 2 de P10), o usa texto libre que dificulta auditar el criterio?
+2. **Coherencia con las categorías declaradas:** ¿el profesor registra categoría + ejemplo concreto, o usa texto libre que dificulta auditar el criterio?
 
-La salida de la revisión es un ajuste: descripción del problema detectado y recomendación (cambio de umbral, registro más estructurado, formación específica en reconocimiento de arquetipos o en aplicación de §7.6). La salida **no** es una sanción ni una calibración impuesta — la decisión final sobre cómo ajustar el criterio la sigue tomando el profesor, ahora con la observación documentada de la dirección o el comité.
+La salida de la revisión es un ajuste: descripción del problema detectado y recomendación (cambio de umbral, registro más estructurado, formación específica en reconocimiento de arquetipos o en aplicación de la regla de cautela). La salida **no** es una sanción ni una calibración impuesta — la decisión final sobre cómo ajustar el criterio la sigue tomando el profesor, ahora con la observación documentada de la dirección o el comité.
 
 ### Por qué esta pieza importa
 
-Sin esta guía procedural, la regla 5 de P10 se queda en enunciado: la salvaguarda de proporcionalidad existe en el papel pero nadie sabe quién la ejecuta. Eso es justo el fallo que el cribado quiso evitar con el V9 — reglas sin mecanismo operativo. La regla 5 solo sostiene al alumno si el profesor sabe que su criterio será mirado en agregado y que un patrón anómalo generará conversación con la dirección o el comité. Esa expectativa es lo que convierte la buena fe del profesor en criterio calibrable.
-
-## Fundamentos
-
-- Cierre de [P7](../articulos/P7.md) (régimen reforzado TFG/TFM sin los 13 campos; tres mecanismos: acuerdo / versiones / defensa) del cribado ([discussions/1](https://github.com/mmasias/pyAI-edu/discussions/1)).
-- Cierre de [P10](../articulos/P10.md) (regla 5, salvaguarda de proporcionalidad; deuda operativa explícita sobre quién revisa).
-- Cierre de [P6](../articulos/P6.md) (regla de cautela §7.6) para el límite entre conversación y expediente.
-- [Módulo mínimo](minimo.md) para el reconocimiento de arquetipos que la defensa final puede revelar.
-- [Plantilla de acuerdo de supervisión](../plantillas/acuerdo-supervision-tfg-tfm.md) que la Pieza A amplía.
-- [Registro estructurado de indicio](../plantillas/registro-indicio.md) cuya regla 5 es la que esta Pieza B operacionaliza.
+Sin esta guía procedural, la salvaguarda de proporcionalidad se queda en enunciado: existe en el papel pero nadie sabe quién la ejecuta. Eso es justo el fallo que se quiere evitar: reglas sin mecanismo operativo. La salvaguarda solo sostiene al alumno si el profesor sabe que su criterio será mirado en agregado y que un patrón anómalo generará conversación con la dirección o el comité. Esa expectativa es lo que convierte la buena fe del profesor en criterio calibrable.

@@ -1,6 +1,6 @@
 # Asistente de clasificación A/B/D
 
-> Árbol de decisión para fijar el régimen de una actividad **antes de escribir la consigna** — desarrolla el §1 y el paso 2 de "Cómo aplicarlo el primer día de curso" de [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md). Aplica la regla mecánica de [P3](../articulos/P3.md) y [P4](../articulos/P4.md): dos preguntas de diseño que colapsan los cuatro regímenes del V9 a tres.
+Árbol de decisión para fijar el régimen de una actividad **antes de escribir la consigna**.
 
 ## Árbol de decisión
 
@@ -25,7 +25,7 @@ La pregunta clasificatoria (paso 2) es la que fija el régimen. La pregunta diag
 
 ## Tabla de ejemplos por grado
 
-Seis grados reales de UNEATLANTICO, uno por facultad como mínimo, con los dos casos límite del cierre de P4 incluidos.
+Seis grados reales de UNEATLANTICO, uno por facultad como mínimo, con los dos casos límite incluidos.
 
 | Grado UNEATLANTICO | Actividad | ¿Reconstruible sin IA? | ¿IA medio u objeto? | Régimen |
 |---|---|---|---|---|
@@ -36,16 +36,13 @@ Seis grados reales de UNEATLANTICO, uno por facultad como mínimo, con los dos c
 | Traducción y Enseñanza de Lenguas | Comentario de una fuente en lengua extranjera; IA permitida solo para traducir la fuente | Sí, salvo la traducción | Medio (uso acotado a una subtarea) | B, con excepción declarada por tarea (caso límite: especificación por actividad) |
 | Publicidad y Relaciones Públicas | Evaluación crítica de una campaña publicitaria generada por IA (sesgos, errores de marca) | No — se evalúa el juicio sobre la salida, no una producción propia | Objeto | D |
 
+Grados oficiales de UNEATLANTICO: [grados.uneatlantico.es](https://grados.uneatlantico.es/) — 15 grados en 3 facultades.
+
 ## Casos límite
 
-Dos casos que la regla mecánica resuelve sin necesitar un cuarto régimen (cierre de P4):
+Dos casos que la regla mecánica resuelve sin necesitar un cuarto régimen:
 
 1. **Especificación por actividad** (fila Traducción y Enseñanza de Lenguas): un uso acotado a una subtarea concreta puede permitirse dentro de una actividad B por lo demás restringida. Se declara la excepción en la consigna, no se sube toda la actividad a un régimen distinto.
 2. **Multi-régimen por fase** (fila Ingeniería de Organización Industrial): la misma asignatura puede tener régimen distinto en fases distintas (práctica en B, evaluación final en A). Cada fase se clasifica por separado con el mismo árbol.
 
 Un tercer caso — la **mixtura B/D dentro del mismo trabajo** (la IA es medio en una parte y objeto evaluado en otra parte del *mismo* entregable, no en fases distintas) — no se resuelve con este árbol de clasificación por actividad completa. Se resuelve con la tabla de régimen por sección de la [plantilla de acuerdo de supervisión TFG/TFM](acuerdo-supervision-tfg-tfm.md#régimen-de-uso-de-ia), donde este tipo de mixtura aparece con más frecuencia.
-
-## Fundamentos
-
-- Cierre de [P3](../articulos/P3.md) (colapso de taxonomía, las dos preguntas de diseño) y [P4](../articulos/P4.md) (regla mecánica de tres regímenes, tabla de ejemplos, casos límite) del cribado ([discussions/1](https://github.com/mmasias/pyAI-edu/discussions/1)).
-- Grados verificados contra [grados.uneatlantico.es](https://grados.uneatlantico.es/), 15 grados oficiales en 3 facultades.

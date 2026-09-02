@@ -1,6 +1,6 @@
 # Declaración de autoría
 
-> Plantilla universal: aplica a los regímenes A/B/D sin modificación. Pieza mínima exigida en cualquier entrega (§5.1 del protocolo; P0 y P4 del cribado).
+Plantilla universal: aplica a los regímenes A, B y D sin modificación. Obligatoria en cualquier entrega.
 
 ## Datos de la actividad
 
@@ -14,7 +14,7 @@
 Quien firma declara que la entrega referenciada es producto de su autoría efectiva: las decisiones, el análisis y la elaboración intelectual sustantivos son propios.
 
 - En **régimen A**, declara además que no ha utilizado ninguna herramienta de IA en ninguna fase del trabajo.
-- En **regímenes B y D**, declara que el uso de IA (declarado aparte en la _Declaración de uso de IA_) no sustituye su autoría efectiva: el resultado es defendible y modificable por quien firma, conforme al guion de defensa oral ([P1](../articulos/P1.md#qué-se-decidió)).
+- En **regímenes B y D**, declara que el uso de IA (declarado aparte en la _Declaración de uso de IA_) no sustituye su autoría efectiva: el resultado es defendible y modificable por quien firma, conforme al [guion de defensa oral](guion-defensa-canonico.md).
 
 ## Firma
 
@@ -28,5 +28,4 @@ Quien firma declara que la entrega referenciada es producto de su autoría efect
 
 - Declaración **obligatoria** en los regímenes A, B y D, con independencia del peso de la actividad.
 - **No sustituye** a la _Declaración de uso de IA_ (exigida en B/D); la complementa.
-- Ante discrepancia entre lo declarado y la evidencia (trazabilidad pasiva, defensa oral), la decisión se funda en la **conversación**, no en el indicio. Fundamento: §7.6 del protocolo (regla de cautela, P6).
-- **Fundamentos:** §5.1 del _Protocolo de medidas para garantizar la calidad y la integridad académicas en la modalidad de enseñanza presencial_ V9; cierre de P4 del cribado ([discussions/1](https://github.com/mmasias/pyAI-edu/discussions/1)).
+- Ante discrepancia entre lo declarado y la evidencia (trazabilidad pasiva, defensa oral), la decisión se funda en la **conversación**, no en el indicio.

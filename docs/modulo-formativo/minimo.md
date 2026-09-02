@@ -1,34 +1,34 @@
 # Módulo formativo mínimo
 
-> Formación que el profesorado necesita para ejecutar los mecanismos del régimen cribado ([P9](../articulos/P9.md#qué-se-decidió)): no el catálogo de plantillas, sino el **juicio operativo** que las hace aplicables. Publicado junto a las plantillas, no después — la regla P9 establece que un instrumento sin manual se aplica mal por las mismas razones que el V9: exceso de confianza en el enunciado formal y ausencia de práctica guiada donde la regla contradice la intuición.
->
-> El alcance se fijó en [discussions#27](https://github.com/mmasias/pyAI-edu/discussions/27): las cuatro piezas cotidianas (autoría / uso IA / defensa oral / consigna) ya viven explicadas dentro de cada plantilla; este módulo no las duplica. Cubre las dos piezas que no tienen sitio propio y que el cierre de P9 marcó como críticas: reconocimiento práctico de arquetipos de fraude ([P5](../articulos/P5.md#qué-se-decidió)) y aplicación guiada de la regla de cautela §7.6 ([P6](../articulos/P6.md#qué-se-decidió)).
+Formación que el profesorado necesita para ejecutar los mecanismos del régimen: no el catálogo de plantillas, sino el **juicio operativo** que las hace aplicables.
+
+Las cuatro piezas cotidianas (autoría / uso IA / defensa oral / consigna) ya viven explicadas dentro de cada plantilla; este módulo no las duplica. Cubre las dos que no tienen sitio propio: reconocimiento práctico de arquetipos de fraude y aplicación guiada de la regla de cautela.
 
 ## Dónde está el "cómo usar" de cada plantilla
 
-Las cuatro plantillas cotidianas (autoría / uso IA / defensa oral / consigna) y la plantilla de registro explican su propio uso en secciones dedicadas — este módulo no las duplica, las enlaza:
+Las cuatro plantillas cotidianas y la plantilla de registro explican su propio uso en secciones dedicadas — este módulo no las duplica, las enlaza:
 
 - **Declaración de autoría** — [`Notas`](../plantillas/declaracion-autoria.md#notas): qué es, cuándo se firma, alcance de la declaración.
 - **Declaración de uso de IA** — [`Notas`](../plantillas/declaracion-uso-ia.md#notas): cómo rellenarla por régimen (B / D), campos herramienta + finalidad + fase.
 - **Guion canónico de defensa oral** — [`Reglas de ejecución`](../plantillas/guion-defensa-canonico.md#reglas-de-ejecución): una pregunta a la vez, sin avances, modificación en vivo obligatoria.
-- **Consigna por régimen (A/B/D)** — [`Cómo usar esta plantilla`](../plantillas/consigna-abd.md#cómo-usar-esta-plantilla): cómo aplicar el bloque por régimen y la especificación por actividad del §4.3.
-- **Registro estructurado de indicio** — [`Reglas procedimentales`](../plantillas/registro-indicio.md#reglas-procedimentales-p10): cómo documentar el disparador de verificación en un clic; el detector como disparador, nunca como prueba.
+- **Consigna por régimen (A/B/D)** — [`Cómo usar esta plantilla`](../plantillas/consigna-abd.md#cómo-usar-esta-plantilla): cómo aplicar el bloque por régimen y la especificación por actividad.
+- **Registro estructurado de indicio** — [`Reglas procedimentales`](../plantillas/registro-indicio.md#reglas-procedimentales): cómo documentar el disparador de verificación en un clic; el detector como disparador, nunca como prueba.
 
 Lo que sigue es lo que no vive en ninguna plantilla.
 
-## Pieza 1 — Reconocimiento práctico de arquetipos de fraude ([P5](../articulos/P5.md#qué-se-decidió))
+## Pieza 1 — Reconocimiento práctico de arquetipos de fraude
 
-El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) §5 lista los seis arquetipos (copia literal / fabricación de evidencia / uso desproporcionado al régimen / evasión activa / colusión organizada / falsificación de fuente) como índice de reconocimiento rápido. Esta sección los trabaja: por cada arquetipo, un ejemplo, cómo se tipifica y qué **no** es ese arquetipo (la frontera con la mera evaluación negativa o con la declaración olvidada).
+El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) lista los seis arquetipos (copia literal / fabricación de evidencia / uso desproporcionado al régimen / evasión activa / colusión organizada / falsificación de fuente) como índice de reconocimiento rápido. Esta sección los trabaja: por cada arquetipo, un ejemplo, cómo se tipifica y qué **no** es ese arquetipo (la frontera con la mera evaluación negativa o con la declaración olvidada).
 
-**Tres recordatorios del cierre de P5 antes de los ejemplos:**
+**Tres recordatorios antes de los ejemplos:**
 
 - El listado es **abierto y combinable**. El docente puede proponer tipificaciones adicionales. Un fraude real puede ser multi-arquetipo; la tipificación reporta todos los que aplican.
-- La función de los arquetipos es **diagnóstica, no detectiva**: el docente detecta por criterio propio ([P10](../articulos/P10.md#qué-se-decidió)); los arquetipos ayudan a **tipificar la magnitud** del mal uso.
+- La función de los arquetipos es **diagnóstica, no detectiva**: el docente detecta por criterio propio; los arquetipos ayudan a **tipificar la magnitud** del mal uso.
 - Los seis arquetipos son **actos afirmativos** del alumno, no síntomas observables ni omisiones ambiguas.
 
 ### Arquetipo 1 — Copia literal o sustitución completa
 
-**Ejemplo trabajado:** un alumno en régimen A entrega un ensayo que no contiene ningún rastro de borrador previo (entrega un PDF fuera del Doc compartido exigido); al pedirle la versión editable, el contenido aparece pegado de una sola vez en el histórico. La conversación posterior (defensa oral, P1) revela que no puede explicar la elección de la estructura ni modificar un párrafo en vivo.
+**Ejemplo trabajado:** un alumno en régimen A entrega un ensayo que no contiene ningún rastro de borrador previo (entrega un PDF fuera del Doc compartido exigido); al pedirle la versión editable, el contenido aparece pegado de una sola vez en el histórico. La conversación posterior (defensa oral) revela que no puede explicar la elección de la estructura ni modificar un párrafo en vivo.
 
 **Cómo se tipifica:** arquetipo 1. Si además la declaración de uso está vacía o copiada, se suma arquetipo 4 (evasión activa) solo si el alumno negó el uso al ser preguntado — no si simplemente olvidó declarar.
 
@@ -40,7 +40,7 @@ El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) §5 lista los seis arque
 
 **Cómo se tipifica:** arquetipo 2. La evidencia de proceso (historial, versiones intermedias, enlace de chat) es lo que sostiene el régimen D; falsearla es fabricar la base misma del régimen.
 
-**Qué no es este arquetipo:** un Doc con histórico escaso porque el alumno trabajó principalmente en local y solo subió la versión final. Eso es indicio (categoría 2 de P10, _"Documento sin histórico"_), no arquetipo. El arquetipo requiere fabricación activa, no simple ausencia.
+**Qué no es este arquetipo:** un Doc con histórico escaso porque el alumno trabajó principalmente en local y solo subió la versión final. Eso es indicio (categoría 2, _"Documento sin histórico"_), no arquetipo. El arquetipo requiere fabricación activa, no simple ausencia.
 
 ### Arquetipo 3 — Uso desproporcionado al régimen
 
@@ -48,13 +48,13 @@ El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) §5 lista los seis arque
 
 **Cómo se tipifica:** arquetipo 3. El régimen B permite IA como medio (defendible y reconstruible); el análisis sustantivo generado por IA cruza al régimen D sin estar declarado ni defendido.
 
-**Qué no es este arquetipo:** un alumno en régimen D que usa IA más intensamente de lo que inicialmente declaró, siempre que la declaración se corrija y el trabajo sea defendible. La declaración incompleta corregible no es fraude; es deuda que la conversación ([P1](../articulos/P1.md#qué-se-decidió)) resuelve.
+**Qué no es este arquetipo:** un alumno en régimen D que usa IA más intensamente de lo que inicialmente declaró, siempre que la declaración se corrija y el trabajo sea defendible. La declaración incompleta corregible no es fraude; es deuda que la conversación resuelve.
 
 ### Arquetipo 4 — Evasión activa de verificación
 
 **Ejemplo trabajado:** ante un indicio de categoría 1 (salto cualitativo del trabajo respecto al histórico del alumno), el profesor pide el enlace del chat declarado. El alumno responde que lo ha borrado, que la cuenta estaba asociada a otra persona, o que el enlace _"ya no funciona"_. En cada intento introduce una nueva excusa que no cuadra con las anteriores.
 
-**Cómo se tipifica:** arquetipo 4. La evasión es activa: ocultar, negar o dificultar el acceso a evidencia que el régimen exigía. La regla de cautela §7.6 sigue aplicando: el comportamiento evasivo es indicio que dispara la conversación, no prueba por sí solo.
+**Cómo se tipifica:** arquetipo 4. La evasión es activa: ocultar, negar o dificultar el acceso a evidencia que el régimen exigía. La regla de cautela sigue aplicando: el comportamiento evasivo es indicio que dispara la conversación, no prueba por sí solo.
 
 **Qué no es este arquetipo:** un alumno que no recuerda un detalle o que se confunde al explicar su proceso. La incapacidad de recordar o explicar funda evaluación negativa (no aprendió) o activa más preguntas en el guion de defensa oral; el arquetipo 4 requiere evasión activa y reiterada.
 
@@ -74,9 +74,9 @@ El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) §5 lista los seis arque
 
 **Qué no es este arquetipo:** citar una fuente que resulta errónea o mal interpretada. La fuente defectuosa funda evaluación negativa (no supo investigar); el arquetipo requiere que la fuente no exista tal como se presenta.
 
-## Pieza 2 — Práctica guiada de la regla de cautela §7.6 ([P6](../articulos/P6.md#qué-se-decidió))
+## Pieza 2 — Práctica guiada de la regla de cautela
 
-El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) §6 enuncia la regla: _"un detector automático (de IA, de similitud, etc.) puede ser **disparador**, nunca **prueba**"_. El cierre de P9 advierte que esta regla es **contraintuitiva** — cuando un detector dice _"85% probable IA"_, la tentación natural es calificar conforme al detector; la regla exige lo contrario. Enunciarla no basta; requiere práctica guiada. Esta sección es esa práctica.
+La regla: _"un detector automático (de IA, de similitud, etc.) puede ser **disparador**, nunca **prueba**"_. Es contraintuitiva — cuando un detector dice _"85% probable IA"_, la tentación natural es calificar conforme al detector; la regla exige lo contrario. Enunciarla no basta; requiere práctica guiada. Esta sección es esa práctica.
 
 ### Escenario 1 — El detector dice _"85% IA"_ y la conversación confirma
 
@@ -84,8 +84,8 @@ El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) §6 enuncia la regla: _"
 
 **Qué hace el profesor:**
 
-1. Registra el indicio (categoría 1 de P10: _salto cualitativo_ o _calidad superior a la demostrada en aula_). El detector es disparador; el indicio ya está documentado.
-2. Abre la conversación con el alumno (guion de defensa oral, P1) **sin mencionar el resultado del detector**. El detector no entra en la conversación; lo que se examina es el trabajo.
+1. Registra el indicio (categoría 1: _salto cualitativo_ o _calidad superior a la demostrada en aula_). El detector es disparador; el indicio ya está documentado.
+2. Abre la conversación con el alumno (guion de defensa oral) **sin mencionar el resultado del detector**. El detector no entra en la conversación; lo que se examina es el trabajo.
 3. Si el alumno no puede defender el trabajo (no explica decisiones, no modifica en vivo, no detecta errores obvios), la decisión se funda en **la conversación**, no en el detector. Evaluación negativa o, si hay arquetipo claro, apertura de expediente.
 4. Si el alumno defiende el trabajo, la activación del detector queda como falso positivo — los detectores mejoran, la regla sobrevive. No hay consecuencia para el alumno.
 
@@ -93,16 +93,16 @@ El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) §6 enuncia la regla: _"
 
 ### Escenario 2 — El detector dice _"85% IA"_ y la conversación no confirma
 
-Es el caso que el cierre de P9 marca como crítico — donde el atajo intuitivo tira con más fuerza.
+Es el caso crítico — donde el atajo intuitivo tira con más fuerza.
 
 **Estado inicial:** detector marca el trabajo con 85%. El profesor ejecuta el guion de defensa oral; el alumno defiende el trabajo razonablemente (explica decisiones, modifica en vivo un fragmento, reconoce errores menores).
 
 **Qué hace el profesor:**
 
 1. El indicio del detector queda registrado, pero la conversación no produce indicio adicional. La verificación se cierra sin consecuencia para el alumno.
-2. Si el profesor **aun así** sospecha, no puede fundar la decisión en esa sospecha reforzada por el detector. La regla §7.6 prohíbe usar el detector como prueba, incluso cuando la intuición del profesor y el detector apuntan en la misma dirección.
+2. Si el profesor **aun así** sospecha, no puede fundar la decisión en esa sospecha reforzada por el detector. La regla prohíbe usar el detector como prueba, incluso cuando la intuición del profesor y el detector apuntan en la misma dirección.
 3. Lo que sí cabe: reforzar la trazabilidad pasiva del alumno en futuras entregas (pedir Doc compartido desde el primer día si no se exigía, revisar históricos con más atención). Pero el caso actual se cierra sin consecuencia.
-4. Si el patrón se repite en varias entregas del mismo alumno sin confirmación en conversación, lo que se revisa no es al alumno, es **el criterio del profesor** (regla 5 de P10, _salvaguarda de proporcionalidad_). Un detector que activa repetidamente sin conversación que confirme es señal de que el criterio de uso del detector está mal calibrado, no de que el alumno esté defraudando sistemáticamente sin dejar rastro.
+4. Si el patrón se repite en varias entregas del mismo alumno sin confirmación en conversación, lo que se revisa no es al alumno, es **el criterio del profesor** (salvaguarda de proporcionalidad). Un detector que activa repetidamente sin conversación que confirme es señal de que el criterio de uso del detector está mal calibrado, no de que el alumno esté defraudando sistemáticamente sin dejar rastro.
 
 **Por qué la regla se respeta incluso cuando duele:** los detectores no eliminan los falsos positivos. La regla no especifica la calidad del detector, solo su estatus probatorio: ningún detector, por bueno que sea, funda decisión sin conversación interpuesta. Si se flexibiliza la regla para el caso donde intuición y detector coinciden, se abre la puerta a flexibilizarla en cualquier caso — la regla pierde su función de contención.
 
@@ -113,19 +113,11 @@ Es el caso que el cierre de P9 marca como crítico — donde el atajo intuitivo 
 **Qué hace el profesor:**
 
 1. La decisión **no se funda en el detector** sino en el arquetipo: la fabricación de evidencia es un acto afirmativo del alumno, no un output del detector. La apertura de expediente, si procede, se basa en la fabricación, no en el 85%.
-2. El detector aparece en el informe solo como indicio de partida (categoría 1 de P10), no como argumento. Lo que funda la decisión es la conversación que reveló la fabricación.
+2. El detector aparece en el informe solo como indicio de partida (categoría 1), no como argumento. Lo que funda la decisión es la conversación que reveló la fabricación.
 3. La convergencia detector + arquetipo refuerza la confianza en la decisión pero no cambia su fundamento: el arquetipo, no el detector.
 
 **Lo que el profesor NO hace:** citar el 85% como evidencia complementaria al arquetipo. El detector es siempre disparador, nunca prueba — incluso cuando hay arquetipo independiente.
 
-## Sobre el muestreo — fuera del módulo
+## Sobre el muestreo
 
-El cierre original de P9 listaba como pieza del módulo _"cómo aplicar el muestreo sin que explote el coste (P2 acotado por P8)"_. El propio cierre de P8, en la misma discusión, sustituyó el muestreo por **verificación reactiva bajo indicio legítimo** (definido en P10), sin distinción de niveles ni necesidad de muestrear. El muestreo no es un mecanismo vigente del régimen cribado — ver [P8](../articulos/P8.md) y la nota de obsolescencia en [P9](../articulos/P9.md).
-
-Lo que sí existe: trazabilidad pasiva universal de base (Docs compartidos desde el primer día) y activación de defensa oral solo bajo indicio documentado ([P10](../articulos/P10.md#qué-se-decidió)). Cómo se documenta ese indicio vive en [`registro-indicio.md`](../plantillas/registro-indicio.md), no aquí.
-
-## Fundamentos
-
-- Cierre de [P5](../articulos/P5.md) (seis arquetipos abiertos y combinables, función diagnóstica, actos afirmativos), [P6](../articulos/P6.md) (regla de cautela §7.6, detector como disparador nunca prueba) y [P8](../articulos/P8.md) (verificación reactiva bajo indicio, sin muestreo) del cribado ([discussions/1](https://github.com/mmasias/pyAI-edu/discussions/1)).
-- Cierre de [P9](../articulos/P9.md) (módulo formativo mínimo publicado junto a plantillas; las dos piezas marcadas como críticas son arquetipos y §7.6).
-- Alcance confirmado en [discussions#27](https://github.com/mmasias/pyAI-edu/discussions/27): híbrido delgado — índice al _"cómo usar"_ embebido en plantillas + reconocimiento práctico de arquetipos + práctica guiada de §7.6, sin muestreo.
+No es un mecanismo del régimen. Lo que existe: trazabilidad pasiva universal de base (Docs compartidos desde el primer día) y activación de defensa oral solo bajo indicio documentado. Cómo se documenta ese indicio vive en [`registro-indicio.md`](../plantillas/registro-indicio.md), no aquí.
