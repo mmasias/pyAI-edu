@@ -4,6 +4,7 @@ Las seis piezas en una página: qué **régimen** aplica a cada actividad, qué 
 
 > ||
 > |-
+> |<sub>Si solo necesita el procedimiento, sin la justificación de cada regla: [`QUE-HACER.md`](QUE-HACER.md) (capa 0, hoja de acción).
 > |<sub>Si busca la secuencia paso a paso para el primer día de clase, vaya directamente a [`Cómo aplicarlo`](#cómo-aplicarlo-el-primer-día-de-curso).
 > |<sub>Para los _por qués_ de cada regla: [`docs/articulos/`](docs/articulos/) (capa 2) o la [discusión de cribado](https://github.com/mmasias/pyAI-edu/discussions/1).
 > |<sub>Para formación sobre la ejecución (reconocimiento de arquetipos de fraude, aplicación práctica de la regla de cautela §7.6): [`docs/modulo-formativo/minimo.md`](docs/modulo-formativo/minimo.md).

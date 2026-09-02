@@ -6,7 +6,8 @@ Asistente para el profesorado sobre uso responsable de inteligencia artificial e
 
 | Si quieres... | Lee |
 |---|---|
-| Aplicar el régimen el primer día de curso | [`RESUMEN-OPERATIVO.md`](RESUMEN-OPERATIVO.md) — una página, todo lo operativo |
+| Saber qué hacer, sin explicaciones | [`QUE-HACER.md`](QUE-HACER.md) — hoja de acción, solo los pasos |
+| Aplicar el régimen el primer día de curso, con el porqué de cada regla condensado | [`RESUMEN-OPERATIVO.md`](RESUMEN-OPERATIVO.md) — una página, todo lo operativo |
 | Entender por qué una regla es como es | [`docs/articulos/`](docs/articulos/) — un artículo por punto del cribado (P0-P10) |
 | Usar una plantilla ya lista (declaraciones, consigna, acuerdo TFG/TFM...) | [`docs/plantillas/`](docs/plantillas/) |
 | Ver qué falta y en qué orden se construye | [`planDeAccion.md`](planDeAccion.md) |
@@ -27,7 +28,8 @@ Resumen operativo y artículos de capa 2 ya construidos y mergeados. Plantillas 
 
 ```
 pyAI-edu/
-├── RESUMEN-OPERATIVO.md    Una página: aplicación práctica del régimen
+├── QUE-HACER.md            Hoja de acción: los pasos, sin justificación
+├── RESUMEN-OPERATIVO.md    Una página: aplicación práctica del régimen con su porqué
 ├── planDeAccion.md         Hoja de ruta y backlog
 ├── docs/
 │   ├── articulos/          Por qué de cada regla (P0-P10)
