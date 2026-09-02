@@ -1,5 +1,11 @@
 # Qué hacer
 
+## 0. Recordar los regímenes con los que trabajamos
+
+| Régimen A | Régimen B | Régimen D |
+|---|---|---|
+| Sin IA | IA como medio | IA como objeto evaluado |
+
 ## 1. Antes de cada actividad evaluable
 
 ### Fijar el régimen
