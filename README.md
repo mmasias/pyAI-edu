@@ -4,7 +4,7 @@ Asistente para el profesorado sobre uso responsable de inteligencia artificial e
 
 ## Qué leer primero
 
-| Si quieres... | Lee |
+| Para | Leer |
 |---|---|
 | Saber qué hacer | [`QUE-HACER.md`](QUE-HACER.md) — hoja de acción, solo los pasos |
 | Aplicar el régimen el primer día de curso, con el porqué de cada regla condensado | [`RESUMEN-OPERATIVO.md`](RESUMEN-OPERATIVO.md) — una página, todo lo operativo |
