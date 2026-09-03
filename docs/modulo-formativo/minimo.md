@@ -22,8 +22,8 @@ El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) lista los seis arquetipo
 
 **Tres recordatorios antes de los ejemplos:**
 
-- El listado es **abierto y combinable**. El docente puede proponer tipificaciones adicionales. Un fraude real puede ser multi-arquetipo; la tipificación reporta todos los que aplican.
-- La función de los arquetipos es **diagnóstica, no detectiva**: el docente detecta por criterio propio; los arquetipos ayudan a **tipificar la magnitud** del mal uso.
+- El listado es **abierto y combinable**. El profesorado puede proponer tipificaciones adicionales. Un fraude real puede ser multi-arquetipo; la tipificación reporta todos los que aplican.
+- La función de los arquetipos es **diagnóstica, no detectiva**: el profesorado detecta por criterio propio; los arquetipos ayudan a **tipificar la magnitud** del mal uso.
 - Los seis arquetipos son **actos afirmativos** del alumno, no síntomas observables ni omisiones ambiguas.
 
 ### Arquetipo 1 — Copia literal o sustitución completa
@@ -46,7 +46,7 @@ El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) lista los seis arquetipo
 
 **Ejemplo trabajado:** un alumno en régimen B (IA como medio) declara uso de IA para corrección ortográfica y traducción. La declaración cuadra con el producto; pero al revisar el Doc compartido, dos secciones analíticas del trabajo aparecen redactadas de golpe con un estilo homogéneo que el alumno no reproduce al escribir en vivo durante la defensa oral.
 
-**Cómo se tipifica:** arquetipo 3. El régimen B permite IA como medio (defendible y reconstruible); el análisis sustantivo generado por IA cruza al régimen D sin estar declarado ni defendido.
+**Cómo se tipifica:** arquetipo 3. El régimen B permite IA como medio (defendible y reconstruible); el análisis de fondo generado por IA cruza al régimen D sin estar declarado ni defendido.
 
 **Qué no es este arquetipo:** un alumno en régimen D que usa IA más intensamente de lo que inicialmente declaró, siempre que la declaración se corrija y el trabajo sea defendible. La declaración incompleta corregible no es fraude; es deuda que la conversación resuelve.
 

@@ -78,12 +78,12 @@ Tres categorías exhaustivas. **Un indicio documentado de cualquiera basta para 
 
 1. Copia literal o sustitución completa de la producción del alumno.
 2. Fabricación de evidencia de proceso (versiones intermedias falseadas, etc.).
-3. Uso desproporcionado al régimen asignado (sustantivo donde solo se permite instrumental).
+3. Uso desproporcionado al régimen asignado (análisis de fondo generado por IA donde solo se permite como apoyo).
 4. Evasión activa de mecanismos de verificación (ocultar, negar el uso cuando se pregunta).
 5. Colusión organizada (varios alumnos personalizando la misma salida para evadir detección por similitud).
 6. Falsificación de fuente (IA presentada activamente como bibliografía o autoría humana).
 
-**Función diagnóstica, no detectiva:** el docente detecta el uso indebido por criterio propio; los arquetipos ayudan a **tipificar la magnitud**, no a detectar. Combinables — un fraude real puede ser multi-arquetipo. Lista no cerrada: el docente puede proponer tipificaciones adicionales.
+**Función diagnóstica, no detectiva:** el profesorado detecta el uso indebido por criterio propio; los arquetipos ayudan a **tipificar la magnitud**, no a detectar. Combinables — un fraude real puede ser multi-arquetipo. Lista no cerrada: el profesorado puede proponer tipificaciones adicionales.
 
 ## 6. Regla de cautela
 
@@ -93,8 +93,8 @@ Lo que funda una decisión es la conversación que el indicio dispara, no el ind
 
 ## Cómo aplicarlo el primer día de curso
 
-1. **Guía docente:** añadir la frase _"Esta asignatura se rige por el Protocolo de medidas para garantizar la calidad y la integridad académicas en la modalidad de enseñanza presencial de UNEATLANTICO. El régimen aplicable a cada actividad se indicará en su enunciado."_
+1. **Guía docente:** ya lleva incluida la frase _"Esta asignatura se rige por el Protocolo de medidas para garantizar la calidad y la integridad académicas en la modalidad de enseñanza presencial de UNEATLANTICO. El régimen aplicable a cada actividad se indicará en su enunciado."_
 2. **Para cada actividad evaluada:** fijar el régimen (A/B/D) usando la regla mecánica del apartado 1.
 3. **Para B:** declaración de autoría + declaración de uso + Doc compartido recomendado. **Para D:** exige lo mismo, con Doc compartido obligatorio.
-4. **Para B y D:** añadir consigna tipo con la regla de especificación por actividad.
+4. **Para B y D:** añadir la consigna predeterminada del régimen, con la regla de especificación por actividad.
 5. **Anunciar al aula:** la verificación es **reactiva, no universal** — cualquiera puede ser auditado bajo indicio, pero el indicio nunca es prueba y la conversación sí funda la decisión.

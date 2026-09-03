@@ -14,7 +14,7 @@ Cuatro preguntas para verificar autoría efectiva cuando hay indicio. Lo ejecuta
 ## Cobertura declarada
 
 - **Cubre bien:** producto de código y texto (programación, redacción técnica, análisis documental).
-- **No probado:** actuación, interpretación musical, cálculo manual, diseño físico. En estas disciplinas el docente debe adaptar el guion.
+- **No probado:** actuación, interpretación musical, cálculo manual, diseño físico. En estas disciplinas el profesorado debe adaptar el guion.
 
 ## Reglas de ejecución
 

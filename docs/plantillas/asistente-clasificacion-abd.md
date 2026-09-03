@@ -1,4 +1,4 @@
-# Asistente de clasificación A/B/D
+# Clasificación de actividades
 
 Árbol de decisión para fijar el régimen de una actividad **antes de escribir la consigna**.
 

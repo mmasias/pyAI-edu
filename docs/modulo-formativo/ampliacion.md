@@ -24,7 +24,7 @@ La dirección revisa las versiones contra el calendario fijado en el acuerdo. La
 
 - **Trazabilidad viva:** el Doc compartido refleja elaboración real, no pegado final. Si el histórico muestra saltos o el alumno trabaja principalmente en local, se señala en la revisión — antes del problema, no después.
 - **Declaración al día:** cuando el trabajo es régimen mixto, la declaración de uso refleja las secciones D con su alcance real, no una descripción genérica.
-- **Indicios tempranos:** si alguna sección descuadra con el régimen declarado (p. ej. análisis sustantivo generado por IA en una sección marcada B), se conversa en la revisión intermedia — no se espera a la defensa final. La conversación temprana es donde la defensa oral hace su trabajo preventivo.
+- **Indicios tempranos:** si alguna sección descuadra con el régimen declarado (p. ej. análisis de fondo generado por IA en una sección marcada B), se conversa en la revisión intermedia — no se espera a la defensa final. La conversación temprana es donde la defensa oral hace su trabajo preventivo.
 
 **Qué documentar:** comentarios en el Doc compartido, correo o acta breve de tutoría. Si la dirección es activa, este registro es la evidencia de que la dirección cumplió su parte; si es nominal, la ausencia de este registro es señal de que la defensa final sostiene todo el peso.
 

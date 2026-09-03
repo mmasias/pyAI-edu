@@ -1,10 +1,10 @@
 # Plantilla de consigna por régimen (A/B/D)
 
-Texto que el profesorado copia en el enunciado de cada actividad evaluada, **una vez fijado el régimen** con el [asistente de clasificación A/B/D](asistente-clasificacion-abd.md).
+Texto que el profesorado copia en el enunciado de cada actividad evaluada, **una vez fijado el régimen** de la actividad (ver [Clasificación de actividades](asistente-clasificacion-abd.md)).
 
 ## Cómo usar esta plantilla
 
-1. Fija el régimen (A/B/D) con el [asistente de clasificación](asistente-clasificacion-abd.md). Esta plantilla asume ese paso ya hecho.
+1. Fija el régimen (A/B/D) siguiendo [Clasificación de actividades](asistente-clasificacion-abd.md). Esta plantilla asume ese paso ya hecho.
 2. Copia el bloque del régimen correspondiente en el enunciado de la actividad.
 3. Si acotas el uso de IA a una subtarea concreta dentro de una actividad B por lo demás restringida (caso límite: especificación por actividad), rellena además la subsección _"Especificación por actividad"_ del bloque B.
 4. Si la actividad tiene varias fases con régimen distinto (caso límite: multi-régimen por fase), copia un bloque por fase y señala en cada uno a qué fase aplica.
