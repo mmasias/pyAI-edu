@@ -28,7 +28,7 @@ El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) lista los seis arquetipo
 
 ### Arquetipo 1 — Copia literal o sustitución completa
 
-**Ejemplo trabajado:** un alumno en régimen A entrega un ensayo que no contiene ningún rastro de borrador previo (entrega un PDF fuera del Doc compartido exigido); al pedirle la versión editable, el contenido aparece pegado de una sola vez en el histórico. La conversación posterior (defensa oral) revela que no puede explicar la elección de la estructura ni modificar un párrafo en vivo.
+**Ejemplo trabajado:** un alumno en régimen A entrega un ensayo que no contiene ningún rastro de borrador previo (entrega un PDF fuera del documento compartido exigido); al pedirle la versión editable, el contenido aparece pegado de una sola vez en el histórico. La conversación posterior (defensa oral) revela que no puede explicar la elección de la estructura ni modificar un párrafo en vivo.
 
 **Cómo se tipifica:** arquetipo 1. Si además la declaración de uso está vacía o copiada, se suma arquetipo 4 (evasión activa) solo si el alumno negó el uso al ser preguntado — no si simplemente olvidó declarar.
 
@@ -36,15 +36,15 @@ El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) lista los seis arquetipo
 
 ### Arquetipo 2 — Fabricación de evidencia de proceso
 
-**Ejemplo trabajado:** un alumno en régimen D (donde la trazabilidad pasiva es obligatoria) entrega el Doc compartido con un histórico de versiones que no cuadra con el calendario declarado — siete revisiones en una noche, todas posteriores a la fecha de entrega declarada, con cambios cosméticos distribuidos para simular elaboración escalonada.
+**Ejemplo trabajado:** un alumno en régimen D (donde la trazabilidad pasiva es obligatoria) entrega el documento compartido con un histórico de versiones que no cuadra con el calendario declarado — siete revisiones en una noche, todas posteriores a la fecha de entrega declarada, con cambios cosméticos distribuidos para simular elaboración escalonada.
 
 **Cómo se tipifica:** arquetipo 2. La evidencia de proceso (historial, versiones intermedias, enlace de chat) es lo que sostiene el régimen D; falsearla es fabricar la base misma del régimen.
 
-**Qué no es este arquetipo:** un Doc con histórico escaso porque el alumno trabajó principalmente en local y solo subió la versión final. Eso es indicio (categoría 2, _"Documento sin histórico"_), no arquetipo. El arquetipo requiere fabricación activa, no simple ausencia.
+**Qué no es este arquetipo:** un documento con histórico escaso porque el alumno trabajó principalmente en local y solo subió la versión final. Eso es indicio (categoría 2, _"Documento sin histórico"_), no arquetipo. El arquetipo requiere fabricación activa, no simple ausencia.
 
 ### Arquetipo 3 — Uso desproporcionado al régimen
 
-**Ejemplo trabajado:** un alumno en régimen B (IA como medio) declara uso de IA para corrección ortográfica y traducción. La declaración cuadra con el producto; pero al revisar el Doc compartido, dos secciones analíticas del trabajo aparecen redactadas de golpe con un estilo homogéneo que el alumno no reproduce al escribir en vivo durante la defensa oral.
+**Ejemplo trabajado:** un alumno en régimen B (IA como medio) declara uso de IA para corrección ortográfica y traducción. La declaración cuadra con el producto; pero al revisar el documento compartido, dos secciones analíticas del trabajo aparecen redactadas de golpe con un estilo homogéneo que el alumno no reproduce al escribir en vivo durante la defensa oral.
 
 **Cómo se tipifica:** arquetipo 3. El régimen B permite IA como medio (defendible y reconstruible); el análisis de fondo generado por IA cruza al régimen D sin estar declarado ni defendido.
 
@@ -60,7 +60,7 @@ El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) lista los seis arquetipo
 
 ### Arquetipo 5 — Colusión organizada
 
-**Ejemplo trabajado:** tres alumnos entregan trabajos individualmente declarados, cada uno con su propio Doc compartido. Los tres Docs tienen históricos que arrancan el mismo día, con patrones de revisión casi idénticos (mismas marcas temporales, mismos bloques de texto reordenados). El estilo analítico es común; las diferencias son cosméticas.
+**Ejemplo trabajado:** tres alumnos entregan trabajos individualmente declarados, cada uno con su propio documento compartido. Los tres Docs tienen históricos que arrancan el mismo día, con patrones de revisión casi idénticos (mismas marcas temporales, mismos bloques de texto reordenados). El estilo analítico es común; las diferencias son cosméticas.
 
 **Cómo se tipifica:** arquetipo 5. El eje es multi-alumno: varios alumnos personalizando la misma salida de IA para evadir detección por similitud. Combinable con arquetipo 1 (sustitución completa) o arquetipo 3 (uso desproporcionado).
 
@@ -101,14 +101,14 @@ Es el caso crítico — donde el atajo intuitivo tira con más fuerza.
 
 1. El indicio del detector queda registrado, pero la conversación no produce indicio adicional. La verificación se cierra sin consecuencia para el alumno.
 2. Si el profesor **aun así** sospecha, no puede fundar la decisión en esa sospecha reforzada por el detector. La regla prohíbe usar el detector como prueba, incluso cuando la intuición del profesor y el detector apuntan en la misma dirección.
-3. Lo que sí cabe: reforzar la trazabilidad pasiva del alumno en futuras entregas (pedir Doc compartido desde el primer día si no se exigía, revisar históricos con más atención). Pero el caso actual se cierra sin consecuencia.
+3. Lo que sí cabe: reforzar la trazabilidad pasiva del alumno en futuras entregas (pedir documento compartido desde el primer día si no se exigía, revisar históricos con más atención). Pero el caso actual se cierra sin consecuencia.
 4. Si el patrón se repite en varias entregas del mismo alumno sin confirmación en conversación, lo que se revisa no es al alumno, es **el criterio del profesor** (salvaguarda de proporcionalidad). Un detector que activa repetidamente sin conversación que confirme es señal de que el criterio de uso del detector está mal calibrado, no de que el alumno esté defraudando sistemáticamente sin dejar rastro.
 
 **Por qué la regla se respeta incluso cuando duele:** los detectores no eliminan los falsos positivos. La regla no especifica la calidad del detector, solo su estatus probatorio: ningún detector, por bueno que sea, funda decisión sin conversación interpuesta. Si se flexibiliza la regla para el caso donde intuición y detector coinciden, se abre la puerta a flexibilizarla en cualquier caso — la regla pierde su función de contención.
 
 ### Escenario 3 — Detector y arquetipo convergen
 
-**Estado inicial:** detector marca 85%. El profesor, durante la defensa oral, descubre además un arquetipo claro (p. ej. arquetipo 2 — fabricación de evidencia de proceso: el histórico del Doc fue manipulado).
+**Estado inicial:** detector marca 85%. El profesor, durante la defensa oral, descubre además un arquetipo claro (p. ej. arquetipo 2 — fabricación de evidencia de proceso: el histórico del documento fue manipulado).
 
 **Qué hace el profesor:**
 
@@ -120,4 +120,4 @@ Es el caso crítico — donde el atajo intuitivo tira con más fuerza.
 
 ## Sobre el muestreo
 
-No es un mecanismo del régimen. Lo que existe: trazabilidad pasiva universal de base (Docs compartidos desde el primer día) y activación de defensa oral solo bajo indicio documentado. Cómo se documenta ese indicio vive en [`registro-indicio.md`](../plantillas/registro-indicio.md), no aquí.
+No es un mecanismo del régimen. Lo que existe: trazabilidad pasiva universal de base (documentos compartidos desde el primer día) y activación de defensa oral solo bajo indicio documentado. Cómo se documenta ese indicio vive en [`registro-indicio.md`](../plantillas/registro-indicio.md), no aquí.

@@ -16,23 +16,23 @@ La plantilla de [acuerdo de supervisión](../plantillas/acuerdo-supervision-tfg-
 2. **Tipo de dirección** (activa o nominal). La distinción no es jerárquica — es declarativa: fija qué mecanismo sostiene realmente el régimen. Si la dirección es nominal, la defensa oral final pasa a ser el **único** mecanismo que sostiene el régimen; la dirección debe saberlo al firmar.
 3. **Calendario de versiones intermedias** rellenando la tabla de la plantilla con fechas concretas y qué se revisa en cada una. Sin calendario, "versiones intermedias revisables" se queda en enunciado.
 
-**Charla con el alumno antes de firmar:** la dirección se asegura de que el alumno entiende que la declaración de uso de IA va en el **apartado metodológico** del propio trabajo (no en anexo), que la trazabilidad pasiva (Doc compartido desde el primer día) es parte del trabajo desde el arranque, y que la defensa oral final cubre explícitamente la reconstrucción del proceso, no solo el resultado.
+**Charla con el alumno antes de firmar:** la dirección se asegura de que el alumno entiende que la declaración de uso de IA va en el **apartado metodológico** del propio trabajo (no en anexo), que la trazabilidad pasiva (documento compartido desde el primer día) es parte del trabajo desde el arranque, y que la defensa oral final cubre explícitamente la reconstrucción del proceso, no solo el resultado.
 
 ### Versiones intermedias
 
 La dirección revisa las versiones contra el calendario fijado en el acuerdo. La revisión no es validación de contenido (eso es dirección académica); desde el punto de vista del régimen de IA, comprueba tres cosas:
 
-- **Trazabilidad viva:** el Doc compartido refleja elaboración real, no pegado final. Si el histórico muestra saltos o el alumno trabaja principalmente en local, se señala en la revisión — antes del problema, no después.
+- **Trazabilidad viva:** el documento compartido refleja elaboración real, no pegado final. Si el histórico muestra saltos o el alumno trabaja principalmente en local, se señala en la revisión — antes del problema, no después.
 - **Declaración al día:** cuando el trabajo es régimen mixto, la declaración de uso refleja las secciones D con su alcance real, no una descripción genérica.
 - **Indicios tempranos:** si alguna sección descuadra con el régimen declarado (p. ej. análisis de fondo generado por IA en una sección marcada B), se conversa en la revisión intermedia — no se espera a la defensa final. La conversación temprana es donde la defensa oral hace su trabajo preventivo.
 
-**Qué documentar:** comentarios en el Doc compartido, correo o acta breve de tutoría. Si la dirección es activa, este registro es la evidencia de que la dirección cumplió su parte; si es nominal, la ausencia de este registro es señal de que la defensa final sostiene todo el peso.
+**Qué documentar:** comentarios en el documento compartido, correo o acta breve de tutoría. Si la dirección es activa, este registro es la evidencia de que la dirección cumplió su parte; si es nominal, la ausencia de este registro es señal de que la defensa final sostiene todo el peso.
 
 ### Defensa oral final
 
 La defensa oral de un TFG/TFM/tesis no es la misma pieza que la defensa reactiva bajo indicio de una asignatura ordinaria — es **obligatoria por diseño académico**, no reactiva. Esto cambia dos cosas:
 
-1. **Cobertura:** la defensa cubre explícitamente la reconstrucción del proceso completo de elaboración, no solo preguntas puntuales sobre decisiones. La dirección puede pedir al alumno que recorra el histórico del Doc compartido y explique las decisiones tomadas en cada revisión.
+1. **Cobertura:** la defensa cubre explícitamente la reconstrucción del proceso completo de elaboración, no solo preguntas puntuales sobre decisiones. La dirección puede pedir al alumno que recorra el histórico del documento compartido y explique las decisiones tomadas en cada revisión.
 2. **Profundidad:** la defensa puede exigir modificación en vivo de fragmentos concretos (pregunta 2 del guion canónico) con más peso que en una asignatura ordinaria, porque el trabajo tiene peso mayoritario en la nota y la defensa es el mecanismo central.
 
 Si durante la defensa aparece un arquetipo claro de fraude, la conversación **no** resuelve el expediente — la apertura de expediente, si procede, se basa en el arquetipo, no en el indicio que disparó la pregunta (regla de cautela). La conversación funda la decisión sobre autoría efectiva (evaluación negativa si no aprendió, expediente si defraudó); la distinción está en los [seis arquetipos](minimo.md#pieza-1--reconocimiento-práctico-de-arquetipos-de-fraude).

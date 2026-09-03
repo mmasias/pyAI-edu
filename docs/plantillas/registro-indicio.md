@@ -39,9 +39,9 @@ Trabajo entregado descuadra con lo esperable del alumno o del régimen.
 
 ### Categoría 2 — Proceso
 
-Huecos o anomalías en la trazabilidad pasiva (Docs, enlace de chat).
+Huecos o anomalías en la trazabilidad pasiva (documento compartido, enlace de chat).
 
-- Documento entregado sin histórico de revisiones (pegado final, no redactado en el Doc compartido desde el inicio).
+- Documento entregado sin histórico de revisiones (pegado final, no redactado en el documento compartido desde el inicio).
 - Histórico con saltos temporales inconsistentes con el trabajo declarado.
 - Enlace de chat compartido que no corresponde con la declaración de uso.
 - Versiones intermedias ausentes cuando el régimen las exige (en TFG/TFM/tesis).

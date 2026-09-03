@@ -36,5 +36,5 @@ Quien firma declara que el uso declarado arriba no sustituye su autoría efectiv
 ## Notas
 
 - Declaración **obligatoria** en los regímenes B y D; **no aplica** en A (donde no se permite IA).
-- **No reconstruye el log de interacción.** La trazabilidad del proceso vive en el Doc compartido o el repositorio; esta declaración deja constancia mínima accionable para el profesorado.
+- **No reconstruye el log de interacción.** La trazabilidad del proceso vive en el documento compartido o el repositorio; esta declaración deja constancia mínima accionable para el profesorado.
 - Si el profesorado identifica uso desproporcionado al régimen o inconsistencias entre lo declarado y el producto, la conversación posterior (defensa oral) funda la decisión, no el indicio.

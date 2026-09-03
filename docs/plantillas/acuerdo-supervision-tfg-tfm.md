@@ -48,7 +48,7 @@ Tres mecanismos, ninguno nuevo — es la aplicación del régimen general a un t
 
 La distinción entre dirección activa y nominal determina qué mecanismo sostiene realmente el régimen — declararlo aquí, no asumirlo.
 
-- ☐ **Activa** — la dirección revisa las versiones intermedias del calendario de arriba, con comentarios documentados (correo, comentarios en el Doc compartido, actas de tutoría).
+- ☐ **Activa** — la dirección revisa las versiones intermedias del calendario de arriba, con comentarios documentados (correo, comentarios en el documento compartido, actas de tutoría).
 - ☐ **Nominal** — reuniones mínimas, sin revisión sistemática de versiones intermedias.
 
 **Si la dirección es nominal**, la defensa oral final pasa a ser el **único** mecanismo que sostiene el régimen — no es opcional reducirla ni tratarla como trámite. La dirección debe saberlo al firmar: sin revisión de proceso, todo el peso de la verificación cae en esa conversación final.

@@ -27,7 +27,7 @@ Todas deben pedirse con proporcionalidad y coherencia con la actividad — no se
 
 | Evidencia | Qué aporta |
 |---|---|
-| **Versiones intermedias** | Historial del Doc compartido — elaboración real vs. pegado final. |
+| **Versiones intermedias** | Historial del documento compartido — elaboración real vs. pegado final. |
 | **Trazabilidad pasiva** | Historial de revisiones, timestamps de servidor, enlace de chat declarado. |
 | **Declaración de uso** | Contraste entre lo declarado y el producto entregado. |
 | **Comprobación de fuentes citadas** | Verificación de que las fuentes existen y dicen lo que el trabajo les atribuye (falsificación de fuente). |
@@ -73,7 +73,7 @@ _(qué evidencia concreta sostiene la conclusión, en los términos exactos del 
 
 Si las evidencias recabadas apuntan a un arquetipo de fraude, la revisión académica **no tramita el expediente**. La Sección 7.9 del protocolo fija el límite exacto: cuando los hechos pudieran constituir falta disciplinaria, la revisión académica se limita a adoptar la decisión evaluativa que corresponda y a **preservar las evidencias**, remitiendo las actuaciones al órgano competente según el Reglamento Académico y del Alumno. La revisión académica y el procedimiento disciplinario no pueden confundirse, aunque compartan evidencias.
 
-En la práctica: si marcas "indicio de fraude" en la plantilla, tu trabajo termina en preservar la evidencia recabada (no borrar ni modificar nada del Doc compartido, del registro de indicio ni de esta plantilla) y remitirla al órgano competente de tu institución. No te corresponde instruir el expediente.
+En la práctica: si marcas "indicio de fraude" en la plantilla, tu trabajo termina en preservar la evidencia recabada (no borrar ni modificar nada del documento compartido, del registro de indicio ni de esta plantilla) y remitirla al órgano competente de tu institución. No te corresponde instruir el expediente.
 
 ## Qué no cubre este documento
 

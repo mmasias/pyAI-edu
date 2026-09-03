@@ -28,7 +28,7 @@ Tres regímenes: A, B, D.
 
 <div align="center">
 
-| Régimen | Declaración autoría | Declaración uso IA | Trazabilidad pasiva |
+| Régimen | Declaración autoría | Declaración uso IA | Trazabilidad |
 |---|:-:|:-:|---|
 | A | ✓ | — | — |
 | B | ✓ | ✓ | Recomendada |
@@ -40,8 +40,8 @@ Tres regímenes: A, B, D.
   - _Ejemplo: "Declaro que la entrega referenciada es producto de mi autoría efectiva."_
 - **Declaración de uso de IA:** herramienta + finalidad + fase. No reconstruye log; deja constancia. <5 min.
   - _Ejemplo: "Herramienta: Claude Sonnet 5 · Finalidad: corrección ortográfica · Fase: revisión final."_
-- **Trazabilidad pasiva:** el trabajo en régimen B/D se redacta en un **Doc compartido con el profesor desde el primer día**, nunca se pega un documento final. El historial de versiones de Docs/Sheets hace de registro sin coste adicional.
-  - _Ejemplo: "Doc de Google Drive compartido con el profesor desde el día 1; historial de versiones visible."_
+- **Trazabilidad:** el trabajo en régimen B/D se redacta en un **documento compartido con el profesor desde el primer día**, nunca se pega un documento final. El historial de versiones de Google Docs/Sheets hace de registro sin coste adicional.
+  - _Ejemplo: "documento de Google Drive compartido con el profesor desde el día 1; historial de versiones visible."_
 
 ## 3. Guion de defensa oral
 
@@ -65,7 +65,7 @@ Tres categorías exhaustivas. **Un indicio documentado de cualquiera basta para 
 | Categoría | Qué detecta | Ejemplos |
 |---|---|---|
 | **1. Producto** | El trabajo entregado descuadra con lo esperable del alumno o del régimen | Salto cualitativo vs. histórico · Inconsistencia de estilo entre secciones · Calidad superior a la demostrada en aula · Declaración vacía, copiada o contradictoria |
-| **2. Proceso** | Huecos en la trazabilidad pasiva (Docs, enlace de chat) | Documento sin histórico · Saltos temporales inconsistentes · Enlace de chat que no cuadra con la declaración · Versiones intermedias ausentes cuando el régimen las exige |
+| **2. Proceso** | Huecos en la trazabilidad (documento compartido, enlace de chat) | Documento sin histórico · Saltos temporales inconsistentes · Enlace de chat que no cuadra con la declaración · Versiones intermedias ausentes cuando el régimen las exige |
 | **3. Interacción** | El comportamiento en aula/tutoría descuadra con el trabajo entregado | Respuestas evasivas a preguntas sobre el propio trabajo · Incapacidad de explicar decisiones que el trabajo presupone · Discrepancia entre lo que el alumno dice conocer y lo que puede operar en vivo |
 
 </div>
@@ -95,6 +95,6 @@ Lo que funda una decisión es la conversación que el indicio dispara, no el ind
 
 1. **Guía docente:** ya lleva incluida la frase _"Esta asignatura se rige por el Protocolo de medidas para garantizar la calidad y la integridad académicas en la modalidad de enseñanza presencial de UNEATLANTICO. El régimen aplicable a cada actividad se indicará en su enunciado."_
 2. **Para cada actividad evaluada:** fijar el régimen (A/B/D) usando la regla mecánica del apartado 1.
-3. **Para B:** declaración de autoría + declaración de uso + Doc compartido recomendado. **Para D:** exige lo mismo, con Doc compartido obligatorio.
+3. **Para B:** declaración de autoría + declaración de uso + documento compartido recomendado. **Para D:** exige lo mismo, con documento compartido obligatorio.
 4. **Para B y D:** añadir la consigna predeterminada del régimen, con la regla de especificación por actividad.
 5. **Anunciar al aula:** la verificación es **reactiva, no universal** — cualquiera puede ser auditado bajo indicio, pero el indicio nunca es prueba y la conversación sí funda la decisión.

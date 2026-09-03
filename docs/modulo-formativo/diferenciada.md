@@ -24,8 +24,8 @@ El enunciado de cada actividad evaluada dice explícitamente en cuál de los tre
 | Régimen | Qué permite | Qué tienes que hacer |
 |---|---|---|
 | **A — sin IA** | Ningún uso de IA, en ninguna fase. Excepción: apoyos de accesibilidad previamente autorizados. | Firmar la [declaración de autoría](../plantillas/declaracion-autoria.md). |
-| **B — IA como medio** | IA como medio; el trabajo se evalúa con independencia de la herramienta usada. | Firmar la declaración de autoría. Rellenar la [declaración de uso de IA](../plantillas/declaracion-uso-ia.md) (herramienta + finalidad + fase). Trabajar en el Doc compartido desde el primer día, no pegar un documento final. |
-| **D — IA como objeto evaluado** | IA como objeto; lo que se evalúa es tu interacción con la herramienta (auditar, criticar, corregir, reconstruir). | Lo mismo que en B, con la trazabilidad pasiva **obligatoria** (no recomendada): el Doc compartido es parte de lo evaluable. Además, tienes que poder explicar y reconstruir todo el proceso de interacción con la IA. |
+| **B — IA como medio** | IA como medio; el trabajo se evalúa con independencia de la herramienta usada. | Firmar la declaración de autoría. Rellenar la [declaración de uso de IA](../plantillas/declaracion-uso-ia.md) (herramienta + finalidad + fase). Trabajar en el documento compartido desde el primer día, no pegar un documento final. |
+| **D — IA como objeto evaluado** | IA como objeto; lo que se evalúa es tu interacción con la herramienta (auditar, criticar, corregir, reconstruir). | Lo mismo que en B, con la trazabilidad pasiva **obligatoria** (no recomendada): el documento compartido es parte de lo evaluable. Además, tienes que poder explicar y reconstruir todo el proceso de interacción con la IA. |
 
 Lo que cambia entre B y D no es cuánta IA usas, sino **qué se evalúa**: en B se evalúa el producto (la IA es solo el medio), en D se evalúa cómo usaste la IA (la IA es el objeto). Si la consigna deja ambiguo en cuál estás, pregunta antes de empezar — después no se puede reclasificar.
 
@@ -42,7 +42,7 @@ La defensa oral es la conversación que verifica autoría efectiva cuando hay un
 
 **Lo que NO se te puede pedir:** un log reconstruido a mano de cada interacción con la IA, una declaración exhaustiva palabra por palabra, o responder todas las preguntas a la vez. La declaración de uso que firmaste ya deja constancia mínima (herramienta + finalidad + fase); la defensa es para verificar que lo declarado cuadra con lo que puedes explicar.
 
-**Cómo prepararse:** la defensa no se prepara el día antes. Se prepara trabajando de forma que las decisiones del trabajo sean tuyas durante la elaboración: si pediste a la IA un análisis, lo revisaste y lo reescribiste con tu criterio (no solo lo aceptaste); si generaste código, lo entiendes y lo sabes modificar; si la IA te dio una estructura, la elegiste entre varias opciones. Trabajar en el Doc compartido desde el primer día ayuda — el histórico es tu evidencia de proceso, no un trámite.
+**Cómo prepararse:** la defensa no se prepara el día antes. Se prepara trabajando de forma que las decisiones del trabajo sean tuyas durante la elaboración: si pediste a la IA un análisis, lo revisaste y lo reescribiste con tu criterio (no solo lo aceptaste); si generaste código, lo entiendes y lo sabes modificar; si la IA te dio una estructura, la elegiste entre varias opciones. Trabajar en el documento compartido desde el primer día ayuda — el histórico es tu evidencia de proceso, no un trámite.
 
 **Defensa reactiva vs. defensa obligatoria:** en asignaturas ordinarias la defensa es reactiva (se abre solo bajo indicio, no a todos). En TFG/TFM/tesis es obligatoria por diseño académico, cubre la reconstrucción del proceso completo y la puedes esperar siempre — ver la [guía para dirección](ampliacion.md#pieza-a--guía-para-dirección-de-tfgtfmtesis) si tu caso es un TFG/TFM/tesis.
 
@@ -53,7 +53,7 @@ La frontera: los seis arquetipos son actos afirmativos del alumno, no síntomas 
 Los seis arquetipos desde el alumno (cómo NO caer en cada uno):
 
 1. **Copia literal o sustitución completa.** No entregues trabajo hecho por IA en su totalidad o en secciones enteras. Si la IA redactó un párrafo y tú lo dejaste sin reelaboración crítica, eso es arquetipo 1 — aunque el resto del trabajo sea tuyo.
-2. **Fabricación de evidencia de proceso.** No falsifiques el histórico del Doc compartido, no crees versiones intermedias artificiales después de terminado, no manipules timestamps. La evidencia de proceso es lo que sostiene el régimen D; falsearla es fabricar la base misma del régimen.
+2. **Fabricación de evidencia de proceso.** No falsifiques el histórico del documento compartido, no crees versiones intermedias artificiales después de terminado, no manipules timestamps. La evidencia de proceso es lo que sostiene el régimen D; falsearla es fabricar la base misma del régimen.
 3. **Uso desproporcionado al régimen.** Si estás en B, la IA es medio (defendible y reconstruible); usar IA para análisis de fondo no declarados cruza al régimen D sin estar declarado. Si te das cuenta en medio del trabajo, **corrige la declaración** — la declaración incompleta corregida no es fraude, es deuda que se resuelve conversando.
 4. **Evasión activa de verificación.** No ocultes, no niegues el uso al ser preguntado, no inventes excusas si te piden el enlace del chat declarado. Si lo borraste o no lo tienes, dilo — la conversación posterior distingue evaluación negativa de fraude; la evasión activa sí es arquetipo.
 5. **Colusión organizada.** No orquestes con otros alumnos la personalización de una misma salida para evadir detección por similitud. Trabajar juntos es legítimo; orquestar outputs individualizables para parecer autoría independiente no lo es.
