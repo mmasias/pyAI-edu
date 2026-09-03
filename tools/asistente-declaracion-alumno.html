@@ -105,13 +105,9 @@
   <header>
     <div>
       <h1>Asistente de declaración de autoría y uso de IA</h1>
-      <p>Redacta la declaración de autoría y, si el régimen lo exige, la declaración de uso de IA. El régimen lo fija la consigna de la actividad, no se elige aquí. Herramienta personal, sin conexión ni almacenamiento externo. Con "Cargar" se retoma un <code>.txt</code> descargado antes.</p>
+      <p>Redacta la declaración de autoría y, si el régimen lo exige, la declaración de uso de IA. El régimen lo fija la consigna de la actividad, no se elige aquí. Herramienta personal, sin conexión ni almacenamiento externo.</p>
     </div>
-    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
-      <button class="reset-btn" onclick="document.getElementById('loadFile').click()">Cargar (.txt)</button>
-      <input type="file" id="loadFile" accept=".txt,text/plain" style="display:none" onchange="onLoadFile(event)">
-      <div id="resetControl"><button class="reset-btn" onclick="askReset()">Empezar de nuevo</button></div>
-    </div>
+    <div id="resetControl"><button class="reset-btn" onclick="askReset()">Empezar de nuevo</button></div>
   </header>
   <div class="layout">
     <nav class="stepper" id="stepper"></nav>
@@ -485,52 +481,12 @@ ${reg!=='A' ? '<h2>Declaraci&oacute;n de uso de inteligencia artificial</h2>' + 
 </body></html>`;
   triggerDownload(new Blob(['﻿', html], {type:'application/msword'}), safeFilename()+'.doc');
 }
-const BLOB_MARKER = '--- datos del asistente (no editar) ---';
-
-function encodeState(){
-  const payload = { v:1, datos:state.datos, autoria:state.autoria, uso:state.uso };
-  return btoa(encodeURIComponent(JSON.stringify(payload)));
-}
-
 function downloadTxt(){
   const reg = state.datos.regimen || 'B';
   let text = 'DECLARACIÓN DE AUTORÍA\n\n'+state.out.autoriaTexto;
   if(reg!=='A') text += '\n\n\nDECLARACIÓN DE USO DE IA\n\n'+state.out.usoTexto;
-  text += '\n\n\n'+BLOB_MARKER+'\n'+encodeState()+'\n';
   triggerDownload(new Blob([text], {type:'text/plain;charset=utf-8'}), safeFilename()+'.txt');
 }
-
-function onLoadFile(ev){
-  const file = ev.target.files && ev.target.files[0];
-  ev.target.value = '';
-  if(!file) return;
-  const reader = new FileReader();
-  reader.onload = ()=> loadFicha(String(reader.result));
-  reader.readAsText(file);
-}
-
-function loadFicha(text){
-  const idx = text.indexOf(BLOB_MARKER);
-  if(idx === -1){ alert('Ese .txt no lleva el bloque de datos del asistente. Solo se pueden recargar los .txt descargados desde aquí.'); return; }
-  const b64 = text.slice(idx + BLOB_MARKER.length).trim().split(/\s+/)[0];
-  let payload;
-  try { payload = JSON.parse(decodeURIComponent(atob(b64))); }
-  catch(e){ alert('El bloque de datos está dañado y no se puede leer.'); return; }
-  if(!payload || payload.v !== 1){ alert('El .txt es de una versión distinta del asistente. Se cargará lo que sea compatible.'); }
-  const fresh = freshState();
-  state = {
-    step: STEPS.length,
-    prefilled: { regimen:false },
-    datos:   Object.assign(fresh.datos,   payload.datos   || {}),
-    autoria: Object.assign(fresh.autoria, payload.autoria || {}),
-    uso:     Object.assign(fresh.uso,     payload.uso     || {}),
-    out:     fresh.out
-  };
-  generateTexts();
-  render();
-  window.scrollTo({top:0, behavior:'smooth'});
-}
-
 function triggerDownload(blob, filename){
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
