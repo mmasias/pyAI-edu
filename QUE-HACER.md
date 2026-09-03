@@ -4,7 +4,7 @@
 
 | Guía docente | Regímenes definidos |
 |---|---|
-| En las guías docentes **ya está incluido** lo siguiente:<br><sub>_Esta asignatura se rige por el Protocolo de medidas para garantizar la calidad y la integridad académicas en la modalidad de enseñanza presencial de UNEATLANTICO. El régimen aplicable a cada actividad se indicará en su enunciado._</sub> | Sin IA<br>IA como medio<br>IA como objeto evaluado |
+| En las guías docentes **ya está incluido** lo siguiente:<br><sub>_Esta asignatura se rige por el Protocolo de medidas para garantizar la calidad y la integridad académicas<br>en la modalidad de enseñanza presencial de UNEATLANTICO. El régimen aplicable a cada actividad se indicará en su enunciado._</sub> | Sin IA<br>IA como medio<br>IA como objeto evaluado |
 
 ## 1. Antes de cada actividad evaluable
 
