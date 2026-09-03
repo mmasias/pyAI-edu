@@ -26,7 +26,7 @@ Copiar en el enunciado de la actividad el bloque correspondiente al régimen fij
 
 Cuando se autoriza el uso de IA solo para una subtarea acotada (por ejemplo, traducir una fuente), esa excepción se declara en la consigna. No eleva el régimen de la actividad completa.
 
-> Para esto puede apoyarse en las **[consignas predeterminadas](docs/plantillas/consigna-abd.md)** o utilizar el **[Asistente de redacción de consignas](tools/asistente-consignas-profesor.md)**.
+> Para esto puede apoyarse en las **[consignas predeterminadas](docs/plantillas/consigna-abd.md)** o utilizar el **[Asistente de redacción de consignas](tools/guia-consignas.md)**.
 
 ## 2. Al recoger las entregas
 
@@ -40,7 +40,7 @@ Cuando se autoriza el uso de IA solo para una subtarea acotada (por ejemplo, tra
 - **Declaración de uso de IA**: herramienta, finalidad y fase en que intervino. Plantilla: [`declaracion-uso-ia.md`](docs/plantillas/declaracion-uso-ia.md).
 - **Documento compartido**: el trabajo se redacta en un documento compartido con el profesorado desde el primer día; no se entrega un documento pegado al final. El historial de versiones es el registro del proceso.
 
-El alumnado puede redactar las dos declaraciones con el [Asistente de declaración de autoría y uso de IA](tools/asistente-declaracion-alumno.md). Si la consigna se generó con el Asistente de redacción de consignas, ya lleva el enlace con el régimen puesto.
+El alumnado puede redactar las dos declaraciones con el [Asistente de declaración de autoría y uso de IA](tools/guia-declaracion.md). Si la consigna se generó con el Asistente de redacción de consignas, ya lleva el enlace con el régimen puesto.
 
 ## 3. Si una entrega no cuadra
 

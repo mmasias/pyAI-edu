@@ -9,7 +9,7 @@ Estos dos HTML son el **primer intento** de aterrizar el Protocolo V9 en algo op
 
 Las herramientas vigentes están en [`tools/`](../../tools/):
 
-- **[Asistente de redacción de consignas](../../tools/asistente-consignas-profesor.md)** (profesorado) — tres regímenes A/B/D, una pregunta de clasificación (medio/objeto), sin VERITAS ni RICE, consigna alineada con [`docs/plantillas/consigna-abd.md`](../plantillas/consigna-abd.md).
-- **[Asistente de declaración de autoría y uso de IA](../../tools/asistente-declaracion-alumno.md)** (alumnado) — declaraciones alineadas con [`docs/plantillas/declaracion-autoria.md`](../plantillas/declaracion-autoria.md) y [`docs/plantillas/declaracion-uso-ia.md`](../plantillas/declaracion-uso-ia.md).
+- **[Asistente de redacción de consignas](../../tools/guia-consignas.md)** (profesorado) — tres regímenes A/B/D, una pregunta de clasificación (medio/objeto), sin VERITAS ni RICE, consigna alineada con [`docs/plantillas/consigna-abd.md`](../plantillas/consigna-abd.md).
+- **[Asistente de declaración de autoría y uso de IA](../../tools/guia-declaracion.md)** (alumnado) — declaraciones alineadas con [`docs/plantillas/declaracion-autoria.md`](../plantillas/declaracion-autoria.md) y [`docs/plantillas/declaracion-uso-ia.md`](../plantillas/declaracion-uso-ia.md).
 
 Recorrido de cómo se pasó de uno a otro: [discussions#35](https://github.com/mmasias/pyAI-edu/discussions/35).
