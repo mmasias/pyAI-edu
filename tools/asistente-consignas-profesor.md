@@ -1,6 +1,8 @@
 # Asistente de redacción de consignas
 
-Herramienta para fijar el régimen de uso de IA de una actividad (A / B / D) y generar la consigna lista para pegar en el enunciado. Archivo único, sin conexión: se descarga [`asistente-consignas-profesor.html`](asistente-consignas-profesor.html) y se abre en el navegador.
+Herramienta para fijar el régimen de uso de IA de una actividad (A / B / D) y generar la consigna lista para pegar en el enunciado.
+
+**[Abrir el asistente](https://mmasias.github.io/pyAI-edu/tools/asistente-consignas-profesor.html)** — se abre en el navegador, no necesita instalar nada y funciona sin conexión una vez cargado. Nada de lo que escribas se guarda ni se envía a ningún sitio: al cerrar la pestaña se pierde lo que no hayas descargado.
 
 ## Cómo funciona, paso a paso
 
