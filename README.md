@@ -6,15 +6,14 @@ Asistente para el profesorado sobre uso responsable de inteligencia artificial e
 
 | Si quieres... | Lee |
 |---|---|
-| Saber qué hacer, sin explicaciones | [`QUE-HACER.md`](QUE-HACER.md) — hoja de acción, solo los pasos |
+| Saber qué hacer | [`QUE-HACER.md`](QUE-HACER.md) — hoja de acción, solo los pasos |
 | Aplicar el régimen el primer día de curso, con el porqué de cada regla condensado | [`RESUMEN-OPERATIVO.md`](RESUMEN-OPERATIVO.md) — una página, todo lo operativo |
-| Entender por qué una regla es como es | [`docs/articulos/`](docs/articulos/) — un artículo por punto del cribado (P0-P10) |
 | Usar una plantilla ya lista (declaraciones, consigna, acuerdo TFG/TFM...) | [`docs/plantillas/`](docs/plantillas/) |
-| Ver qué falta y en qué orden se construye | [`planDeAccion.md`](planDeAccion.md) |
-| Consultar el corpus normativo (UE, España, AEPD, NIST, UNESCO...) | [`docs/README.md`](docs/README.md) |
-| Leer el debate completo que originó todo esto | [discussions#1](https://github.com/mmasias/pyAI-edu/discussions/1) |
 | Ver el Asistente de redacción de consignas | [Asistente](tools/asistente-consignas-profesor.html) / [Explicación](tools/asistente-consignas-profesor.md)
 | Ver el Asistente de declaración del alumno | [Asistente](tools/asistente-declaracion-alumno.html) / [Explicación](tools/asistente-declaracion-alumno.md)
+| Ver qué falta y en qué orden se construye | [`planDeAccion.md`](planDeAccion.md) |
+| Consultar el corpus normativo (UE, España, AEPD, NIST, UNESCO...) | [`docs/README.md`](docs/README.md) |
+| Entender por qué una regla es como es | [`docs/articulos/`](docs/articulos/) — un artículo por punto del cribado (P0-P10) |
 
 ## Audiencia
 
