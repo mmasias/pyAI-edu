@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ficha de régimen de IA — wizard</title>
+<style>
+  :root{
+    --paper: #EEF0EA;
+    --paper-2: #F7F8F4;
+    --card: #FFFFFF;
+    --ink: #1E221D;
+    --ink-soft: #565A50;
+    --ink-faint: #8B8F82;
+    --line: #C9CCC0;
+    --line-strong: #A9AD9C;
+    --accent: #1F4E5F;
+    --accent-ink: #0E2A33;
+    --a-gray: #6B6A63;
+    --a-blue: #2E6E8E;
+    --a-amber: #A66A1F;
+    --a-red: #B23A2E;
+    --radius: 6px;
+    font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--paper);color:var(--ink);}
+  body{padding:32px 20px 80px;}
+  .wrap{max-width:1040px;margin:0 auto;}
+  header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:22px;flex-wrap:wrap;}
+  header h1{font-size:20px;font-weight:600;margin:0 0 4px;letter-spacing:.2px;}
+  header p{margin:0;color:var(--ink-soft);font-size:13px;max-width:520px;line-height:1.5;}
+  .reset-btn{background:none;border:1px solid var(--line-strong);color:var(--ink-soft);font-size:12px;padding:7px 12px;border-radius:var(--radius);cursor:pointer;white-space:nowrap;}
+  .reset-btn:hover{border-color:var(--accent);color:var(--accent);}
+
+  .layout{display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:start;}
+  @media (max-width:760px){.layout{grid-template-columns:1fr;}}
+
+  .stepper{display:flex;flex-direction:column;gap:2px;position:sticky;top:20px;}
+  @media (max-width:760px){.stepper{position:static;flex-direction:row;flex-wrap:wrap;}}
+  .step-tab{display:flex;align-items:center;gap:10px;padding:10px 10px;border:1px solid transparent;border-radius:var(--radius);cursor:pointer;text-align:left;background:none;font-size:13px;color:var(--ink-soft);}
+  .step-tab .num{font-family:ui-monospace,"SF Mono","Cascadia Code",Consolas,monospace;font-size:11px;width:20px;height:20px;border-radius:50%;border:1px solid var(--line-strong);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .step-tab.active{background:var(--card);border-color:var(--line);color:var(--ink);font-weight:600;}
+  .step-tab.active .num{background:var(--accent);border-color:var(--accent);color:#fff;}
+  .step-tab.done .num{background:var(--paper-2);border-color:var(--a-blue);color:var(--a-blue);}
+  .step-tab:hover{color:var(--ink);}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:26px 28px;min-height:420px;}
+  .card h2{font-size:16px;margin:0 0 4px;font-weight:600;}
+  .card .sub{color:var(--ink-soft);font-size:12.5px;margin:0 0 20px;line-height:1.5;}
+
+  .field{margin-bottom:16px;}
+  .field label{display:block;font-size:12.5px;font-weight:600;color:var(--ink);margin-bottom:5px;}
+  .field .hint{display:block;font-weight:400;color:var(--ink-faint);font-size:11.5px;margin-top:3px;}
+  input[type=text], input[type=number], input[type=date], textarea, select{
+    width:100%;border:1px solid var(--line-strong);border-radius:4px;padding:8px 10px;font-size:13px;
+    font-family:inherit;color:var(--ink);background:var(--paper-2);
+  }
+  textarea{min-height:64px;resize:vertical;line-height:1.5;}
+  input:focus, textarea:focus, select:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent);}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;}
+  @media (max-width:600px){.row2,.row3{grid-template-columns:1fr;}}
+
+  .radios{display:flex;gap:14px;flex-wrap:wrap;}
+  .radios label{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:400;}
+
+  .check-list{display:flex;flex-direction:column;gap:8px;}
+  .check-list label{display:flex;align-items:flex-start;gap:8px;font-size:13px;font-weight:400;line-height:1.4;}
+  .check-list input{margin-top:3px;}
+
+  .fase-block{border:1px solid var(--line);border-radius:6px;padding:14px 16px;margin-bottom:12px;background:var(--paper-2);}
+  .fase-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;}
+  .fase-head input[type=text]{font-weight:600;border:none;background:none;padding:2px 0;font-size:13.5px;}
+  .fase-head input[type=text]:focus{outline:none;border-bottom:1px solid var(--accent);}
+  .fase-checks{display:flex;gap:18px;margin-bottom:8px;flex-wrap:wrap;}
+  .fase-checks label{display:flex;align-items:center;gap:6px;font-size:12.5px;}
+  .rm-fase{background:none;border:none;color:var(--a-red);font-size:11px;cursor:pointer;padding:2px 6px;}
+  .add-fase{background:none;border:1px dashed var(--line-strong);color:var(--ink-soft);border-radius:4px;padding:8px;width:100%;font-size:12.5px;cursor:pointer;}
+  .add-fase:hover{border-color:var(--accent);color:var(--accent);}
+
+  .regimen-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px;}
+  @media (max-width:600px){.regimen-grid{grid-template-columns:1fr;}}
+  .regimen-card{border:1px solid var(--line);border-radius:6px;padding:14px;cursor:pointer;position:relative;background:var(--paper-2);}
+  .regimen-card.selected{border-color:var(--accent);background:#fff;box-shadow:inset 0 0 0 1px var(--accent);}
+  .regimen-card.suggested::after{content:"sugerido";position:absolute;top:10px;right:12px;font-size:10px;color:var(--accent);font-weight:600;letter-spacing:.3px;text-transform:uppercase;}
+  .regimen-card h3{margin:0 0 6px;font-size:13.5px;display:flex;align-items:center;gap:8px;}
+  .regimen-card p{margin:0;font-size:12px;color:var(--ink-soft);line-height:1.5;}
+  .stamp{
+    font-family:ui-monospace,"SF Mono","Cascadia Code",Consolas,monospace;
+    font-weight:700;font-size:13px;width:26px;height:26px;border-radius:5px;
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+    border:2px solid; transform:rotate(-3deg);
+  }
+  .stamp.A{color:var(--a-gray);border-color:var(--a-gray);}
+  .stamp.B{color:var(--a-blue);border-color:var(--a-blue);}
+  .stamp.C{color:var(--a-amber);border-color:var(--a-amber);}
+  .stamp.D{color:var(--a-red);border-color:var(--a-red);}
+  .stamp.big{width:40px;height:40px;font-size:18px;}
+
+  .info-box{background:var(--paper-2);border:1px solid var(--line);border-radius:6px;padding:12px 14px;font-size:12px;color:var(--ink-soft);line-height:1.6;margin-bottom:18px;}
+  .info-box strong{color:var(--ink);}
+
+  .out-header{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+  .out-header .txt h3{margin:0;font-size:14px;}
+  .out-header .txt p{margin:2px 0 0;font-size:12px;color:var(--ink-soft);}
+
+  .btnrow{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 22px;}
+  .btn{border:1px solid var(--line-strong);background:var(--paper-2);color:var(--ink);font-size:12.5px;padding:8px 14px;border-radius:5px;cursor:pointer;}
+  .btn:hover{border-color:var(--accent);color:var(--accent);}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;}
+  .btn.primary:hover{background:var(--accent-ink);border-color:var(--accent-ink);color:#fff;}
+  .toast{display:inline-block;font-size:12px;color:var(--a-blue);margin-left:6px;opacity:0;transition:opacity .3s;}
+  .toast.show{opacity:1;}
+
+  footer.nav{display:flex;justify-content:space-between;max-width:1040px;margin:22px auto 0;padding-left:224px;}
+  @media (max-width:760px){footer.nav{padding-left:0;}}
+  .navbtn{border:1px solid var(--line-strong);background:var(--card);padding:10px 20px;border-radius:6px;font-size:13px;cursor:pointer;color:var(--ink);}
+  .navbtn.primary{background:var(--accent);border-color:var(--accent);color:#fff;}
+  .navbtn:disabled{opacity:.35;cursor:not-allowed;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Ficha de régimen de IA</h1>
+      <p>Convierte la secuencia de decisión del Anexo A en un cuestionario y redacta la ficha interna y la consigna final. Herramienta personal, sin conexión ni almacenamiento externo: al cerrar la pestaña se pierde lo que no hayas descargado.</p>
+    </div>
+    <div id="resetControl"><button class="reset-btn" onclick="askReset()">Nueva ficha</button></div>
+  </header>
+  <div class="layout">
+    <nav class="stepper" id="stepper"></nav>
+    <div class="card" id="card"></div>
+  </div>
+  <footer class="nav">
+    <button class="navbtn" id="btnBack" onclick="goStep(state.step-1)">Atrás</button>
+    <button class="navbtn primary" id="btnNext" onclick="goStep(state.step+1)">Siguiente</button>
+  </footer>
+</div>
+
+<script>
+/* ---------- estado ---------- */
+const STEPS = [
+  {id:1, label:'Identificación'},
+  {id:2, label:'Finalidad y desempeño'},
+  {id:3, label:'Usos por fase'},
+  {id:4, label:'Régimen'},
+  {id:5, label:'Funcionalidades y evidencias'},
+  {id:6, label:'Resultado'}
+];
+
+function freshState(){
+  return {
+    step: 1,
+    id: { titulacion:'', asignatura:'', actividad:'', docente:'', curso:'', modalidad:'Individual', peso:'', complejo:false, esTFG:false, fecha: new Date().toISOString().slice(0,10) },
+    fin: { resultados:'', competencias:'', producto:'', desempeno:'', condiciones:[], condicionOtra:'' },
+    fases: [ { id:1, nombre:'Actividad completa', instrumental:false, conceptual:false, sustantivo:false, condiciones:'' } ],
+    faseCounter: 1,
+    regimen: { sustantivoLimitado: null, elegido: null, justificacion:'', justificacionFases:'' },
+    func: { autorizadas:'', restringidas:'', noAutorizadas:'', evidencias:'', comunicacion:'Campus virtual', defensa:'', finalidadIntegracion:'' },
+    out: { ficha:'', consigna:'', generated:false }
+  };
+}
+let state = freshState();
+
+const CONDICIONES_OPTIONS = [
+  'Comprensión o dominio conceptual autónomo.',
+  'Razonamiento, argumentación o interpretación propios.',
+  'Toma de decisiones o desempeño profesional autónomo.',
+  'Expresión escrita u oral propia.',
+  'Producción metodológica, analítica o creativa propia.'
+];
+
+const REGIMEN_INFO = {
+  A: { nombre:'Actividad sin uso de inteligencia artificial',
+       criterio:'La actividad exige desempeño autónomo sin IA y no autoriza ningún uso instrumental, conceptual o sustantivo.',
+       doc:'Declaración de autoría. Los apoyos de accesibilidad autorizados podrán generar otras evidencias, pero no un RICE.' },
+  B: { nombre:'Uso instrumental limitado',
+       criterio:'Solo se autorizan usos instrumentales expresos, sin incidencia en el contenido intelectual.',
+       doc:'Declaración de autoría + declaración de uso de IA + VERITAS básico + RICE sintético.' },
+  C: { nombre:'Uso asistido y supervisado',
+       criterio:'Se autorizan usos instrumentales y conceptuales supervisados; cualquier uso sustantivo se limita a analizar o corregir críticamente outputs de IA.',
+       doc:'Declaración de autoría + declaración de uso de IA + VERITAS íntegro + RICE detallado + evidencias relevantes y suficientes.' },
+  D: { nombre:'Inteligencia artificial integrada como objeto, medio o competencia evaluada',
+       criterio:'La IA forma parte explícita del objeto, medio o competencia evaluada y se autorizan usos sustantivos bajo control.',
+       doc:'Declaración de autoría + declaración de uso de IA + VERITAS íntegro + RICE detallado + evidencias intermedias y finales para reconstrucción completa.' }
+};
+
+/* ---------- motor de decisión ---------- */
+function anyUso(prop){ return state.fases.some(f => f[prop]); }
+
+function regimenSugerido(){
+  const inst = anyUso('instrumental'), conc = anyUso('conceptual'), sus = anyUso('sustantivo');
+  if(!inst && !conc && !sus) return 'A';
+  if(inst && !conc && !sus) return 'B';
+  if(!sus) return 'C';
+  // hay uso sustantivo: depende de si está limitado a analizar/auditar/validar/corregir resultados de IA
+  if(state.regimen.sustantivoLimitado === false) return 'D';
+  return 'C';
+}
+
+/* ---------- render raíz ---------- */
+function render(){
+  renderStepper();
+  renderCard();
+  document.getElementById('btnBack').disabled = state.step===1;
+  document.getElementById('btnNext').textContent = state.step===6 ? 'Ir al inicio' : 'Siguiente';
+}
+
+function renderStepper(){
+  const el = document.getElementById('stepper');
+  el.innerHTML = '';
+  STEPS.forEach(s=>{
+    const b = document.createElement('button');
+    b.className = 'step-tab' + (s.id===state.step?' active':'') + (s.id<state.step?' done':'');
+    b.innerHTML = '<span class="num">'+s.id+'</span><span>'+s.label+'</span>';
+    b.onclick = ()=>goStep(s.id);
+    el.appendChild(b);
+  });
+}
+
+function goStep(n){
+  if(n<1) n=1;
+  if(n>6){ state = freshState(); render(); window.scrollTo({top:0,behavior:'smooth'}); return; }
+  state.step = n;
+  if(n===6) generateTexts();
+  render();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function askReset(){
+  const el = document.getElementById('resetControl');
+  el.innerHTML = `
+    <span style="font-size:12px;color:var(--ink-soft);margin-right:8px;">¿Reiniciar? Se perderá lo que no hayas descargado.</span>
+    <button class="reset-btn" onclick="doReset()" style="border-color:var(--a-red);color:var(--a-red);margin-right:6px;">Confirmar</button>
+    <button class="reset-btn" onclick="renderResetBtn()">Cancelar</button>
+  `;
+}
+function doReset(){
+  state = freshState();
+  render();
+  renderResetBtn();
+}
+function renderResetBtn(){
+  document.getElementById('resetControl').innerHTML = '<button class="reset-btn" onclick="askReset()">Nueva ficha</button>';
+}
+
+/* ---------- helpers de campo ---------- */
+function field(html){ const d=document.createElement('div'); d.className='field'; d.innerHTML=html; return d; }
+
+function bindText(root, selector, getter, setter){
+  const el = root.querySelector(selector);
+  if(!el) return;
+  el.value = getter();
+  el.oninput = (e)=> setter(e.target.value);
+}
+
+/* ---------- STEP 1 ---------- */
+function renderStep1(card){
+  card.innerHTML = `
+    <h2>1. Identificación de la actividad</h2>
+    <p class="sub">Estos datos encabezan la ficha interna. No se usan para calcular el régimen.</p>
+    <div class="row2">
+      <div class="field"><label>Titulación</label><input id="titulacion" type="text" placeholder="Grado / máster / doctorado"></div>
+      <div class="field"><label>Asignatura / materia</label><input id="asignatura" type="text"></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label>Actividad de evaluación</label><input id="actividad" type="text"></div>
+      <div class="field"><label>Responsable docente / equipo</label><input id="docente" type="text"></div>
+    </div>
+    <div class="row3">
+      <div class="field"><label>Curso y grupo</label><input id="curso" type="text"></div>
+      <div class="field"><label>Modalidad</label>
+        <select id="modalidad">
+          <option>Individual</option><option>En parejas</option><option>En grupo</option><option>Mixta</option>
+        </select>
+      </div>
+      <div class="field"><label>Peso en la calificación (%)</label><input id="peso" type="number" min="0" max="100"></div>
+    </div>
+    <div class="field">
+      <label><input type="checkbox" id="complejo"> ¿Trabajo complejo o por fases?
+      <span class="hint">Si está marcado, el paso 3 pedirá clasificar el uso de IA fase por fase; si no, se clasifica la actividad como un único bloque.</span></label>
+    </div>
+    <div class="field">
+      <label><input type="checkbox" id="esTFG"> ¿Es TFG, TFM o tesis doctoral?
+      <span class="hint">Activa la nota de trazabilidad reforzada en el régimen D.</span></label>
+    </div>
+  `;
+  bindText(card,'#titulacion',()=>state.id.titulacion, v=>state.id.titulacion=v);
+  bindText(card,'#asignatura',()=>state.id.asignatura, v=>state.id.asignatura=v);
+  bindText(card,'#actividad',()=>state.id.actividad, v=>state.id.actividad=v);
+  bindText(card,'#docente',()=>state.id.docente, v=>state.id.docente=v);
+  bindText(card,'#curso',()=>state.id.curso, v=>state.id.curso=v);
+  bindText(card,'#peso',()=>state.id.peso, v=>state.id.peso=v);
+  card.querySelector('#modalidad').value = state.id.modalidad;
+  card.querySelector('#modalidad').onchange = e=> state.id.modalidad = e.target.value;
+  const complejo = card.querySelector('#complejo');
+  complejo.checked = state.id.complejo;
+  complejo.onchange = e=>{ state.id.complejo = e.target.checked; };
+  const tfg = card.querySelector('#esTFG');
+  tfg.checked = state.id.esTFG;
+  tfg.onchange = e=> state.id.esTFG = e.target.checked;
+}
+
+/* ---------- STEP 2 ---------- */
+function renderStep2(card){
+  card.innerHTML = `
+    <h2>2. Finalidad evaluativa y desempeño</h2>
+    <p class="sub">Qué debe demostrar el estudiantado, con o sin IA.</p>
+    <div class="field"><label>Resultados de aprendizaje</label><textarea id="resultados"></textarea></div>
+    <div class="field"><label>Competencias</label><textarea id="competencias"></textarea></div>
+    <div class="field"><label>Producto o desempeño esperado</label><textarea id="producto"></textarea></div>
+    <div class="field"><label>Desempeño autónomo imprescindible</label><textarea id="desempeno" placeholder="Qué razonamientos, decisiones o destrezas deben ser propios"></textarea></div>
+    <div class="field">
+      <label>Condiciones que deben acreditarse sin mediación de IA</label>
+      <div class="check-list" id="condiciones"></div>
+    </div>
+  `;
+  bindText(card,'#resultados',()=>state.fin.resultados, v=>state.fin.resultados=v);
+  bindText(card,'#competencias',()=>state.fin.competencias, v=>state.fin.competencias=v);
+  bindText(card,'#producto',()=>state.fin.producto, v=>state.fin.producto=v);
+  bindText(card,'#desempeno',()=>state.fin.desempeno, v=>state.fin.desempeno=v);
+  const wrap = card.querySelector('#condiciones');
+  CONDICIONES_OPTIONS.forEach((c,i)=>{
+    const lab = document.createElement('label');
+    lab.innerHTML = `<input type="checkbox" data-i="${i}"> ${c}`;
+    const cb = lab.querySelector('input');
+    cb.checked = state.fin.condiciones.includes(c);
+    cb.onchange = e=>{
+      if(e.target.checked) state.fin.condiciones.push(c);
+      else state.fin.condiciones = state.fin.condiciones.filter(x=>x!==c);
+    };
+    wrap.appendChild(lab);
+  });
+  const otraLab = document.createElement('label');
+  otraLab.innerHTML = '<input type="text" id="condOtra" placeholder="Otra condición (opcional)" style="margin-top:2px;">';
+  wrap.appendChild(otraLab);
+  bindText(card,'#condOtra',()=>state.fin.condicionOtra, v=>state.fin.condicionOtra=v);
+}
+
+/* ---------- STEP 3 ---------- */
+function renderStep3(card){
+  card.innerHTML = `
+    <h2>3. Clasificación de usos ${state.id.complejo? 'por fase':''}</h2>
+    <p class="sub">Para cada ${state.id.complejo?'fase':'bloque'}, marque si se autoriza un uso instrumental, conceptual o sustantivo. Esto determina el régimen sugerido en el paso siguiente.</p>
+    <div id="fasesWrap"></div>
+    ${state.id.complejo? '<button class="add-fase" id="addFase">+ añadir fase</button>' : ''}
+  `;
+  const wrap = card.querySelector('#fasesWrap');
+  state.fases.forEach((f)=>{
+    const block = document.createElement('div');
+    block.className = 'fase-block';
+    block.innerHTML = `
+      <div class="fase-head">
+        <input type="text" data-field="nombre" value="${escapeAttr(f.nombre)}" ${state.id.complejo? '' : 'readonly'}>
+        ${state.id.complejo && state.fases.length>1 ? '<button class="rm-fase">quitar</button>' : ''}
+      </div>
+      <div class="fase-checks">
+        <label><input type="checkbox" data-field="instrumental"> Instrumental</label>
+        <label><input type="checkbox" data-field="conceptual"> Conceptual</label>
+        <label><input type="checkbox" data-field="sustantivo"> Sustantivo</label>
+      </div>
+      <textarea data-field="condiciones" placeholder="Condiciones o prohibición para esta fase (opcional)"></textarea>
+    `;
+    block.querySelector('[data-field=nombre]').oninput = e=> f.nombre = e.target.value;
+    ['instrumental','conceptual','sustantivo'].forEach(prop=>{
+      const cb = block.querySelector(`[data-field=${prop}]`);
+      cb.checked = f[prop];
+      cb.onchange = e=>{ f[prop]=e.target.checked; };
+    });
+    const cond = block.querySelector('[data-field=condiciones]');
+    cond.value = f.condiciones;
+    cond.oninput = e=> f.condiciones = e.target.value;
+    const rm = block.querySelector('.rm-fase');
+    if(rm) rm.onclick = ()=>{ state.fases = state.fases.filter(x=>x.id!==f.id); renderCard(); };
+    wrap.appendChild(block);
+  });
+  const addBtn = card.querySelector('#addFase');
+  if(addBtn) addBtn.onclick = ()=>{
+    state.faseCounter++;
+    state.fases.push({id:state.faseCounter, nombre:'Fase '+state.faseCounter, instrumental:false, conceptual:false, sustantivo:false, condiciones:''});
+    renderCard();
+  };
+}
+
+/* ---------- STEP 4 ---------- */
+function renderStep4(card){
+  const sugerido = regimenSugerido();
+  const necesitaPregunta = anyUso('sustantivo');
+  card.innerHTML = `
+    <h2>4. Determinación razonada del régimen</h2>
+    <p class="sub">Régimen sugerido a partir del paso 3: <strong>${sugerido}</strong>. Confírmelo o elija otro; la decisión pedagógica es siempre suya.</p>
+    ${necesitaPregunta? `
+    <div class="info-box">
+      <strong>Hay uso sustantivo marcado en alguna fase.</strong> ¿Ese uso se limita a analizar, auditar, validar o corregir críticamente resultados generados por IA?
+      <div class="radios" style="margin-top:8px;">
+        <label><input type="radio" name="susLimitado" value="si"> Sí, limitado a eso</label>
+        <label><input type="radio" name="susLimitado" value="no"> No, la IA interviene más ampliamente en el contenido</label>
+      </div>
+    </div>` : ''}
+    <div class="regimen-grid" id="regimenGrid"></div>
+    <div class="field"><label>Justificación pedagógica y evaluativa</label><textarea id="justif" placeholder="Por qué este régimen permite acreditar los resultados de aprendizaje"></textarea></div>
+    <div class="field"><label>Justificación por fases (si procede)</label><textarea id="justifFases"></textarea></div>
+  `;
+  if(necesitaPregunta){
+    const radios = card.querySelectorAll('[name=susLimitado]');
+    radios.forEach(r=>{
+      r.checked = (state.regimen.sustantivoLimitado===true && r.value==='si') || (state.regimen.sustantivoLimitado===false && r.value==='no');
+      r.onchange = e=>{ state.regimen.sustantivoLimitado = (e.target.value==='si'); renderCard(); };
+    });
+  }
+  const grid = card.querySelector('#regimenGrid');
+  ['A','B','C','D'].forEach(k=>{
+    const info = REGIMEN_INFO[k];
+    const div = document.createElement('div');
+    const isSel = state.regimen.elegido ? state.regimen.elegido===k : sugerido===k;
+    div.className = 'regimen-card' + (isSel?' selected':'') + (sugerido===k && !state.regimen.elegido ? ' suggested':'');
+    div.innerHTML = `<h3><span class="stamp ${k}">${k}</span> ${info.nombre}</h3><p>${info.criterio}</p>`;
+    div.onclick = ()=>{ state.regimen.elegido = k; renderCard(); };
+    grid.appendChild(div);
+  });
+  bindText(card,'#justif',()=>state.regimen.justificacion, v=>state.regimen.justificacion=v);
+  bindText(card,'#justifFases',()=>state.regimen.justificacionFases, v=>state.regimen.justificacionFases=v);
+}
+
+/* ---------- STEP 5 ---------- */
+function renderStep5(card){
+  const reg = state.regimen.elegido || regimenSugerido();
+  card.innerHTML = `
+    <h2>5. Funcionalidades, herramientas y evidencias</h2>
+    <p class="sub">Régimen activo: <span class="stamp ${reg}" style="display:inline-flex;vertical-align:middle;">${reg}</span> ${REGIMEN_INFO[reg].nombre}</p>
+    <div class="info-box"><strong>Instrumentos exigibles en este régimen:</strong> ${REGIMEN_INFO[reg].doc}</div>
+    <div class="field"><label>Funcionalidades autorizadas</label><textarea id="autorizadas" placeholder="Función y, si procede, herramienta"></textarea></div>
+    <div class="field"><label>Autorizadas con restricciones</label><textarea id="restringidas"></textarea></div>
+    <div class="field"><label>No autorizadas</label><textarea id="noAutorizadas" placeholder="Contenido, análisis o desempeño que debe ser propio"></textarea></div>
+    ${reg==='D' ? `<div class="field"><label>Finalidad de la integración</label><input id="finalidadIntegracion" type="text" placeholder="objeto de análisis / medio de producción / competencia evaluada"></div>` : ''}
+    <div class="field"><label>Evidencias a entregar o conservar</label><textarea id="evidencias"></textarea></div>
+    <div class="row2">
+      <div class="field"><label>Mecanismo de comunicación al estudiantado</label><input id="comunicacion" type="text"></div>
+      <div class="field"><label>Mecanismo de defensa o contraste (si procede)</label><input id="defensa" type="text"></div>
+    </div>
+  `;
+  bindText(card,'#autorizadas',()=>state.func.autorizadas, v=>state.func.autorizadas=v);
+  bindText(card,'#restringidas',()=>state.func.restringidas, v=>state.func.restringidas=v);
+  bindText(card,'#noAutorizadas',()=>state.func.noAutorizadas, v=>state.func.noAutorizadas=v);
+  bindText(card,'#evidencias',()=>state.func.evidencias, v=>state.func.evidencias=v);
+  bindText(card,'#comunicacion',()=>state.func.comunicacion, v=>state.func.comunicacion=v);
+  bindText(card,'#defensa',()=>state.func.defensa, v=>state.func.defensa=v);
+  if(reg==='D') bindText(card,'#finalidadIntegracion',()=>state.func.finalidadIntegracion, v=>state.func.finalidadIntegracion=v);
+}
+
+/* ---------- STEP 6 ---------- */
+function renderStep6(card){
+  const reg = state.regimen.elegido || regimenSugerido();
+  card.innerHTML = `
+    <h2>6. Resultado</h2>
+    <p class="sub">Ficha para su propio archivo y consigna lista para trasladar a la actividad. Puede editar ambos textos antes de exportar.</p>
+    <div class="out-header">
+      <span class="stamp big ${reg}">${reg}</span>
+      <div class="txt"><h3>Régimen ${reg} · ${REGIMEN_INFO[reg].nombre}</h3><p>${state.id.asignatura || 'Sin asignatura indicada'} — ${state.id.actividad || 'sin actividad indicada'}</p></div>
+    </div>
+    <div class="field"><label>Ficha interna (uso propio)</label><textarea id="fichaOut" style="min-height:220px;font-family:ui-monospace,Consolas,monospace;font-size:12px;"></textarea></div>
+    <div class="btnrow">
+      <button class="btn" onclick="copyField('fichaOut','t1')">Copiar ficha</button>
+      <span class="toast" id="t1">Copiado</span>
+    </div>
+    <div class="field"><label>Consigna final (para el estudiantado)</label><textarea id="consignaOut" style="min-height:260px;"></textarea></div>
+    <div class="btnrow">
+      <button class="btn" onclick="copyField('consignaOut','t2')">Copiar consigna</button>
+      <span class="toast" id="t2">Copiado</span>
+      <button class="btn" onclick="regenerate()">Regenerar desde el formulario</button>
+    </div>
+    <div class="btnrow">
+      <button class="btn primary" onclick="downloadWord()">Descargar Word (.doc)</button>
+      <button class="btn" onclick="downloadTxt()">Descargar .txt</button>
+    </div>
+  `;
+  const fEl = card.querySelector('#fichaOut');
+  fEl.value = state.out.ficha;
+  fEl.oninput = e=> state.out.ficha = e.target.value;
+  const cEl = card.querySelector('#consignaOut');
+  cEl.value = state.out.consigna;
+  cEl.oninput = e=> state.out.consigna = e.target.value;
+}
+
+function regenerate(){ generateTexts(); renderCard(); }
+
+function renderCard(){
+  const card = document.getElementById('card');
+  ({1:renderStep1,2:renderStep2,3:renderStep3,4:renderStep4,5:renderStep5,6:renderStep6})[state.step](card);
+}
+
+/* ---------- generación de textos ---------- */
+function condicionesTexto(){
+  const list = state.fin.condiciones.slice();
+  if(state.fin.condicionOtra) list.push(state.fin.condicionOtra);
+  return list.length ? list.join(' ') : '[sin condiciones marcadas]';
+}
+function fasesResumenTexto(){
+  const activas = state.fases.filter(f=>f.instrumental||f.conceptual||f.sustantivo).map(f=>f.nombre);
+  return activas.length ? activas.join(', ') : 'todas las fases indicadas';
+}
+
+function generateTexts(){
+  const reg = state.regimen.elegido || regimenSugerido();
+  state.regimen.elegido = reg;
+  state.out.ficha = buildFicha(reg);
+  state.out.consigna = buildConsigna(reg);
+  state.out.generated = true;
+}
+
+function buildFicha(reg){
+  const s = state, f = s.fin, i = s.id, r = s.regimen, fn = s.func;
+  const fasesTxt = s.fases.map(x=>`  - ${x.nombre}: instrumental=${x.instrumental?'sí':'no'}, conceptual=${x.conceptual?'sí':'no'}, sustantivo=${x.sustantivo?'sí':'no'}${x.condiciones? ' | condiciones: '+x.condiciones : ''}`).join('\n');
+  return [
+`FICHA — USO INTERNO DOCENTE (no destinada al estudiantado)`,
+`1. Identificación
+Titulación: ${i.titulacion||'—'}
+Asignatura/materia: ${i.asignatura||'—'}
+Actividad de evaluación: ${i.actividad||'—'}
+Responsable docente/equipo: ${i.docente||'—'}
+Curso y grupo: ${i.curso||'—'}
+Modalidad: ${i.modalidad}
+Peso en la calificación final: ${i.peso? i.peso+'%':'—'}
+¿Trabajo complejo o por fases?: ${i.complejo?'Sí':'No'}
+¿TFG/TFM/tesis doctoral?: ${i.esTFG?'Sí':'No'}
+Fecha de determinación: ${i.fecha}`,
+`2. Finalidad evaluativa
+Resultados de aprendizaje: ${f.resultados||'—'}
+Competencias: ${f.competencias||'—'}
+Producto o desempeño esperado: ${f.producto||'—'}
+Desempeño autónomo imprescindible: ${f.desempeno||'—'}
+Condiciones que deben acreditarse sin mediación de IA: ${condicionesTexto()}`,
+`3. Clasificación de usos por fase\n${fasesTxt}`,
+`4. Régimen
+Régimen seleccionado: ${reg} — ${REGIMEN_INFO[reg].nombre}
+Justificación pedagógica y evaluativa: ${r.justificacion||'—'}
+Justificación por fases: ${r.justificacionFases||'—'}`,
+`5. Funcionalidades, herramientas y límites
+Autorizadas: ${fn.autorizadas||'—'}
+Autorizadas con restricciones: ${fn.restringidas||'—'}
+No autorizadas: ${fn.noAutorizadas||'—'}`,
+`6. Instrumentos y evidencias exigibles
+${REGIMEN_INFO[reg].doc}
+Evidencias: ${fn.evidencias||'—'}`,
+`7. Comunicación al estudiantado
+Mecanismo de comunicación: ${fn.comunicacion||'—'}
+Mecanismo de defensa o contraste: ${fn.defensa||'—'}`
+  ].join('\n\n');
+}
+
+const CIERRE_COMUN = `La presentación de la actividad implica la aceptación de las condiciones de uso de inteligencia artificial indicadas en esta consigna. La persona autora asume la responsabilidad sobre la veracidad, integridad, autoría efectiva y trazabilidad del trabajo. La mera existencia de un indicio no acredita por sí sola un incumplimiento; cualquier revisión se realizará con valoración humana y con las garantías previstas en la normativa institucional.
+
+Referencia institucional: Reglamento Académico y del Alumno y demás normativa institucional aplicable.`;
+
+function buildConsigna(reg){
+  const s = state, fn = s.func, f = s.fin;
+  let body = '';
+  if(reg==='A'){
+    body = `Régimen aplicable. Esta actividad se somete al Régimen A. Actividad sin uso de inteligencia artificial.
+
+Condiciones de realización. No se autoriza el uso de funcionalidades de inteligencia artificial generativa en ninguna fase de la actividad. La persona estudiante deberá realizar de forma autónoma ${f.desempeno || '[indique los desempeños, productos o fases que deben ser propios]'}.
+
+Documentación. La entrega incorporará la declaración de autoría mediante el mecanismo institucional establecido.
+
+Accesibilidad y ajustes. Los apoyos de accesibilidad, ajustes razonables o adaptaciones institucionales previamente autorizados no se consideran una infracción de esta consigna y se aplicarán conforme a las condiciones comunicadas.
+
+Verificación. El profesorado podrá solicitar versiones intermedias, aclaraciones, una entrevista, una defensa o una demostración del proceso cuando resulte necesario para verificar la autoría efectiva.`;
+  } else if(reg==='B'){
+    body = `Régimen aplicable. Esta actividad se somete al Régimen B. Uso instrumental limitado.
+
+Usos permitidos. Se autoriza exclusivamente el uso instrumental de IA para ${fn.autorizadas || '[indique las funciones permitidas]'}. Solo podrán utilizarse funcionalidades y herramientas institucionalmente autorizadas.
+
+Usos no permitidos. No se autoriza la IA para generar, desarrollar o sustituir ${fn.noAutorizadas || '[indique el contenido intelectual que debe ser propio]'}.
+
+Documentación. La entrega incorporará la declaración de autoría y la declaración de uso de IA. El contenido utilizado deberá someterse a una aplicación básica de VERITAS y documentarse mediante un RICE sintético.
+
+Evidencias. Deberán entregarse o conservarse ${fn.evidencias || '[indique las evidencias exigidas]'}.
+
+Verificación e incumplimientos. El profesorado podrá solicitar aclaraciones o evidencias adicionales. El uso no autorizado, no declarado o que sustituya el desempeño propio se examinará conforme al protocolo y a la normativa institucional.`;
+  } else if(reg==='C'){
+    body = `Régimen aplicable. Esta actividad se somete al Régimen C. Uso asistido y supervisado.
+
+Usos permitidos. Se autoriza el uso supervisado de IA para ${fn.autorizadas || '[indique las funciones instrumentales y conceptuales permitidas]'} en las siguientes fases: ${fasesResumenTexto()}. Solo podrán utilizarse funcionalidades y herramientas institucionalmente autorizadas.
+
+Límite sustantivo. La IA no podrá sustituir la aportación intelectual de la persona autora en ${fn.noAutorizadas || '[indique análisis, argumentación, interpretación, resultados, conclusiones u otros]'}. Cualquier uso sustantivo quedará limitado, cuando la actividad lo prevea expresamente, a analizar, auditar, validar o corregir críticamente resultados generados por IA.
+
+Documentación. La entrega incorporará la declaración de autoría y la declaración de uso de IA. Se aplicará VERITAS de forma íntegra y se aportará un RICE detallado con evidencias relevantes y suficientes de las verificaciones, decisiones y reelaboraciones realizadas.
+
+Evidencias. Deberán entregarse o conservarse ${fn.evidencias || '[indique fuentes originales, versiones, prompts relevantes, contrastes, productos intermedios u otras]'}.
+
+Verificación e incumplimientos. El profesorado podrá solicitar aclaraciones, evidencias adicionales o una defensa. El uso no autorizado, no declarado o no validado se examinará conforme al protocolo y a la normativa institucional.`;
+  } else {
+    body = `Régimen aplicable. Esta actividad se somete al Régimen D. Inteligencia artificial integrada como objeto, medio o competencia evaluada.
+
+Finalidad de la integración. La IA forma parte de la actividad como ${fn.finalidadIntegracion || '[objeto de análisis / medio de producción / competencia evaluada]'}. Se autorizan las siguientes funciones y fases: ${fn.autorizadas || '[descríbalas]'}. Solo podrán utilizarse funcionalidades y herramientas institucionalmente autorizadas.
+
+Responsabilidad autoral. La persona estudiante deberá justificar las decisiones adoptadas, distinguir su aportación de la contribución de la herramienta y mantener el control intelectual sobre el proceso y el producto final.
+
+Documentación. La entrega incorporará la declaración de autoría y la declaración de uso de IA. Se aplicará VERITAS de forma íntegra y se aportará un RICE detallado.
+
+Evidencias reforzadas. Deberán incorporarse las iteraciones sucesivas, los productos intermedios, las versiones relevantes, las fuentes originales y las evidencias de contraste necesarias para reconstruir íntegramente el proceso.${state.id.esTFG? ' En TFG, TFM y tesis doctorales se aplicarán los requisitos reforzados establecidos.':''}
+
+Verificación e incumplimientos. El profesorado, la tutoría, la dirección, el tribunal o la comisión evaluadora podrán solicitar aclaraciones, evidencias adicionales o una defensa específica. Las insuficiencias o incoherencias se examinarán conforme al protocolo y a la normativa institucional.`;
+  }
+  return body + '\n\n' + CIERRE_COMUN;
+}
+
+/* ---------- utilidades ---------- */
+function escapeAttr(s){ return (s||'').replace(/"/g,'&quot;'); }
+
+function copyField(id, toastId){
+  const el = document.getElementById(id);
+  navigator.clipboard.writeText(el.value).then(()=>{
+    const t = document.getElementById(toastId);
+    t.classList.add('show');
+    setTimeout(()=>t.classList.remove('show'), 1400);
+  });
+}
+
+function safeFilename(){
+  const base = (state.id.asignatura||'ficha') + '_' + (state.id.actividad||'regimen_ia');
+  return base.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'_').replace(/^_+|_+$/g,'').slice(0,60) || 'ficha_regimen_ia';
+}
+
+function textToHtmlParagraphs(text){
+  return text.split(/\n\n+/).map(block=>{
+    const withBreaks = block.split('\n').map(l=>escapeHtml(l)).join('<br>');
+    return '<p>'+withBreaks+'</p>';
+  }).join('\n');
+}
+function escapeHtml(s){
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function downloadWord(){
+  const html = `<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head><meta charset='utf-8'><title>Ficha de régimen de IA</title>
+<style>
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#111;}
+h1{font-size:15pt;margin-bottom:2pt;}
+h2{font-size:12.5pt;margin-top:16pt;border-bottom:1px solid #999;padding-bottom:2pt;}
+p{margin:0 0 8pt 0;line-height:1.4;}
+</style></head>
+<body>
+<h1>Ficha de régimen de IA — ${escapeHtml(state.id.asignatura||'')}</h1>
+<h2>Ficha interna</h2>
+${textToHtmlParagraphs(state.out.ficha)}
+<h2>Consigna final para el estudiantado</h2>
+${textToHtmlParagraphs(state.out.consigna)}
+</body></html>`;
+  const blob = new Blob(['\ufeff', html], {type:'application/msword'});
+  triggerDownload(blob, safeFilename()+'.doc');
+}
+
+function downloadTxt(){
+  const text = 'FICHA INTERNA\n\n'+state.out.ficha+'\n\n\nCONSIGNA FINAL\n\n'+state.out.consigna;
+  const blob = new Blob([text], {type:'text/plain;charset=utf-8'});
+  triggerDownload(blob, safeFilename()+'.txt');
+}
+
+function triggerDownload(blob, filename){
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+render();
+</script>
+</body>
+</html>

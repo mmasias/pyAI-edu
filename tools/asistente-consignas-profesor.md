@@ -32,8 +32,13 @@ _**5. Resultado.** Se generan la consigna (para el enunciado) y la ficha interna
 
 Dos textos, ambos editables antes de descargar:
 
-- **La consigna** va en el enunciado de la actividad. Es lo que lee el alumno: el régimen aplicable, qué tiene que declarar, qué usos de IA se permiten y cuáles no.
-- **La ficha interna** no se entrega al alumno. Queda en el archivo del profesor y deja constancia de **por qué** se fijó ese régimen —las respuestas dadas al asistente, la justificación pedagógica, los instrumentos exigibles—. Es el documento al que se recurre si más adelante hay una revisión académica o una consulta al comité.
+<div align=center>
+
+|La consigna|La ficha interna|
+|-|-|
+Va en el enunciado de la actividad. Es lo que lee el alumno: el régimen aplicable, qué tiene que declarar, qué usos de IA se permiten y cuáles no.|No se entrega al alumno. Queda en el archivo del profesor y deja constancia de **por qué** se fijó ese régimen —las respuestas dadas al asistente, la justificación pedagógica, los instrumentos exigibles—. Es el documento al que se recurre si más adelante hay una revisión académica o una consulta al comité.
+
+</div>
 
 A continuación, un ejemplo completo (régimen B, con una subtarea acotada).
 
