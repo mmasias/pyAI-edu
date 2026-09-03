@@ -1,4 +1,4 @@
-# Asistente de redacción de consignas
+# PROFESOR - Asistente de redacción de consignas
 
 Herramienta para fijar el régimen de uso de IA de una actividad (A / B / D) y generar la consigna lista para pegar en el enunciado.
 
