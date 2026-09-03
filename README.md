@@ -1,6 +1,6 @@
-# pyAI-edu
+# Aplicación protocolo AI - versión inicial
 
-Asistente para el profesorado sobre uso responsable de inteligencia artificial en el aula universitaria, anclado en el **Protocolo de medidas para garantizar la calidad y la integridad académicas** de UNEATLANTICO (V9, julio 2026).
+Asistente para el profesorado sobre uso responsable de inteligencia artificial en el aula universitaria, anclado en el **Protocolo de medidas para garantizar la calidad y la integridad académicas** de UNEATLANTICO.
 
 ## Qué leer primero
 
