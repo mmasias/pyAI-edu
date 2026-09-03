@@ -16,7 +16,7 @@ La plantilla de [acuerdo de supervisión](../plantillas/acuerdo-supervision-tfg-
 2. **Tipo de dirección** (activa o nominal). La distinción no es jerárquica — es declarativa: fija qué mecanismo sostiene realmente el régimen. Si la dirección es nominal, la defensa oral final pasa a ser el **único** mecanismo que sostiene el régimen; la dirección debe saberlo al firmar.
 3. **Calendario de versiones intermedias** rellenando la tabla de la plantilla con fechas concretas y qué se revisa en cada una. Sin calendario, "versiones intermedias revisables" se queda en enunciado.
 
-**Charla con el alumno antes de firmar:** la dirección se asegura de que el alumno entiende que la declaración de uso de IA va en el **apartado metodológico** del propio trabajo (no en anexo), que la trazabilidad pasiva (documento compartido desde el primer día) es parte del trabajo desde el arranque, y que la defensa oral final cubre explícitamente la reconstrucción del proceso, no solo el resultado.
+**Charla con el alumno antes de firmar:** la dirección se asegura de que el alumno entiende que la declaración de uso de IA va en el **apartado metodológico** del propio trabajo (no en anexo), que la trazabilidad (documento compartido desde el primer día) es parte del trabajo desde el arranque, y que la defensa oral final cubre explícitamente la reconstrucción del proceso, no solo el resultado.
 
 ### Versiones intermedias
 

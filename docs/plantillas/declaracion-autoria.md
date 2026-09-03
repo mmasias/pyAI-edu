@@ -28,4 +28,4 @@ Quien firma declara que la entrega referenciada es producto de su autoría efect
 
 - Declaración **obligatoria** en los regímenes A, B y D, con independencia del peso de la actividad.
 - **No sustituye** a la _Declaración de uso de IA_ (exigida en B/D); la complementa.
-- Ante discrepancia entre lo declarado y la evidencia (trazabilidad pasiva, defensa oral), la decisión se funda en la **conversación**, no en el indicio.
+- Ante discrepancia entre lo declarado y la evidencia (trazabilidad, defensa oral), la decisión se funda en la **conversación**, no en el indicio.

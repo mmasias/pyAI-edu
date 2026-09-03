@@ -28,7 +28,7 @@ Todas deben pedirse con proporcionalidad y coherencia con la actividad — no se
 | Evidencia | Qué aporta |
 |---|---|
 | **Versiones intermedias** | Historial del documento compartido — elaboración real vs. pegado final. |
-| **Trazabilidad pasiva** | Historial de revisiones, timestamps de servidor, enlace de chat declarado. |
+| **Trazabilidad** | Historial de revisiones, timestamps de servidor, enlace de chat declarado. |
 | **Declaración de uso** | Contraste entre lo declarado y el producto entregado. |
 | **Comprobación de fuentes citadas** | Verificación de que las fuentes existen y dicen lo que el trabajo les atribuye (falsificación de fuente). |
 | **Defensa oral** ([guion canónico](guion-defensa-canonico.md)) | Reconstrucción completa del proceso: por qué este enfoque, modificación en vivo, qué no sabría reproducir, detección de errores. |
@@ -50,7 +50,7 @@ Dos reglas de la Sección 7.5 del protocolo, de cumplimiento obligatorio en entr
 | Alumno / actividad / entrega | |
 | Régimen asignado | ☐ A &nbsp;&nbsp; ☐ B &nbsp;&nbsp; ☐ D |
 | Indicio que activó la revisión | _(referencia al registro estructurado de indicio — categoría + ejemplo)_ |
-| Evidencias recabadas | ☐ Versiones intermedias &nbsp; ☐ Trazabilidad pasiva &nbsp; ☐ Declaración de uso &nbsp; ☐ Fuentes &nbsp; ☐ Defensa oral &nbsp; ☐ Microdefensa |
+| Evidencias recabadas | ☐ Versiones intermedias &nbsp; ☐ Trazabilidad &nbsp; ☐ Declaración de uso &nbsp; ☐ Fuentes &nbsp; ☐ Defensa oral &nbsp; ☐ Microdefensa |
 | Fecha de notificación al alumno | |
 | Fecha de la conversación / defensa | |
 

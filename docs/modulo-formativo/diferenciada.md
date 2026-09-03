@@ -25,7 +25,7 @@ El enunciado de cada actividad evaluada dice explícitamente en cuál de los tre
 |---|---|---|
 | **A — sin IA** | Ningún uso de IA, en ninguna fase. Excepción: apoyos de accesibilidad previamente autorizados. | Firmar la [declaración de autoría](../plantillas/declaracion-autoria.md). |
 | **B — IA como medio** | IA como medio; el trabajo se evalúa con independencia de la herramienta usada. | Firmar la declaración de autoría. Rellenar la [declaración de uso de IA](../plantillas/declaracion-uso-ia.md) (herramienta + finalidad + fase). Trabajar en el documento compartido desde el primer día, no pegar un documento final. |
-| **D — IA como objeto evaluado** | IA como objeto; lo que se evalúa es tu interacción con la herramienta (auditar, criticar, corregir, reconstruir). | Lo mismo que en B, con la trazabilidad pasiva **obligatoria** (no recomendada): el documento compartido es parte de lo evaluable. Además, tienes que poder explicar y reconstruir todo el proceso de interacción con la IA. |
+| **D — IA como objeto evaluado** | IA como objeto; lo que se evalúa es tu interacción con la herramienta (auditar, criticar, corregir, reconstruir). | Lo mismo que en B, con la trazabilidad **obligatoria** (no recomendada): el documento compartido es parte de lo evaluable. Además, tienes que poder explicar y reconstruir todo el proceso de interacción con la IA. |
 
 Lo que cambia entre B y D no es cuánta IA usas, sino **qué se evalúa**: en B se evalúa el producto (la IA es solo el medio), en D se evalúa cómo usaste la IA (la IA es el objeto). Si la consigna deja ambiguo en cuál estás, pregunta antes de empezar — después no se puede reclasificar.
 

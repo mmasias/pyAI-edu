@@ -36,7 +36,7 @@ El [`RESUMEN-OPERATIVO.md`](../../RESUMEN-OPERATIVO.md) lista los seis arquetipo
 
 ### Arquetipo 2 — Fabricación de evidencia de proceso
 
-**Ejemplo trabajado:** un alumno en régimen D (donde la trazabilidad pasiva es obligatoria) entrega el documento compartido con un histórico de versiones que no cuadra con el calendario declarado — siete revisiones en una noche, todas posteriores a la fecha de entrega declarada, con cambios cosméticos distribuidos para simular elaboración escalonada.
+**Ejemplo trabajado:** un alumno en régimen D (donde la trazabilidad es obligatoria) entrega el documento compartido con un histórico de versiones que no cuadra con el calendario declarado — siete revisiones en una noche, todas posteriores a la fecha de entrega declarada, con cambios cosméticos distribuidos para simular elaboración escalonada.
 
 **Cómo se tipifica:** arquetipo 2. La evidencia de proceso (historial, versiones intermedias, enlace de chat) es lo que sostiene el régimen D; falsearla es fabricar la base misma del régimen.
 
@@ -101,7 +101,7 @@ Es el caso crítico — donde el atajo intuitivo tira con más fuerza.
 
 1. El indicio del detector queda registrado, pero la conversación no produce indicio adicional. La verificación se cierra sin consecuencia para el alumno.
 2. Si el profesor **aun así** sospecha, no puede fundar la decisión en esa sospecha reforzada por el detector. La regla prohíbe usar el detector como prueba, incluso cuando la intuición del profesor y el detector apuntan en la misma dirección.
-3. Lo que sí cabe: reforzar la trazabilidad pasiva del alumno en futuras entregas (pedir documento compartido desde el primer día si no se exigía, revisar históricos con más atención). Pero el caso actual se cierra sin consecuencia.
+3. Lo que sí cabe: reforzar la trazabilidad del alumno en futuras entregas (pedir documento compartido desde el primer día si no se exigía, revisar históricos con más atención). Pero el caso actual se cierra sin consecuencia.
 4. Si el patrón se repite en varias entregas del mismo alumno sin confirmación en conversación, lo que se revisa no es al alumno, es **el criterio del profesor** (salvaguarda de proporcionalidad). Un detector que activa repetidamente sin conversación que confirme es señal de que el criterio de uso del detector está mal calibrado, no de que el alumno esté defraudando sistemáticamente sin dejar rastro.
 
 **Por qué la regla se respeta incluso cuando duele:** los detectores no eliminan los falsos positivos. La regla no especifica la calidad del detector, solo su estatus probatorio: ningún detector, por bueno que sea, funda decisión sin conversación interpuesta. Si se flexibiliza la regla para el caso donde intuición y detector coinciden, se abre la puerta a flexibilizarla en cualquier caso — la regla pierde su función de contención.
@@ -120,4 +120,4 @@ Es el caso crítico — donde el atajo intuitivo tira con más fuerza.
 
 ## Sobre el muestreo
 
-No es un mecanismo del régimen. Lo que existe: trazabilidad pasiva universal de base (documentos compartidos desde el primer día) y activación de defensa oral solo bajo indicio documentado. Cómo se documenta ese indicio vive en [`registro-indicio.md`](../plantillas/registro-indicio.md), no aquí.
+No es un mecanismo del régimen. Lo que existe: trazabilidad universal de base (documentos compartidos desde el primer día) y activación de defensa oral solo bajo indicio documentado. Cómo se documenta ese indicio vive en [`registro-indicio.md`](../plantillas/registro-indicio.md), no aquí.

@@ -28,7 +28,7 @@ Texto que el profesorado copia en el enunciado de cada actividad evaluada, **una
 >
 > - [Declaración de autoría](declaracion-autoria.md).
 > - [Declaración de uso de IA](declaracion-uso-ia.md): herramienta + finalidad + fase.
-> - **Trazabilidad pasiva recomendada:** el trabajo se redacta en un documento compartido con el profesorado desde el primer día; el historial de versiones hace de registro sin coste adicional.
+> - **Trazabilidad recomendada:** el trabajo se redacta en un documento compartido con el profesorado desde el primer día; el historial de versiones hace de registro sin coste adicional.
 >
 > La IA no puede sustituir la autoría efectiva: la aportación intelectual del alumno debe ser defendible y reconstruible. La declaración de uso no exime de esta exigencia; la reconstrucción puede pedirse en una defensa oral bajo indicio.
 
@@ -52,7 +52,7 @@ Texto que el profesorado copia en el enunciado de cada actividad evaluada, **una
 >
 > - [Declaración de autoría](declaracion-autoria.md).
 > - [Declaración de uso de IA](declaracion-uso-ia.md): herramienta + finalidad + fase.
-> - **Trazabilidad pasiva obligatoria:** el trabajo se redacta en un documento compartido con el profesorado desde el primer día; el historial de versiones es parte de lo evaluable, no un extra opcional.
+> - **Trazabilidad obligatoria:** el trabajo se redacta en un documento compartido con el profesorado desde el primer día; el historial de versiones es parte de lo evaluable, no un extra opcional.
 >
 > El alumno debe poder explicar y reconstruir el proceso completo de interacción con la IA: por qué hizo cada solicitud, cómo interpretó cada respuesta, qué modificó y por qué. Una defensa oral puede exigir esta reconstrucción en vivo.
 
