@@ -13,6 +13,8 @@ Asistente para el profesorado sobre uso responsable de inteligencia artificial e
 | Ver qué falta y en qué orden se construye | [`planDeAccion.md`](planDeAccion.md) |
 | Consultar el corpus normativo (UE, España, AEPD, NIST, UNESCO...) | [`docs/README.md`](docs/README.md) |
 | Leer el debate completo que originó todo esto | [discussions#1](https://github.com/mmasias/pyAI-edu/discussions/1) |
+| Ver el Asistente de redacción de consignas | [Asistente](tools/asistente-consignas-profesor.html) / [Explicación](tools/asistente-consignas-profesor.md)
+| Ver el Asistente de declaración del alumno | [Asistente](tools/asistente-declaracion-alumno.html) / [Explicación](tools/asistente-declaracion-alumno.md)
 
 ## Audiencia
 
