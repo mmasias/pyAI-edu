@@ -30,13 +30,9 @@ _**4. Resultado.** Se generan las declaraciones, editables, con una lista de com
 
 ## Qué genera el asistente
 
-<div align="center" markdown="1">
-
 | Declaración de autoría | Declaración de uso de IA |
 |---|---|
 | Obligatoria en todos los regímenes. Afirma que el trabajo es de autoría efectiva del alumno o del grupo y que las fuentes están reconocidas y citadas. En régimen A añade que no se ha usado IA; en B y D, que el uso de IA no sustituye la autoría. | Solo en regímenes B y D. Deja constancia de qué herramientas de IA se usaron, para qué y en qué fase. No reconstruye la conversación: es una constancia mínima, no un registro exhaustivo. |
-
-</div>
 
 A continuación, un ejemplo completo (régimen B, entrega individual).
 
