@@ -1,6 +1,12 @@
 # Qué hacer
 
-## 0. Recordar los regímenes con los que trabajamos
+## 0.a. Guía docente
+
+En la guía docente ya está incluido lo siguiente:
+
+> Esta asignatura se rige por el Protocolo de medidas para garantizar la calidad y la integridad académicas en la modalidad de enseñanza presencial de UNEATLANTICO. El régimen aplicable a cada actividad se indicará en su enunciado.
+
+## 0.b. Recordar los regímenes con los que trabajamos
 
 | Régimen A | Régimen B | Régimen D |
 |---|---|---|
@@ -26,11 +32,7 @@ Copiar en el enunciado de la actividad el bloque correspondiente al régimen fij
 
 Cuando se autoriza el uso de IA solo para una subtarea acotada (por ejemplo, traducir una fuente), esa excepción se declara en la consigna. No eleva el régimen de la actividad completa.
 
-### Guía docente
-
-Incluir una sola vez, al inicio de la guía:
-
-> Esta asignatura se rige por el Protocolo de medidas para garantizar la calidad y la integridad académicas en la modalidad de enseñanza presencial de UNEATLANTICO. El régimen aplicable a cada actividad se indicará en su enunciado.
+> Para esto puede apoyarse en las **[consignas predeterminadas](docs/plantillas/consigna-abd.md)** o utilizar el **[Asistente de redacción de consignas](tools/asistente-consignas-profesor.md)**.
 
 ## 2. Al recoger las entregas
 
@@ -85,7 +87,7 @@ Si el registro muestra verificaciones reiteradas sobre un mismo alumno sin confi
 
 ## Ejemplos por grado
 
-Un ejemplo de cada régimen por titulación. Clasificación razonada y casos límite: [`asistente-clasificacion-abd.md`](docs/plantillas/asistente-clasificacion-abd.md).
+Un ejemplo de cada régimen por titulación. Clasificación razonada y casos límite: [Clasificación de actividades](docs/plantillas/asistente-clasificacion-abd.md).
 
 ### Ingeniería Informática
 
