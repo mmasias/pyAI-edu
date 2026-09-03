@@ -458,6 +458,8 @@ Son obligatorios:
 El alumno debe poder explicar y reconstruir el proceso completo de interacción con la IA: por qué hizo cada solicitud, cómo interpretó cada respuesta, qué modificó y por qué. Una defensa oral puede exigir esta reconstrucción en vivo.`
 };
 
+const DECLARACION_URL = 'https://mmasias.github.io/pyAI-edu/tools/asistente-declaracion-alumno.html';
+
 function buildConsigna(reg){
   const p = state.prec, f = state.fin;
   let out = CONSIGNA[reg];
@@ -475,6 +477,13 @@ function buildConsigna(reg){
 - Fase en la que se aplica: ${p.fase || '[especificar]'}
 El resto de la actividad sigue en régimen B sin IA o con IA solo como medio ya declarado. La excepción no sube el régimen de la actividad entera.`;
   }
+
+  const q = new URLSearchParams({ regimen: reg });
+  if(state.id.asignatura) q.set('asignatura', state.id.asignatura);
+  if(state.id.actividad) q.set('actividad', state.id.actividad);
+  const label = reg==='A' ? 'la declaración de autoría' : 'las declaraciones de autoría y de uso de IA';
+  out += `\n\nPara redactar ${label}, el alumnado puede usar el asistente:\n${DECLARACION_URL}?${q.toString()}`;
+
   return out;
 }
 

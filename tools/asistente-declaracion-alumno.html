@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asistente de declaración de autoría y uso de IA</title>
+<style>
+  :root{
+    --paper:#EEF0EA; --paper-2:#F7F8F4; --card:#FFFFFF;
+    --ink:#1E221D; --ink-soft:#565A50; --ink-faint:#8B8F82;
+    --line:#C9CCC0; --line-strong:#A9AD9C;
+    --accent:#1F4E5F; --accent-ink:#0E2A33;
+    --a-gray:#6B6A63; --a-blue:#2E6E8E; --a-red:#B23A2E;
+    --radius:6px;
+    font-family:-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--paper);color:var(--ink);}
+  body{padding:32px 20px 80px;}
+  .wrap{max-width:1040px;margin:0 auto;}
+  header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:22px;flex-wrap:wrap;}
+  header h1{font-size:20px;font-weight:600;margin:0 0 4px;letter-spacing:.2px;}
+  header p{margin:0;color:var(--ink-soft);font-size:13px;max-width:560px;line-height:1.5;}
+  .reset-btn{background:none;border:1px solid var(--line-strong);color:var(--ink-soft);font-size:12px;padding:7px 12px;border-radius:var(--radius);cursor:pointer;white-space:nowrap;}
+  .reset-btn:hover{border-color:var(--accent);color:var(--accent);}
+
+  .layout{display:grid;grid-template-columns:210px 1fr;gap:24px;align-items:start;}
+  @media (max-width:760px){.layout{grid-template-columns:1fr;}}
+  .stepper{display:flex;flex-direction:column;gap:2px;position:sticky;top:20px;}
+  @media (max-width:760px){.stepper{position:static;flex-direction:row;flex-wrap:wrap;}}
+  .step-tab{display:flex;align-items:center;gap:10px;padding:10px;border:1px solid transparent;border-radius:var(--radius);cursor:pointer;text-align:left;background:none;font-size:13px;color:var(--ink-soft);}
+  .step-tab .num{font-family:ui-monospace,Consolas,monospace;font-size:11px;width:20px;height:20px;border-radius:50%;border:1px solid var(--line-strong);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .step-tab.active{background:var(--card);border-color:var(--line);color:var(--ink);font-weight:600;}
+  .step-tab.active .num{background:var(--accent);border-color:var(--accent);color:#fff;}
+  .step-tab.done .num{background:var(--paper-2);border-color:var(--a-blue);color:var(--a-blue);}
+  .step-tab:hover{color:var(--ink);}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:26px 28px;min-height:420px;}
+  .card h2{font-size:16px;margin:0 0 4px;font-weight:600;}
+  .card .sub{color:var(--ink-soft);font-size:12.5px;margin:0 0 20px;line-height:1.5;}
+
+  .field{margin-bottom:16px;}
+  .field label{display:block;font-size:12.5px;font-weight:600;color:var(--ink);margin-bottom:5px;}
+  .field .hint{display:block;font-weight:400;color:var(--ink-faint);font-size:11.5px;margin-top:3px;}
+  input[type=text],input[type=date],textarea,select{
+    width:100%;border:1px solid var(--line-strong);border-radius:4px;padding:8px 10px;font-size:13px;
+    font-family:inherit;color:var(--ink);background:var(--paper-2);
+  }
+  textarea{min-height:64px;resize:vertical;line-height:1.5;}
+  input:focus,textarea:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent);}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;}
+  @media (max-width:600px){.row2,.row3{grid-template-columns:1fr;}}
+
+  .radios{display:flex;gap:14px;flex-wrap:wrap;}
+  .radios label{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:400;}
+
+  .regimen-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:4px;}
+  @media (max-width:600px){.regimen-grid{grid-template-columns:1fr;}}
+  .regimen-card{border:1px solid var(--line);border-radius:6px;padding:12px 14px;cursor:pointer;background:var(--paper-2);}
+  .regimen-card.selected{border-color:var(--accent);background:#fff;box-shadow:inset 0 0 0 1px var(--accent);}
+  .regimen-card h3{margin:0;font-size:12.5px;display:flex;align-items:center;gap:8px;}
+  .stamp{font-family:ui-monospace,Consolas,monospace;font-weight:700;font-size:13px;width:26px;height:26px;border-radius:5px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:2px solid;transform:rotate(-3deg);}
+  .stamp.A{color:var(--a-gray);border-color:var(--a-gray);}
+  .stamp.B{color:var(--a-blue);border-color:var(--a-blue);}
+  .stamp.D{color:var(--a-red);border-color:var(--a-red);}
+  .stamp.big{width:40px;height:40px;font-size:18px;}
+
+  .info-box{background:var(--paper-2);border:1px solid var(--line);border-radius:6px;padding:12px 14px;font-size:12px;color:var(--ink-soft);line-height:1.6;margin-bottom:18px;}
+  .info-box.na{text-align:center;padding:30px 14px;font-size:13px;}
+  .info-box strong{color:var(--ink);}
+  .prefilled{font-size:11.5px;color:var(--a-blue);margin-top:4px;}
+
+  .persona-block{border:1px solid var(--line);border-radius:6px;padding:12px 14px;margin-bottom:10px;background:var(--paper-2);}
+  .persona-row{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;align-items:center;}
+  @media (max-width:700px){.persona-row{grid-template-columns:1fr;}}
+  .tool-block{border:1px solid var(--line);border-radius:6px;padding:12px 14px;margin-bottom:10px;background:var(--paper-2);}
+  .rm-x{background:none;border:none;color:var(--a-red);font-size:11px;cursor:pointer;padding:2px 6px;}
+  .add-x{background:none;border:1px dashed var(--line-strong);color:var(--ink-soft);border-radius:4px;padding:8px;width:100%;font-size:12.5px;cursor:pointer;}
+  .add-x:hover{border-color:var(--accent);color:var(--accent);}
+
+  .out-header{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+  .out-header .txt h3{margin:0;font-size:14px;}
+  .out-header .txt p{margin:2px 0 0;font-size:12px;color:var(--ink-soft);}
+
+  .checklist{font-size:12px;color:var(--ink-soft);line-height:1.9;border:1px solid var(--line);border-radius:6px;padding:14px 16px;margin:14px 0 22px;background:var(--paper-2);}
+
+  .btnrow{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 22px;align-items:center;}
+  .btn{border:1px solid var(--line-strong);background:var(--paper-2);color:var(--ink);font-size:12.5px;padding:8px 14px;border-radius:5px;cursor:pointer;}
+  .btn:hover{border-color:var(--accent);color:var(--accent);}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;}
+  .btn.primary:hover{background:var(--accent-ink);border-color:var(--accent-ink);color:#fff;}
+  .toast{display:inline-block;font-size:12px;color:var(--a-blue);opacity:0;transition:opacity .3s;}
+  .toast.show{opacity:1;}
+
+  footer.nav{display:flex;justify-content:space-between;max-width:1040px;margin:22px auto 0;padding-left:234px;}
+  @media (max-width:760px){footer.nav{padding-left:0;}}
+  .navbtn{border:1px solid var(--line-strong);background:var(--card);padding:10px 20px;border-radius:6px;font-size:13px;cursor:pointer;color:var(--ink);}
+  .navbtn.primary{background:var(--accent);border-color:var(--accent);color:#fff;}
+  .navbtn:disabled{opacity:.35;cursor:not-allowed;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Asistente de declaración de autoría y uso de IA</h1>
+      <p>Redacta la declaración de autoría y, si el régimen lo exige, la declaración de uso de IA. El régimen lo fija la consigna de la actividad, no se elige aquí. Herramienta personal, sin conexión ni almacenamiento externo.</p>
+    </div>
+    <div id="resetControl"><button class="reset-btn" onclick="askReset()">Empezar de nuevo</button></div>
+  </header>
+  <div class="layout">
+    <nav class="stepper" id="stepper"></nav>
+    <div class="card" id="card"></div>
+  </div>
+  <footer class="nav">
+    <button class="navbtn" id="btnBack" onclick="goStep(state.step-1)">Atrás</button>
+    <button class="navbtn primary" id="btnNext" onclick="goStep(state.step+1)">Siguiente</button>
+  </footer>
+</div>
+
+<script>
+/* ============ estado ============ */
+const STEPS = [
+  {id:1, label:'Datos de la entrega'},
+  {id:2, label:'Autoría'},
+  {id:3, label:'Uso de IA'},
+  {id:4, label:'Resultado'}
+];
+
+const REGIMEN_INFO = {
+  A:{ nombre:'Sin IA' },
+  B:{ nombre:'IA como medio' },
+  D:{ nombre:'IA como objeto evaluado' }
+};
+
+function freshState(){
+  const q = new URLSearchParams(location.search);
+  const reg = (q.get('regimen')||'').toUpperCase();
+  return {
+    step:1,
+    prefilled: { regimen: ['A','B','D'].includes(reg) },
+    datos:{
+      asignatura: q.get('asignatura') || '',
+      actividad:  q.get('actividad')  || '',
+      docente:    q.get('docente')    || '',
+      modalidad:'Individual',
+      regimen: ['A','B','D'].includes(reg) ? reg : null,
+      fecha: new Date().toISOString().slice(0,10)
+    },
+    autoria:{ nombre:'', personas:[{id:1,nombre:'',contribucion:''}], personaCounter:1 },
+    uso:{ usoIA:null, tools:[{id:1,herramienta:'',finalidad:'',fase:''}], toolCounter:1 },
+    out:{ autoriaTexto:'', usoTexto:'', generated:false }
+  };
+}
+let state = freshState();
+
+/* ============ render raíz ============ */
+function render(){
+  renderStepper();
+  renderCard();
+  document.getElementById('btnBack').disabled = state.step===1;
+  document.getElementById('btnNext').textContent = state.step===STEPS.length ? 'Empezar de nuevo' : 'Siguiente';
+}
+function renderStepper(){
+  const el = document.getElementById('stepper');
+  el.innerHTML = '';
+  STEPS.forEach(s=>{
+    const b = document.createElement('button');
+    b.className = 'step-tab' + (s.id===state.step?' active':'') + (s.id<state.step?' done':'');
+    b.innerHTML = '<span class="num">'+s.id+'</span><span>'+s.label+'</span>';
+    b.onclick = ()=>goStep(s.id);
+    el.appendChild(b);
+  });
+}
+function goStep(n){
+  if(n<1) n=1;
+  if(n>STEPS.length){ state = freshState(); render(); window.scrollTo({top:0,behavior:'smooth'}); return; }
+  state.step = n;
+  if(n===STEPS.length) generateTexts();
+  render();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function renderCard(){
+  const card = document.getElementById('card');
+  ({1:renderStep1,2:renderStep2,3:renderStep3,4:renderStep4})[state.step](card);
+}
+
+/* ============ confirmación en línea ============ */
+function askReset(){
+  document.getElementById('resetControl').innerHTML = `
+    <span style="font-size:12px;color:var(--ink-soft);margin-right:8px;">¿Empezar de nuevo? Se perderá lo que no hayas descargado.</span>
+    <button class="reset-btn" onclick="doReset()" style="border-color:var(--a-red);color:var(--a-red);margin-right:6px;">Confirmar</button>
+    <button class="reset-btn" onclick="renderResetBtn()">Cancelar</button>`;
+}
+function doReset(){ state = freshState(); render(); renderResetBtn(); }
+function renderResetBtn(){ document.getElementById('resetControl').innerHTML = '<button class="reset-btn" onclick="askReset()">Empezar de nuevo</button>'; }
+
+/* ============ helpers ============ */
+function bindText(root, sel, getter, setter){
+  const el = root.querySelector(sel);
+  if(!el) return;
+  el.value = getter();
+  el.oninput = e=> setter(e.target.value);
+}
+function escapeAttr(s){ return (s||'').replace(/"/g,'&quot;'); }
+function escapeHtml(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+/* ============ STEP 1 ============ */
+function renderStep1(card){
+  const d = state.datos;
+  card.innerHTML = `
+    <h2>1. Datos de la entrega</h2>
+    <p class="sub">El <strong>régimen</strong> lo indica la consigna de la actividad; aquí solo se recoge. Si abriste el asistente desde el enlace de la consigna, ya viene marcado.</p>
+    <div class="row2">
+      <div class="field"><label>Asignatura</label><input id="asignatura" type="text"></div>
+      <div class="field"><label>Actividad / entrega</label><input id="actividad" type="text"></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label>Docente</label><input id="docente" type="text"></div>
+      <div class="field"><label>Modalidad</label>
+        <div class="radios">
+          <label><input type="radio" name="modalidad" value="Individual"> Individual</label>
+          <label><input type="radio" name="modalidad" value="Grupal"> Grupal</label>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label>Régimen indicado en la consigna</label>
+      <div class="regimen-grid" id="regGrid"></div>
+      ${state.prefilled.regimen ? '<div class="prefilled">Pre-cargado desde el enlace de la consigna. Cámbialo solo si la consigna dice otra cosa.</div>' : ''}
+    </div>`;
+  bindText(card,'#asignatura',()=>d.asignatura, v=>d.asignatura=v);
+  bindText(card,'#actividad',()=>d.actividad, v=>d.actividad=v);
+  bindText(card,'#docente',()=>d.docente, v=>d.docente=v);
+  card.querySelectorAll('[name=modalidad]').forEach(r=>{
+    r.checked = d.modalidad===r.value;
+    r.onchange = e=>{ d.modalidad = e.target.value; };
+  });
+  const grid = card.querySelector('#regGrid');
+  ['A','B','D'].forEach(k=>{
+    const div = document.createElement('div');
+    div.className = 'regimen-card' + (d.regimen===k?' selected':'');
+    div.innerHTML = `<h3><span class="stamp ${k}">${k}</span> ${REGIMEN_INFO[k].nombre}</h3>`;
+    div.onclick = ()=>{ d.regimen = k; state.prefilled.regimen = false; renderCard(); };
+    grid.appendChild(div);
+  });
+}
+
+/* ============ STEP 2 ============ */
+function renderStep2(card){
+  const grupal = state.datos.modalidad==='Grupal';
+  const a = state.autoria;
+  card.innerHTML = `
+    <h2>2. Autoría</h2>
+    <p class="sub">Obligatoria en todos los regímenes. ${grupal ? 'Indica cada integrante y su contribución.' : 'Indica tu nombre completo.'}</p>
+    ${grupal
+      ? `<div id="personasWrap"></div><button class="add-x" id="addPersona">+ añadir integrante</button>`
+      : `<div class="field"><label>Nombre y apellidos</label><input id="nombreAutor" type="text"></div>`}`;
+  if(grupal){
+    const wrap = card.querySelector('#personasWrap');
+    a.personas.forEach(p=>{
+      const block = document.createElement('div');
+      block.className = 'persona-block';
+      block.innerHTML = `<div class="persona-row">
+        <input type="text" placeholder="Nombre y apellidos" data-f="nombre" value="${escapeAttr(p.nombre)}">
+        <input type="text" placeholder="Contribución (apartado o tarea)" data-f="contribucion" value="${escapeAttr(p.contribucion)}">
+        ${a.personas.length>1 ? '<button class="rm-x">quitar</button>' : '<span></span>'}
+      </div>`;
+      ['nombre','contribucion'].forEach(f=>{ block.querySelector(`[data-f=${f}]`).oninput = e=> p[f]=e.target.value; });
+      const rm = block.querySelector('.rm-x');
+      if(rm) rm.onclick = ()=>{ a.personas = a.personas.filter(x=>x.id!==p.id); renderCard(); };
+      wrap.appendChild(block);
+    });
+    card.querySelector('#addPersona').onclick = ()=>{
+      a.personaCounter++; a.personas.push({id:a.personaCounter,nombre:'',contribucion:''}); renderCard();
+    };
+  } else {
+    bindText(card,'#nombreAutor',()=>a.nombre, v=>a.nombre=v);
+  }
+}
+
+/* ============ STEP 3 ============ */
+function renderStep3(card){
+  const reg = state.datos.regimen;
+  if(reg==='A'){
+    card.innerHTML = `<h2>3. Uso de IA</h2>
+      <div class="info-box na">El régimen A no permite uso de IA en esta actividad. No corresponde declaración de uso: solo se formaliza la declaración de autoría del paso anterior.</div>`;
+    return;
+  }
+  if(!reg){
+    card.innerHTML = `<h2>3. Uso de IA</h2>
+      <div class="info-box na">Vuelve al paso 1 y marca el régimen que indica la consigna.</div>`;
+    return;
+  }
+  const u = state.uso;
+  card.innerHTML = `
+    <h2>3. Declaración de uso de IA</h2>
+    <p class="sub">Régimen ${reg}. Basta con herramienta, finalidad y fase por cada herramienta usada. No hay que reconstruir la conversación.</p>
+    <div class="field">
+      <label>¿Has utilizado IA en esta entrega?</label>
+      <div class="radios">
+        <label><input type="radio" name="usoIA" value="si"> Sí</label>
+        <label><input type="radio" name="usoIA" value="no"> No</label>
+      </div>
+    </div>
+    <div id="toolsArea" ${u.usoIA==='si'?'':'style="display:none"'}>
+      <div id="toolsWrap"></div>
+      <button class="add-x" id="addTool">+ añadir otra herramienta</button>
+    </div>`;
+  card.querySelectorAll('[name=usoIA]').forEach(r=>{
+    r.checked = u.usoIA===r.value;
+    r.onchange = e=>{ u.usoIA = e.target.value; renderCard(); };
+  });
+  if(u.usoIA==='si'){
+    const wrap = card.querySelector('#toolsWrap');
+    u.tools.forEach(tl=>{
+      const block = document.createElement('div');
+      block.className = 'tool-block';
+      block.innerHTML = `
+        <div class="row2">
+          <div class="field" style="margin-bottom:8px;"><label>Herramienta y versión</label><input type="text" data-f="herramienta" value="${escapeAttr(tl.herramienta)}" placeholder="p. ej. ChatGPT con GPT-4o, Claude con Sonnet 5, GitHub Copilot"></div>
+          <div class="field" style="margin-bottom:8px;"><label>Finalidad del uso</label><input type="text" data-f="finalidad" value="${escapeAttr(tl.finalidad)}" placeholder="p. ej. corrección ortográfica, generación de código base"></div>
+        </div>
+        <div class="field" style="margin-bottom:0;"><label>Fase del trabajo en que intervino</label>
+          <input type="text" data-f="fase" value="${escapeAttr(tl.fase)}" placeholder="p. ej. redacción de borrador, revisión final, depuración">
+          ${u.tools.length>1 ? '<button class="rm-x" style="float:right;margin-top:6px;">quitar herramienta</button>' : ''}
+        </div>`;
+      ['herramienta','finalidad','fase'].forEach(f=>{ block.querySelector(`[data-f=${f}]`).oninput = e=> tl[f]=e.target.value; });
+      const rm = block.querySelector('.rm-x');
+      if(rm) rm.onclick = ()=>{ u.tools = u.tools.filter(x=>x.id!==tl.id); renderCard(); };
+      wrap.appendChild(block);
+    });
+    card.querySelector('#addTool').onclick = ()=>{
+      u.toolCounter++; u.tools.push({id:u.toolCounter,herramienta:'',finalidad:'',fase:''}); renderCard();
+    };
+  }
+}
+
+/* ============ STEP 4 ============ */
+function renderStep4(card){
+  const reg = state.datos.regimen || 'B';
+  card.innerHTML = `
+    <h2>4. Resultado</h2>
+    <p class="sub">Revisa y edita antes de exportar. Adjunta esto a la entrega junto con el trabajo.</p>
+    <div class="out-header">
+      <span class="stamp big ${reg}">${reg}</span>
+      <div class="txt"><h3>Régimen ${reg} &mdash; ${REGIMEN_INFO[reg].nombre}</h3>
+      <p>${escapeHtml(state.datos.asignatura||'Sin asignatura')} &mdash; ${escapeHtml(state.datos.actividad||'sin actividad')}</p></div>
+    </div>
+
+    <div class="field"><label>Declaración de autoría</label><textarea id="autoriaOut" style="min-height:190px;"></textarea></div>
+    <div class="btnrow"><button class="btn" onclick="copyField('autoriaOut','t1')">Copiar autoría</button><span class="toast" id="t1">Copiado</span></div>
+
+    ${reg!=='A' ? `
+    <div class="field"><label>Declaración de uso de IA</label><textarea id="usoOut" style="min-height:210px;"></textarea></div>
+    <div class="btnrow"><button class="btn" onclick="copyField('usoOut','t2')">Copiar uso de IA</button><span class="toast" id="t2">Copiado</span></div>` : ''}
+
+    <div class="checklist">
+      <div>&#9744; El régimen coincide con el que dice la consigna.</div>
+      <div>&#9744; He nombrado todas las herramientas de IA que usé, no solo la principal.</div>
+      <div>&#9744; Puedo explicar y defender las decisiones del trabajo sin la herramienta.</div>
+      ${reg==='D' ? '<div>&#9744; El documento compartido con el profesorado está al día.</div>' : ''}
+    </div>
+
+    <div class="btnrow">
+      <button class="btn" onclick="regenerate()">Regenerar desde el formulario</button>
+    </div>
+    <div class="btnrow">
+      <button class="btn primary" onclick="downloadWord()">Descargar Word (.doc)</button>
+      <button class="btn" onclick="downloadTxt()">Descargar .txt</button>
+    </div>`;
+  const aEl = card.querySelector('#autoriaOut');
+  aEl.value = state.out.autoriaTexto; aEl.oninput = e=> state.out.autoriaTexto = e.target.value;
+  if(reg!=='A'){
+    const uEl = card.querySelector('#usoOut');
+    uEl.value = state.out.usoTexto; uEl.oninput = e=> state.out.usoTexto = e.target.value;
+  }
+}
+function regenerate(){ generateTexts(); renderCard(); }
+
+/* ============ generación de textos ============ */
+function generateTexts(){
+  state.out.autoriaTexto = buildAutoria();
+  state.out.usoTexto = state.datos.regimen==='A' ? '' : buildUso();
+  state.out.generated = true;
+}
+
+function joinNombres(arr){
+  const l = arr.filter(Boolean);
+  if(l.length===0) return '';
+  if(l.length===1) return l[0];
+  return l.slice(0,-1).join(', ') + ' y ' + l[l.length-1];
+}
+function nombresAutoria(){
+  const d = state.datos, a = state.autoria;
+  if(d.modalidad==='Grupal'){
+    return joinNombres(a.personas.map(p=>p.nombre)) || '[nombres de las personas integrantes]';
+  }
+  return a.nombre || '[nombre y apellidos]';
+}
+
+function buildAutoria(){
+  const d = state.datos;
+  const grupal = d.modalidad==='Grupal';
+  const cab = grupal ? 'Nosotros' : 'Yo';
+  const decl = grupal ? 'declaramos' : 'declaro';
+  const mi = grupal ? 'nuestra' : 'mi';
+  const act = d.actividad ? `la entrega "${d.actividad}"` : 'la entrega';
+  const asig = d.asignatura ? ` de la asignatura ${d.asignatura}` : '';
+
+  let t = `${cab}, ${nombresAutoria()}, ${decl} que ${act}${asig} es producto de ${mi} autoría efectiva: las decisiones, el análisis y la elaboración intelectual sustantivos son ${grupal?'nuestros':'míos'}.`;
+
+  if(d.regimen==='A'){
+    t += `\n\n${grupal?'No hemos utilizado':'No he utilizado'} ninguna herramienta de inteligencia artificial en ninguna fase del trabajo.`;
+  } else {
+    t += `\n\nEl uso de inteligencia artificial realizado en esta entrega, declarado aparte en la declaración de uso de IA, no sustituye ${mi} autoría efectiva: el resultado es defendible y modificable por ${grupal?'nosotros':'mí'}, conforme al guion de defensa oral.`;
+  }
+
+  t += `\n\nTodas las fuentes, datos y contribuciones de terceros están reconocidos y citados conforme a las normas aplicables. ${grupal?'Asumimos':'Asumo'} la responsabilidad académica sobre la veracidad, integridad y trazabilidad del trabajo entregado.`;
+
+  if(grupal && state.autoria.personas.some(p=>p.contribucion)){
+    t += `\n\nContribución individual:\n` + state.autoria.personas
+      .map(p=>`- ${p.nombre||'[nombre]'}: ${p.contribucion||'[contribución]'}`).join('\n');
+  }
+  t += `\n\nFecha: ${d.fecha}`;
+  return t;
+}
+
+function buildUso(){
+  const d = state.datos, u = state.uso;
+  let t = `Asignatura: ${d.asignatura||'-'}\nActividad / entrega: ${d.actividad||'-'}\nRégimen asignado: ${d.regimen} (${REGIMEN_INFO[d.regimen].nombre})\nFecha de entrega: ${d.fecha}`;
+
+  const grupal = d.modalidad==='Grupal';
+  const decl = grupal ? 'Declaramos' : 'Declaro';
+  const mi = grupal ? 'nuestra' : 'mi';
+  const yo = grupal ? 'nosotros' : 'mí';
+
+  if(u.usoIA==='no'){
+    t += `\n\n${grupal?'No hemos utilizado':'No he utilizado'} inteligencia artificial en esta entrega.`;
+  } else {
+    t += `\n\n${grupal?'Hemos utilizado':'He utilizado'} inteligencia artificial en esta entrega:\n`;
+    t += u.tools.map((tl,i)=>{
+      return `${u.tools.length>1?(i+1)+'. ':''}Herramienta y versión: ${tl.herramienta||'[herramienta y versión]'}\n`
+           + `   Finalidad del uso: ${tl.finalidad||'[finalidad]'}\n`
+           + `   Fase del trabajo en que intervino: ${tl.fase||'[fase]'}`;
+    }).join('\n\n');
+  }
+
+  t += `\n\nDeclaración de responsabilidad. ${decl} que ${mi} autoría efectiva no se ve sustituida por ningún uso de inteligencia artificial: el resultado entregado es defendible y modificable por ${yo}, conforme al guion de defensa oral. Cualquier parte del trabajo que no ${grupal?'pudiéramos':'pudiera'} explicar o modificar queda fuera del alcance de esta declaración; se resuelve en la conversación del guion de defensa oral, que distingue evaluación negativa (no aprendió) de fraude (defraudó) antes de concluir nada.`;
+
+  t += `\n\n${nombresAutoria()} — ${d.fecha}`;
+  return t;
+}
+
+/* ============ utilidades ============ */
+function copyField(id, toastId){
+  const el = document.getElementById(id);
+  const done = ()=>{ const t=document.getElementById(toastId); t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),1400); };
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(el.value).then(done).catch(()=>{ el.select(); document.execCommand('copy'); done(); });
+  } else { el.select(); document.execCommand('copy'); done(); }
+}
+function safeFilename(){
+  const base = (state.datos.modalidad==='Grupal' ? 'grupo' : (state.autoria.nombre||'declaracion')) + '_' + (state.datos.actividad||'entrega');
+  return base.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,'_').replace(/^_+|_+$/g,'').slice(0,60) || 'declaracion';
+}
+function textToHtmlParagraphs(text){
+  return text.split(/\n\n+/).map(b=> '<p>'+b.split('\n').map(escapeHtml).join('<br>')+'</p>').join('\n');
+}
+function downloadWord(){
+  const reg = state.datos.regimen || 'B';
+  const html = `<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head><meta charset='utf-8'><title>Declaraci&oacute;n</title>
+<style>body{font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#111;} h1{font-size:15pt;margin-bottom:2pt;} h2{font-size:12.5pt;margin-top:16pt;border-bottom:1px solid #999;padding-bottom:2pt;} p{margin:0 0 8pt 0;line-height:1.4;}</style></head>
+<body>
+<h1>${escapeHtml(state.datos.asignatura||'')} &mdash; ${escapeHtml(state.datos.actividad||'')}</h1>
+<h2>Declaraci&oacute;n de autor&iacute;a</h2>
+${textToHtmlParagraphs(state.out.autoriaTexto)}
+${reg!=='A' ? '<h2>Declaraci&oacute;n de uso de inteligencia artificial</h2>' + textToHtmlParagraphs(state.out.usoTexto) : ''}
+</body></html>`;
+  triggerDownload(new Blob(['﻿', html], {type:'application/msword'}), safeFilename()+'.doc');
+}
+function downloadTxt(){
+  const reg = state.datos.regimen || 'B';
+  let text = 'DECLARACIÓN DE AUTORÍA\n\n'+state.out.autoriaTexto;
+  if(reg!=='A') text += '\n\n\nDECLARACIÓN DE USO DE IA\n\n'+state.out.usoTexto;
+  triggerDownload(new Blob([text], {type:'text/plain;charset=utf-8'}), safeFilename()+'.txt');
+}
+function triggerDownload(blob, filename){
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+render();
+</script>
+</body>
+</html>
