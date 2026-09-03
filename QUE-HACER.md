@@ -1,16 +1,10 @@
 # Qué hacer
 
-## 0.a. Guía docente
+## 0. Ya tenemos
 
-En la guía docente ya está incluido lo siguiente:
-
-> Esta asignatura se rige por el Protocolo de medidas para garantizar la calidad y la integridad académicas en la modalidad de enseñanza presencial de UNEATLANTICO. El régimen aplicable a cada actividad se indicará en su enunciado.
-
-## 0.b. Recordar los regímenes con los que trabajamos
-
-| Régimen A | Régimen B | Régimen D |
-|---|---|---|
-| Sin IA | IA como medio | IA como objeto evaluado |
+| Guía docente | Regímenes definidos |
+|---|---|
+| En las guías docentes **ya está incluido** lo siguiente:<br><sub>_Esta asignatura se rige por el Protocolo de medidas para garantizar la calidad y la integridad académicas en la modalidad de enseñanza presencial de UNEATLANTICO. El régimen aplicable a cada actividad se indicará en su enunciado._</sub> | Sin IA<br>IA como medio<br>IA como objeto evaluado |
 
 ## 1. Antes de cada actividad evaluable
 
