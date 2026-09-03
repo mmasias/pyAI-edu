@@ -8,7 +8,7 @@ Lo habitual es llegar aquí desde el **enlace que el profesorado incluye en la c
 
 ## Cómo funciona, paso a paso
 
-<div align="center">
+<div align="center" markdown="1">
 
 ![Paso 1: datos de la entrega](../images/asistenteAlumno-001.png)
 
@@ -30,7 +30,7 @@ _**4. Resultado.** Se generan las declaraciones, editables, con una lista de com
 
 ## Qué genera el asistente
 
-<div align="center">
+<div align="center" markdown="1">
 
 | Declaración de autoría | Declaración de uso de IA |
 |---|---|

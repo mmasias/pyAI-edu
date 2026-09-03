@@ -10,7 +10,7 @@ No es prerrequisito de sanción; es prerrequisito de conversación. La verificac
 
 ## Formato
 
-<div align="center">
+<div align="center" markdown="1">
 
 | Campo | Qué rellenar |
 |---|---|

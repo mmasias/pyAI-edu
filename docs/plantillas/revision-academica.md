@@ -43,7 +43,7 @@ Dos reglas de la Sección 7.5 del protocolo, de cumplimiento obligatorio en entr
 
 ## Plantilla de decisión motivada
 
-<div align="center">
+<div align="center" markdown="1">
 
 | Campo | Qué rellenar |
 |---|---|

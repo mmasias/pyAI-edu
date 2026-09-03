@@ -4,7 +4,7 @@
 
 Tres regímenes: A, B, D.
 
-<div align="center">
+<div align="center" markdown="1">
 
 | Régimen | Cuándo aplica | Cómo se evalúa |
 |---|---|---|
@@ -26,7 +26,7 @@ Tres regímenes: A, B, D.
 
 ## 2. Instrumentos por régimen
 
-<div align="center">
+<div align="center" markdown="1">
 
 | Régimen | Declaración autoría | Declaración uso IA | Trazabilidad |
 |---|:-:|:-:|---|
@@ -60,7 +60,7 @@ Versión fija, para quien prefiera no adaptarlo: [`docs/plantillas/guion-defensa
 
 Tres categorías exhaustivas. **Un indicio documentado de cualquiera basta para activar** la verificación (guion de defensa oral).
 
-<div align="center">
+<div align="center" markdown="1">
 
 | Categoría | Qué detecta | Ejemplos |
 |---|---|---|

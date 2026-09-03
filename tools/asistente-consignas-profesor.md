@@ -6,7 +6,7 @@ Herramienta para fijar el régimen de uso de IA de una actividad (A / B / D) y g
 
 ## Cómo funciona, paso a paso
 
-<div align="center">
+<div align="center" markdown="1">
 
 |![Paso 1: identificación de la actividad](../images/asistenteConsigna-001.png)
 |-
@@ -34,7 +34,7 @@ _**5. Resultado.** Se generan la consigna (para el enunciado) y la ficha interna
 
 Dos textos, ambos editables antes de descargar:
 
-<div align=center>
+<div align="center" markdown="1">
 
 |La consigna|La ficha interna|
 |-|-|
