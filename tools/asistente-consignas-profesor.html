@@ -131,7 +131,7 @@ const STEPS = [
 
 function freshState(){
   return {
-    step:1,
+    step:3,  /* temporal: arranca en "Determinación del régimen" para demos; volver a 1 (o reordenar) después */
     id:{ asignatura:'', actividad:'', docente:'', curso:'', modalidad:'Individual', fecha:new Date().toISOString().slice(0,10) },
     fin:{ resultados:'', producto:'', desempeno:'' },
     regimen:{ permiteIA:null, medioObjeto:null, reconstruible:null, elegido:null, justificacion:'' },
